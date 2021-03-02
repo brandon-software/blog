@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/CSharp/feed.xml" rel="self" type="application/atom+xml" /><link href="/CSharp/" rel="alternate" type="text/html" /><updated>2021-03-02T20:53:26+00:00</updated><id>/CSharp/feed.xml</id><title type="html">Code-Sage</title><subtitle>Blog featuring concise software development reference material and articles authored by Brandon D'Souza
+</subtitle><entry><title type="html">A concise guide to C# Language Features</title><link href="/CSharp/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>/CSharp/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="/CSharp/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html">&lt;p&gt;&lt;img src=&quot;/CSharp/assets/code-sage-time.jpg&quot; alt=&quot;Code Sage&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-concise-guide-to-c-language-features&quot;&gt;A concise guide to C# Language Features&lt;/h2&gt;
+
+&lt;p&gt;My first topic is a collection of articles on C# language features.  The articles are organized progressively by version release i.e. chronologically and then alphabetically by language feature.  The motivation for this C# guide is as follows&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;-To create a consistent and organized reference for C# language features not found elsewhere.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notes about the code examples within the guide:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;-Using statements have been omitted for brevity.&lt;/li&gt;
+  &lt;li&gt;-Other than the missing using statements and namespace, all code compiles and executes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;World Wide Web has been a fantastic resource for developing this guide.  Of particular note are the following sites:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://msdn.com&quot;&gt;MSDN&lt;/a&gt; and &lt;a href=&quot;https://wikipedia.org&quot;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Brandon_Dsouza" /><category term="update" /><summary type="html"></summary></entry></feed>
