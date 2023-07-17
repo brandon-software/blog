@@ -1,815 +1,768 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
   <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Default values for Read-only Auto-properties</title>
-  <meta name="description" content="C# language feature:">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  <link rel="stylesheet" href="/blog/assets/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+    Default values for Read-only Auto-properties &middot; Code-Sage
+    
+  </title>
+
+  
   <link rel="canonical" href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">
-  <link rel="alternate" type="application/rss+xml" title="Code-Sage" href="/blog/feed.xml">
-  <link rel="shortcut icon" href="/blog/favicon-16x16.png">
-
   
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105544392-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="/blog/public/css/main.css">
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  gtag('config', 'UA—105544392-1');
-</script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/blog/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/atom.xml">
 
   
 </head>
 
-
   <body>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-    <header class="site-header" role="banner">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A Software Engineer's Blog by Brandon D'Souza
+</p>
+</div>
 
-  <div class="wrapper">
-    <img class="site-title" src="/blog/assets/cs.jpg" width="54px" />
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/blog/">Home</a>
+
+    
+
     
     
-    <a class="site-title" href="/blog/">Code-Sage</a>
-  
     
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/csharp/">CSharp Guide</a>
+    
+    
+    
+    
+    
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-        <div class="trigger">
-          
-            
-            
-            <a class="page-link" href="/blog/about/">About</a>
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version ">
+      csharp v2
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Anonymous_methods/">Anonymous methods</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Co-_and_Contra-variance_for_delegates/">Co- and Contra-variance for delegates</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Delegate_inference/">Delegate inference</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Generics/">Generics</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Getter_and_setter_separate_accessibility/">Getter and setter separate accessibility</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Iterators/">Iterators</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Method_group_conversions__delegates_/">Method group conversions (delegates)</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Nullable_types/">Nullable types</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Partials/">Partials</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v2/Static_classes/">Static classes</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version ">
+      csharp v3
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Anonymous_types/">Anonymous types</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Auto-Implemented_properties/">Auto-Implemented properties</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Expression_trees/">Expression trees</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Extension_methods/">Extension methods</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Implicitly_typed_local_variables/">Implicitly typed local variables</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Lambda_expression/">Lambda expression</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Object_and_collection_initializers/">Object and collection initializers</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Partial_methods/">Partial methods</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v3/Query_expressions/">Query expressions</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version ">
+      csharp v4
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v4/Generic_co-_and_contravariance/">Generic co- and contravariance</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v4/Named_and_optional_arguments/">Named and optional arguments</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version ">
+      csharp v5
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v5/Asynchronous_methods/">Asynchronous methods</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v5/Caller_info_attributes/">Caller info attributes</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version active">
+      csharp v6
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/A_note_for_CSharp_6_and_beyond/">A note for CSharp 6 and beyond</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Allow_await_in_catch_and_finally_blocks/">Allow await in catch and finally blocks</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Auto_property_initializers/">Auto property initializers</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item active"
+      href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">Default values for Read-only Auto-properties</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Dictionary__index__initializers/">Dictionary (index) initializers</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Exception_filters/">Exception filters</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Expression-bodied_members/">Expression-bodied members</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Import_of_static_type_members_into_namespace/">Import of static type members into namespace</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/Null_propagator__null-conditional_operator__succinct_null_checking_/">Null propagator (null-conditional operator, succinct null checking)</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/String_interpolation/">String interpolation</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v6/nameof_operator/">nameof operator</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div class="version ">
+      csharp v7
+    </div>
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Binary_literals/">Binary literals</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Deconstruction/">Deconstruction</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Digit_separators/">Digit separators</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Expression_bodied_constructors_and_finalizers/">Expression bodied constructors and finalizers</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Expression_bodied_getters_and_setters/">Expression bodied getters and setters</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Generalized_async_return_types/">Generalized async return types</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Local_functions/">Local functions</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Out_variables/">Out variables</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Pattern_matching/">Pattern matching</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Ref_returns_and_locals/">Ref returns and locals</a>
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <a class="sidebar-nav-item"
+      href="/blog/topics/csharp/v7/Tuples/">Tuples</a>
+    
+    
+
+    
+    
+    
+  </nav>
+  <div class="sidebar-item">
+    <ul class="social-media-list">
+        
+        <li>
+            <a href="https://linkedin.com/in/brandon-dsouza">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="https://github.com/brandon-software"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">brandon-software</span></a>
+
+        </li>
+        
+    </ul>
+    <span>Version: 2.0.0</span>
+    <p>
+        <span>&copy; 2023 Code-Sage.com. All rights reserved.</span>
+    </p>
+</div>
+</div>
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead sticky">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blog/" title="Home">Code-Sage</a>
+            <small></small>
+          </h3>
         </div>
-      </nav>
-    
-  </div>
-</header>
-
-
-    <main class="container" aria-label="Content">
-        <div class="sideBar">
-            <nav class="main-nav" id="main-nav">
-    <ul class="menu"><ul>
-
-   
-   
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-posts" class="toggle"> posts +</label>
-        <a> posts</a>
-        <input type="checkbox" id="drop-posts" ><ul>
-        
-    
-    <li><a  href="/blog/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html">A concise guide to C# Language Features</a></li>
-   
-   
-
-   
-   
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-v2" class="toggle">csharp v2 +</label>
-        <a>csharp v2</a>
-        <input type="checkbox" id="drop-v2" ><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v2/Anonymous_methods/">Anonymous methods</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Co-_and_Contra-variance_for_delegates/">Co- and Contra-variance for delegates</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Delegate_inference/">Delegate inference</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Generics/">Generics</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Getter_and_setter_separate_accessibility/">Getter and setter separate accessibility</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Iterators/">Iterators</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Method_group_conversions__delegates_/">Method group conversions (delegates)</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Nullable_types/">Nullable types</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Partials/">Partials</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v2/Static_classes/">Static classes</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-v3" class="toggle">csharp v3 +</label>
-        <a>csharp v3</a>
-        <input type="checkbox" id="drop-v3" ><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v3/Anonymous_types/">Anonymous types</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Auto-Implemented_properties/">Auto-Implemented properties</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Expression_trees/">Expression trees</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Extension_methods/">Extension methods</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Implicitly_typed_local_variables/">Implicitly typed local variables</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Lambda_expression/">Lambda expression</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Object_and_collection_initializers/">Object and collection initializers</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Partial_methods/">Partial methods</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v3/Query_expressions/">Query expressions</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-v4" class="toggle">csharp v4 +</label>
-        <a>csharp v4</a>
-        <input type="checkbox" id="drop-v4" ><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v4/Generic_co-_and_contravariance/">Generic co- and contravariance</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v4/Named_and_optional_arguments/">Named and optional arguments</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-v5" class="toggle">csharp v5 +</label>
-        <a>csharp v5</a>
-        <input type="checkbox" id="drop-v5" ><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v5/Asynchronous_methods/">Asynchronous methods</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v5/Caller_info_attributes/">Caller info attributes</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li class="active" >
-        <label for="drop-v6" class="toggle">csharp v6 +</label>
-        <a>csharp v6</a>
-        <input type="checkbox" id="drop-v6" checked><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v6/A_note_for_CSharp_6_and_beyond/">A note for CSharp 6 and beyond</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Allow_await_in_catch_and_finally_blocks/">Allow await in catch and finally blocks</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Auto_property_initializers/">Auto property initializers</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a class="active" href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">Default values for Read-only Auto-properties</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Dictionary__index__initializers/">Dictionary (index) initializers</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Exception_filters/">Exception filters</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Expression-bodied_members/">Expression-bodied members</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Import_of_static_type_members_into_namespace/">Import of static type members into namespace</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/Null_propagator__null-conditional_operator__succinct_null_checking_/">Null propagator (null-conditional operator, succinct null checking)</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/String_interpolation/">String interpolation</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v6/nameof_operator/">nameof operator</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-      
-        </ul></ul><ul>
-        <li  >
-        <label for="drop-v7" class="toggle">csharp v7 +</label>
-        <a>csharp v7</a>
-        <input type="checkbox" id="drop-v7" ><ul>
-        
-    
-    <li><a  href="/blog/topics/csharp/v7/Binary_literals/">Binary literals</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Deconstruction/">Deconstruction</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Digit_separators/">Digit separators</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Expression_bodied_constructors_and_finalizers/">Expression bodied constructors and finalizers</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Expression_bodied_getters_and_setters/">Expression bodied getters and setters</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Generalized_async_return_types/">Generalized async return types</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Local_functions/">Local functions</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Out_variables/">Out variables</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Pattern_matching/">Pattern matching</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Ref_returns_and_locals/">Ref returns and locals</a></li>
-   
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    <li><a  href="/blog/topics/csharp/v7/Tuples/">Tuples</a></li>
-   
-   
-
-</ul></nav>
-
-            <div class="page-wrap">
-              <header>
-              <a href="#main-nav" class="open-menu">
-                  <span class="menu-icon">
-                      <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-                        <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-                        <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-                      </svg>
-                    </span>
-                </a>
-                <a href="#" class="close-menu">
-                    <span class="menu-icon">
-                        <svg viewBox="0 0 18 15" width="18px" height="15px">
-                          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-                          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-                          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-                        </svg>
-                      </span>
-                </a>
-              </header>                            
-              </div>
-            </div>
-        <div class="content">
-      <p><strong>C# language feature</strong>:</p>
+        <div class="cs-sticky-language-feature content ">
+          <p><strong>C# language feature</strong>:</p>
 
 <ul>
   <li>
@@ -837,63 +790,715 @@
 <figure class="highlight"><pre><code class="language-c#" data-lang="c#">        <span class="k">public</span> <span class="kt">double</span> <span class="n">PI</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">3.14</span><span class="p">;</span></code></pre></figure>
 
 
+          <!-- include line separator across page-->
+          <hr>
+<div class="quick" style="margin:5%;">
+    <h6>C# articles</h6>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" >
+        <h3 style="display:inline;">csharp v2 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v2/Anonymous_methods/">Anonymous methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Co-_and_Contra-variance_for_delegates/">Co- and Contra-variance for delegates</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Delegate_inference/">Delegate inference</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Generics/">Generics</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Getter_and_setter_separate_accessibility/">Getter and setter separate accessibility</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Iterators/">Iterators</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Method_group_conversions__delegates_/">Method group conversions (delegates)</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Nullable_types/">Nullable types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Partials/">Partials</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v2/Static_classes/">Static classes</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" >
+        <h3 style="display:inline;">csharp v3 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v3/Anonymous_types/">Anonymous types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Auto-Implemented_properties/">Auto-Implemented properties</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Expression_trees/">Expression trees</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Extension_methods/">Extension methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Implicitly_typed_local_variables/">Implicitly typed local variables</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Lambda_expression/">Lambda expression</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Object_and_collection_initializers/">Object and collection initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Partial_methods/">Partial methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v3/Query_expressions/">Query expressions</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" >
+        <h3 style="display:inline;">csharp v4 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v4/Generic_co-_and_contravariance/">Generic co- and contravariance</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v4/Named_and_optional_arguments/">Named and optional arguments</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" >
+        <h3 style="display:inline;">csharp v5 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v5/Asynchronous_methods/">Asynchronous methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v5/Caller_info_attributes/">Caller info attributes</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" class="active-x" >
+        <h3 style="display:inline;">csharp v6 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v6/A_note_for_CSharp_6_and_beyond/">A note for CSharp 6 and beyond</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Allow_await_in_catch_and_finally_blocks/">Allow await in catch and finally blocks</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Auto_property_initializers/">Auto property initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a class="active-x"  href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">Default values for Read-only Auto-properties</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Dictionary__index__initializers/">Dictionary (index) initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Exception_filters/">Exception filters</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Expression-bodied_members/">Expression-bodied members</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Import_of_static_type_members_into_namespace/">Import of static type members into namespace</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/Null_propagator__null-conditional_operator__succinct_null_checking_/">Null propagator (null-conditional operator, succinct null checking)</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/String_interpolation/">String interpolation</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v6/nameof_operator/">nameof operator</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;" >
+        <h3 style="display:inline;">csharp v7 +</h3>
+    </div>
+    
+    
+
+    <a  href="/blog/topics/csharp/v7/Binary_literals/">Binary literals</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Deconstruction/">Deconstruction</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Digit_separators/">Digit separators</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Expression_bodied_constructors_and_finalizers/">Expression bodied constructors and finalizers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Expression_bodied_getters_and_setters/">Expression bodied getters and setters</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Generalized_async_return_types/">Generalized async return types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Local_functions/">Local functions</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Out_variables/">Out variables</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Pattern_matching/">Pattern matching</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Ref_returns_and_locals/">Ref returns and locals</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a  href="/blog/topics/csharp/v7/Tuples/">Tuples</a>
+    *
+    
+    
+
+    
+    
+    
+</div>
+        </div>
       </div>
       <div class="wrapper">
       </div>
-    </main>
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">    <a  href="/blog/">Code-Sage</a>
-    </h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            
-              Code-Sage
-            
-            </li>
-            
-            <li><a href="mailto:brandon@code-sage.com">brandon@code-sage.com</a></li>
-            
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-            
-            <li>
-              <a href="https://linkedin.com/in/brandon-dsouza">
-                <i class="fa fa-linkedin"></i> LinkedIn
-              </a>
-            </li>
-          
-          
-          <li>
-            <a href="https://github.com/brandon-software"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">brandon-software</span></a>
-
-          </li>
-          
-
-          
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Blog featuring concise software development reference material and articles authored by Brandon D&#39;Souza
- 
-        </p>
-        <span>&copy; 2023 Code-Sage.com.  All rights reserved.</span>
-      </div>
+      </main>
     </div>
-
-  </div>
-
-</footer>
-
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script src='/blog/public/js/script.js'></script>
   </body>
+
 </html>

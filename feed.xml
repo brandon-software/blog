@@ -1,20 +1,725 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2023-07-14T18:02:44+00:00</updated><id>/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>Blog featuring concise software development reference material and articles authored by Brandon D'Souza
-</subtitle><entry><title type="html">A concise guide to C# Language Features</title><link href="/blog/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>/blog/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="/blog/brandon_dsouza/update/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html">&lt;p&gt;&lt;img src=&quot;/blog/assets/code-sage-time.jpg&quot; alt=&quot;Code Sage&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2023-07-17T19:46:23+00:00</updated><id>/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog by Brandon D&apos;Souza
+</subtitle><entry><title type="html">A concise guide to C# Language Features</title><link href="/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
 
-&lt;h2 id=&quot;a-concise-guide-to-c-language-features&quot;&gt;A concise guide to C# Language Features&lt;/h2&gt;
+<h2 id="a-concise-guide-to-c-language-features">A concise guide to C# Language Features</h2>
 
-&lt;p&gt;My first topic is a collection of articles on C# language features.  The articles are organized progressively by version release i.e. chronologically and then alphabetically by language feature.  The motivation for this C# guide is as follows&lt;/p&gt;
+<p>My first venture into blogging was a collection of articles on C# language features.  The articles are organized progressively by version release i.e. chronologically and then alphabetically by language feature.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;-To create a consistent and organized reference for C# language features not found elsewhere.&lt;/li&gt;
-&lt;/ul&gt;
+<p>To ease navigation when visiting the guide links to C# articles can be found below each article and in the menu.</p>
 
-&lt;p&gt;Notes about the code examples within the guide:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;-Using statements have been omitted for brevity.&lt;/li&gt;
-  &lt;li&gt;-Other than the missing using statements and namespace, all code compiles and executes.&lt;/li&gt;
-&lt;/ul&gt;
+<p>My motivation at the time for the C# guide was as follows to create a consistent and organized reference for C# language features not found elsewhere.</p>
 
-&lt;p&gt;World Wide Web has been a fantastic resource for developing this guide.  Of particular note are the following sites:&lt;/p&gt;
+<p>How the world has changed since then!  The C# language has evolved and so has the internet.  The internet has become a much richer resource for learning C# language features.</p>
 
-&lt;p&gt;&lt;a href=&quot;https://msdn.com&quot;&gt;MSDN&lt;/a&gt; and &lt;a href=&quot;https://wikipedia.org&quot;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Brandon_Dsouza" /><category term="update" /><summary type="html"></summary></entry></feed>
+<p>Regards,</p>
+
+<p>Brandon Dsouza</p>
+
+<p>PS Some notes about the code examples within the guide:</p>
+
+<ul>
+  <li>Using statements have been omitted for brevity.</li>
+  <li>Other than the missing using statements and namespace, all code compiles and executes.</li>
+</ul>
+
+<hr />
+
+<div class="quick" style="margin:5%;">
+    <h6>C# articles</h6>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v2 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v2/Anonymous_methods/">Anonymous methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Co-_and_Contra-variance_for_delegates/">Co- and Contra-variance for delegates</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Delegate_inference/">Delegate inference</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Generics/">Generics</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Getter_and_setter_separate_accessibility/">Getter and setter separate accessibility</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Iterators/">Iterators</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Method_group_conversions__delegates_/">Method group conversions (delegates)</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Nullable_types/">Nullable types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Partials/">Partials</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v2/Static_classes/">Static classes</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v3 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v3/Anonymous_types/">Anonymous types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Auto-Implemented_properties/">Auto-Implemented properties</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Expression_trees/">Expression trees</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Extension_methods/">Extension methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Implicitly_typed_local_variables/">Implicitly typed local variables</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Lambda_expression/">Lambda expression</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Object_and_collection_initializers/">Object and collection initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Partial_methods/">Partial methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v3/Query_expressions/">Query expressions</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v4 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v4/Generic_co-_and_contravariance/">Generic co- and contravariance</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v4/Named_and_optional_arguments/">Named and optional arguments</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v5 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v5/Asynchronous_methods/">Asynchronous methods</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v5/Caller_info_attributes/">Caller info attributes</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v6 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v6/A_note_for_CSharp_6_and_beyond/">A note for CSharp 6 and beyond</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Allow_await_in_catch_and_finally_blocks/">Allow await in catch and finally blocks</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Auto_property_initializers/">Auto property initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">Default values for Read-only Auto-properties</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Dictionary__index__initializers/">Dictionary (index) initializers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Exception_filters/">Exception filters</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Expression-bodied_members/">Expression-bodied members</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Import_of_static_type_members_into_namespace/">Import of static type members into namespace</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/Null_propagator__null-conditional_operator__succinct_null_checking_/">Null propagator (null-conditional operator, succinct null checking)</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/String_interpolation/">String interpolation</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v6/nameof_operator/">nameof operator</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    <div style="display:inline;">
+        <h3 style="display:inline;">csharp v7 +</h3>
+    </div>
+    
+    
+
+    <a href="/blog/topics/csharp/v7/Binary_literals/">Binary literals</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Deconstruction/">Deconstruction</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Digit_separators/">Digit separators</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Expression_bodied_constructors_and_finalizers/">Expression bodied constructors and finalizers</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Expression_bodied_getters_and_setters/">Expression bodied getters and setters</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Generalized_async_return_types/">Generalized async return types</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Local_functions/">Local functions</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Out_variables/">Out variables</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Pattern_matching/">Pattern matching</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Ref_returns_and_locals/">Ref returns and locals</a>
+    *
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    <a href="/blog/topics/csharp/v7/Tuples/">Tuples</a>
+    *
+    
+    
+
+    
+    
+    
+</div>]]></content><author><name></name></author><category term="csharp" /><summary type="html"><![CDATA[]]></summary></entry></feed>

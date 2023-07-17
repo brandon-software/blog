@@ -1,0 +1,51 @@
+/* show content below sticky header */
+body {
+  overflow: hidden;
+}
+
+.cs-sticky-page {
+  /* set max height to 100% of viewport height */
+  max-height: 100vh;
+  overflow-y: scroll;
+  /* Enable vertical scrolling*/
+  padding-top: 0px;
+  margin: 30px 0px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.cs-sticky-language-feature {
+  max-height: 100vh;
+  /* Set the maximum height of the container */
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  padding-top: 0px;
+  margin: 30px 50px 30px 50px;
+}
+
+.version {
+  margin: 10px;
+  font-size: 1.1em;
+  color: lightblue;
+  margin-top: 1em;
+}
+
+/* make header sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* style title in header to be centered */
+/* .masthead-title {
+  text-align: center;
+} */
+
+.center-image {
+  max-width: 400px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
