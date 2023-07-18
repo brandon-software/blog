@@ -1,5 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2023-07-18T04:14:51+00:00</updated><id>/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog by Brandon D&apos;Souza
-</subtitle><entry><title type="html">A concise guide to C# Language Features</title><link href="/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-07-18T19:28:48+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog by Brandon D&apos;Souza
+</subtitle><entry><title type="html">Blog Update</title><link href="https://code-sage.com/blog/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update.html" rel="alternate" type="text/html" title="Blog Update" /><published>2023-07-18T00:00:00+00:00</published><updated>2023-07-18T00:00:00+00:00</updated><id>https://code-sage.com/blog/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update</id><content type="html" xml:base="https://code-sage.com/blog/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update.html"><![CDATA[<h2 id="objective">Objective</h2>
+
+<p>Facilitate Blogging to share daily/weekly work efforts and knowledge with the community.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Jekyll Project Update:
+    <ul>
+      <li>Major version updates to Ruby and Jekyll.</li>
+      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
+    </ul>
+  </li>
+  <li>Theme Customization:
+    <ul>
+      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
+      <li>Implemented sticky headers.</li>
+      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
+      <li>Ensured the layout remains responsive and mobile-friendly.</li>
+    </ul>
+  </li>
+  <li>CI/CD Process Pipeline:
+    <ul>
+      <li>Facilitate rapid local development,</li>
+      <li>Multiple deployments
+        <ul>
+          <li>using GitHub Actions to GitHub Pages</li>
+          <li>Additional deployment to Apache.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="{&quot;general&quot;=&gt;[&quot;Web Development&quot;, &quot;Static Site Web Development&quot;]}" /><category term="{&quot;standards&quot;=&gt;[&quot;HTML&quot;, &quot;CSS&quot;, &quot;Markdown&quot;, &quot;YAML&quot;]}" /><category term="{&quot;tools&quot;=&gt;[&quot;VSCode&quot;, &quot;GIT&quot;, &quot;Ruby&quot;]}" /><category term="{&quot;concepts&quot;=&gt;[&quot;Static Blog&quot;, &quot;Responsive Design&quot;, &quot;CI/CD&quot;, &quot;Git Modules&quot;, &quot;Templating Engine&quot;]}" /><category term="{&quot;packages&quot;=&gt;[&quot;Jekyll&quot;]}" /><category term="{&quot;deployment&quot;=&gt;[&quot;Github Actions&quot;, &quot;Github Pages&quot;, &quot;Apache&quot;]}" /><category term="{&quot;general&quot;=&gt;[&quot;Web Development&quot;, &quot;Static Site Web Development&quot;]}" /><category term="{&quot;standards&quot;=&gt;[&quot;HTML&quot;, &quot;CSS&quot;, &quot;Markdown&quot;, &quot;YAML&quot;]}" /><category term="{&quot;tools&quot;=&gt;[&quot;VSCode&quot;, &quot;GIT&quot;, &quot;Ruby&quot;]}" /><category term="{&quot;concepts&quot;=&gt;[&quot;Static Blog&quot;, &quot;Responsive Design&quot;, &quot;CI/CD&quot;, &quot;Git Modules&quot;, &quot;Templating Engine&quot;]}" /><category term="{&quot;packages&quot;=&gt;[&quot;Jekyll&quot;]}" /><category term="{&quot;deployment&quot;=&gt;[&quot;Github Actions&quot;, &quot;Github Pages&quot;, &quot;Apache&quot;]}" /><category term="html," /><category term="css," /><category term="markdown," /><category term="yaml," /><category term="vscode," /><category term="git," /><category term="ruby," /><category term="jekyll," /><category term="liquid-templates," /><category term="github-actions," /><category term="github-pages," /><category term="apache" /><summary type="html"><![CDATA[Objective]]></summary></entry><entry><title type="html">A concise guide to C# Language Features</title><link href="https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
 
 <h2 id="a-concise-guide-to-c-language-features">A concise guide to C# Language Features</h2>
 
@@ -36,6 +76,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Code-Sage</title>
- <link href="/blog/atom.xml" rel="self"/>
- <link href="/blog/"/>
- <updated>2023-07-18T04:14:51+00:00</updated>
- <id></id>
+ <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
+ <link href="https://code-sage.com/blog/"/>
+ <updated>2023-07-18T19:28:48+00:00</updated>
+ <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
@@ -13,10 +13,59 @@
 
  
  <entry>
+   <title>Blog Update</title>
+   <link href="https://code-sage.com/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update.html"/>
+   <updated>2023-07-18T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update</id>
+   <content type="html">&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Facilitate Blogging to share daily/weekly work efforts and knowledge with the community.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently.  Additional considerations: easy theme updates and rapid development and deployment.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Jekyll Project Update:
+    &lt;ul&gt;
+      &lt;li&gt;Major version updates to Ruby and Jekyll.&lt;/li&gt;
+      &lt;li&gt;Changed and integrated Jekyll theme using Git modules for easy theme updates.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Theme Customization:
+    &lt;ul&gt;
+      &lt;li&gt;Adapted post, page layouts and CSS to match UI design objectives.&lt;/li&gt;
+      &lt;li&gt;Implemented sticky headers.&lt;/li&gt;
+      &lt;li&gt;Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.&lt;/li&gt;
+      &lt;li&gt;Ensured the layout remains responsive and mobile-friendly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CI/CD Process Pipeline:
+    &lt;ul&gt;
+      &lt;li&gt;Facilitate rapid local development,&lt;/li&gt;
+      &lt;li&gt;Multiple deployments
+        &lt;ul&gt;
+          &lt;li&gt;using GitHub Actions to GitHub Pages&lt;/li&gt;
+          &lt;li&gt;Additional deployment to Apache.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>A concise guide to C# Language Features</title>
-   <link href="/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"/>
+   <link href="https://code-sage.com/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"/>
    <updated>2017-06-07T20:16:27+00:00</updated>
-   <id>/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id>
+   <id>https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/code-sage-time.jpg&quot; alt=&quot;Code Sage&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;a-concise-guide-to-c-language-features&quot;&gt;A concise guide to C# Language Features&lt;/h2&gt;
@@ -54,6 +103,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     
