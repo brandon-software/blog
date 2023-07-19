@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+    Web Blog Development &middot; Code-Sage
+    
+  </title>
+
+  
+  <link rel="canonical" href="/blog/2023/07/18/Web-Blog-Development.html">
+  
+  <link rel="stylesheet" href="/blog/public/css/main.css">
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/blog/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/atom.xml">
+
+  
+</head>
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="author-container">
+        <img src="/blog/public/image/brandon.png" alt="author" class="author-image">
+        <p>A Software Engineer's Blog
+ by<br>
+            Brandon D'Souza
+        </p>
+    </div>
+</div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/blog/">Home</a>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/csharp/">CSharp Guide</a>
+    
+    
+    
+    
+    
+  </nav>
+  <div class="sidebar-item">
+    <ul class="social-media-list">
+        
+        <li>
+            <a href="https://linkedin.com/in/brandon-dsouza">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="https://github.com/brandon-software"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">brandon-software</span></a>
+
+        </li>
+        
+    </ul>
+    <span>Version: 2.0.0</span>
+    <p>
+        <span>&copy; 2023 Code-Sage.com. All rights reserved.</span>
+    </p>
+</div>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead sticky">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blog/" title="Home">Code-Sage</a>
+            <small></small>
+          </h3>
+        </div>
+        <div class="cs-sticky-page content">
+          <div class="post">
+  <h1 class="post-title">Web Blog Development</h1>
+  <span class="post-date">18 Jul 2023</span>
+  <h2 id="objective">Objective</h2>
+
+<p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Jekyll Project Update:
+    <ul>
+      <li>Major version updates to Ruby and Jekyll.</li>
+      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
+    </ul>
+  </li>
+  <li>Theme Customization:
+    <ul>
+      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
+      <li>Implemented sticky headers.</li>
+      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
+      <li>Ensured the layout remains responsive and mobile-friendly.</li>
+    </ul>
+  </li>
+  <li>CI/CD Process Pipeline:
+    <ul>
+      <li>Facilitate rapid local development,</li>
+      <li>Multiple deployments
+        <ul>
+          <li>using GitHub Actions to GitHub Pages</li>
+          <li>Additional deployment to Apache.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+
+<hr />
+
+
+  <h2>Skills Footprint:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Technical Specifics</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      
+      
+      
+      <tr>
+        <td>general</td>
+        <td>Web Development * Static Site Web Development</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>standards</td>
+        <td>HTML * CSS * Markdown * YAML</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>tools</td>
+        <td>VSCode * GIT * Ruby</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>concepts</td>
+        <td>Static Blog * Responsive Design * CI/CD * Git Modules * Templating Engine</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>packages</td>
+        <td>Jekyll</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>deployment</td>
+        <td>Github Actions * Github Pages * Apache</td>
+      </tr>
+      
+      
+      
+    </tbody>
+  </table>
+
+  <!-- Display tags -->
+  <!-- 
+  <p>Tags: html, css, markdown, yaml, vscode, git, ruby, jekyll, liquid-templates, github-actions, github-pages, apache</p>
+  
+
+  <p>Tags:
+    
+    <a href="/tags/html">html</a>
+    html
+     * 
+    
+    <a href="/tags/css">css</a>
+    css
+     * 
+    
+    <a href="/tags/markdown">markdown</a>
+    markdown
+     * 
+    
+    <a href="/tags/yaml">yaml</a>
+    yaml
+     * 
+    
+    <a href="/tags/vscode">vscode</a>
+    vscode
+     * 
+    
+    <a href="/tags/git">git</a>
+    git
+     * 
+    
+    <a href="/tags/ruby">ruby</a>
+    ruby
+     * 
+    
+    <a href="/tags/jekyll">jekyll</a>
+    jekyll
+     * 
+    
+    <a href="/tags/liquid-templates">liquid-templates</a>
+    liquid-templates
+     * 
+    
+    <a href="/tags/github-actions">github-actions</a>
+    github-actions
+     * 
+    
+    <a href="/tags/github-pages">github-pages</a>
+    github-pages
+     * 
+    
+    <a href="/tags/apache">apache</a>
+    apache
+    
+    
+  </p> -->
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html">
+          A concise guide to C# Language Features
+          <small>07 Jun 2017</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/blog/public/js/script.js'></script>
+  </body>
+
+</html>

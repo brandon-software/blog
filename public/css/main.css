@@ -3,9 +3,22 @@ body {
   overflow: hidden;
 }
 
+/* image element on left of p element */
+.author-image {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.author-container p {
+  text-align: center;
+}
+
 .cs-sticky-page {
-  /* set max height to 100% of viewport height */
-  max-height: 100vh;
+  max-height: calc(100vh - 100px);
+  /* Adjust the height (100px) based on your sticky header's height */
   overflow-y: scroll;
   /* Enable vertical scrolling*/
   padding-top: 0px;
@@ -15,8 +28,8 @@ body {
 }
 
 .cs-sticky-language-feature {
-  max-height: 100vh;
-  /* Set the maximum height of the container */
+  max-height: calc(100vh - 100px);
+  /* Adjust the height (100px) based on your sticky header's height */
   overflow-y: scroll;
   /* Enable vertical scrolling */
   padding-top: 0px;

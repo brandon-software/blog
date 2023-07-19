@@ -4,7 +4,7 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-07-18T19:28:48+00:00</updated>
+ <updated>2023-07-19T17:59:45+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
@@ -13,17 +13,17 @@
 
  
  <entry>
-   <title>Blog Update</title>
-   <link href="https://code-sage.com/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update.html"/>
+   <title>Web Blog Development</title>
+   <link href="https://code-sage.com/2023/07/18/Web-Blog-Development.html"/>
    <updated>2023-07-18T00:00:00+00:00</updated>
-   <id>https://code-sage.com/blog/%7B%22general%22=%3E%5B%22web%20development%22,%20%22static%20site%20web%20development%22%5D%7D/%7B%22standards%22=%3E%5B%22html%22,%20%22css%22,%20%22markdown%22,%20%22yaml%22%5D%7D/%7B%22tools%22=%3E%5B%22vscode%22,%20%22git%22,%20%22ruby%22%5D%7D/%7B%22concepts%22=%3E%5B%22static%20blog%22,%20%22responsive%20design%22,%20%22ci/cd%22,%20%22git%20modules%22,%20%22templating%20engine%22%5D%7D/%7B%22packages%22=%3E%5B%22jekyll%22%5D%7D/%7B%22deployment%22=%3E%5B%22github%20actions%22,%20%22github%20pages%22,%20%22apache%22%5D%7D/2023/07/18/Blog-Update</id>
+   <id>https://code-sage.com/blog/2023/07/18/Web-Blog-Development</id>
    <content type="html">&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
-&lt;p&gt;Facilitate Blogging to share daily/weekly work efforts and knowledge with the community.&lt;/p&gt;
+&lt;p&gt;Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.&lt;/p&gt;
 
 &lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
 
-&lt;p&gt;Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently.  Additional considerations: easy theme updates and rapid development and deployment.&lt;/p&gt;
+&lt;p&gt;Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.&lt;/p&gt;
 
 &lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
 
@@ -68,7 +68,7 @@
    <id>https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/code-sage-time.jpg&quot; alt=&quot;Code Sage&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;a-concise-guide-to-c-language-features&quot;&gt;A concise guide to C# Language Features&lt;/h2&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;My first venture into blogging was a collection of articles on C# language features.  The articles are organized progressively by version release i.e. chronologically and then alphabetically by language feature.&lt;/p&gt;
 
