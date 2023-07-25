@@ -4,13 +4,59 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-07-19T17:59:45+00:00</updated>
+ <updated>2023-07-25T20:40:57+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Angular App Enhancement and Dependency Maintenance </title>
+   <link href="https://code-sage.com/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html"/>
+   <updated>2023-07-23T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance</id>
+   <content type="html">&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Enhance existing angular application to improve productivity and accessibility (keyboard navigation).&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update Angular Project to build, test, and execute using latest Angular 16:
+    &lt;ul&gt;
+      &lt;li&gt;Update angular dependencies.&lt;/li&gt;
+      &lt;li&gt;Update application code to function with latest supported Typescript.&lt;/li&gt;
+      &lt;li&gt;Replace deprecated 3rd party dependencies with supported dependencies.&lt;/li&gt;
+      &lt;li&gt;Ensure application retains previous form and functionality.&lt;/li&gt;
+      &lt;li&gt;Update tests to function with latest dependencies.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Support keyboard navigation and accessibility:
+    &lt;ul&gt;
+      &lt;li&gt;Allow users to quickly and consistently navigate application using keyboard without use of mouse.&lt;/li&gt;
+      &lt;li&gt;Consider multiple os and browser combinations.&lt;/li&gt;
+      &lt;li&gt;Ensure the layout remains responsive and mobile-friendly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CI/CD Process Pipeline:
+    &lt;ul&gt;
+      &lt;li&gt;Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.&lt;/li&gt;
+      &lt;li&gt;update GitHub Actions build and test with latest dependencies.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, add support for keyboard navigation and accessibility in the angular application.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Web Blog Development</title>
@@ -62,6 +108,29 @@
  </entry>
  
  <entry>
+   <title>Why Angular App Development?</title>
+   <link href="https://code-sage.com/angular/2018/08/20/Why-Angular-App-Development.html"/>
+   <updated>2018-08-20T20:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/code-sage-time.jpg&quot; alt=&quot;Code Sage&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A primary benefit of angular vs typical web application development is improving the user experience by reducing the number web server interactions and improving the responsiveness of the application.  Generally, the application is loaded once and then the user navigates through the application without the need to refresh the page.  The application is responsive and reacts to user input and page transitions, user interactions, etc are all managed by the angular application running in the browser.&lt;/p&gt;
+
+&lt;p&gt;Consider the C# guide I published as a static website using Jekyll.  Each click on a new link typically results in a new page being loaded.  Although, the user experience is fast as a static site, the user experience could be improved by loading the entire guide as a single page application (SPA) and then the user navigates through the application without the need to refresh the page or “hit the server”.&lt;/p&gt;
+
+&lt;p&gt;I have created an angular version of the C# guide.  Additionally, I have added a contextual search feature to the angular version of the guide where the only interaction with the server is the initial load.  The angular version of the guide is available at the following link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://code-sage.com/angular/&quot;&gt;Angular SPA C# Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Regards,&lt;/p&gt;
+
+&lt;p&gt;Brandon Dsouza&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>A concise guide to C# Language Features</title>
    <link href="https://code-sage.com/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"/>
    <updated>2017-06-07T20:16:27+00:00</updated>
@@ -103,6 +172,20 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     

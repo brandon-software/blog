@@ -3,6 +3,7 @@ body {
   overflow: hidden;
 }
 
+
 /* image element on left of p element */
 .author-image {
   float: right;
@@ -17,23 +18,25 @@ body {
 }
 
 .cs-sticky-page {
-  max-height: calc(100vh - 100px);
-  /* Adjust the height (100px) based on your sticky header's height */
+  max-height: calc(100vh - 130px);
+  /* Adjust the height (130px) based on your sticky header's height */
   overflow-y: scroll;
   /* Enable vertical scrolling*/
   padding-top: 0px;
   margin: 30px 0px;
   padding-left: 15%;
   padding-right: 15%;
+  height: auto;
 }
 
 .cs-sticky-language-feature {
-  max-height: calc(100vh - 100px);
-  /* Adjust the height (100px) based on your sticky header's height */
+  max-height: calc(100vh - 130px);
+  /* Adjust the height (130px) based on your sticky header's height */
   overflow-y: scroll;
   /* Enable vertical scrolling */
   padding-top: 0px;
-  margin: 30px 50px 30px 50px;
+  margin: 30px 50px;
+  height: auto;
 }
 
 .version {

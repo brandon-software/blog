@@ -9,12 +9,12 @@
 
   <title>
     
-    Web Blog Development &middot; Code-Sage
+    Angular App Enhancement and Dependency Maintenance  &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/18/Web-Blog-Development.html">
+  <link rel="canonical" href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,47 +118,44 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Web Blog Development</h1>
-  <span class="post-date">18 Jul 2023</span>
+  <h1 class="post-title">Angular App Enhancement and Dependency Maintenance </h1>
+  <span class="post-date">23 Jul 2023</span>
   <h2 id="objective">Objective</h2>
 
-<p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
+<p>Enhance existing angular application to improve productivity and accessibility (keyboard navigation).</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Jekyll Project Update:
+  <li>Update Angular Project to build, test, and execute using latest Angular 16:
     <ul>
-      <li>Major version updates to Ruby and Jekyll.</li>
-      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
+      <li>Update angular dependencies.</li>
+      <li>Update application code to function with latest supported Typescript.</li>
+      <li>Replace deprecated 3rd party dependencies with supported dependencies.</li>
+      <li>Ensure application retains previous form and functionality.</li>
+      <li>Update tests to function with latest dependencies.</li>
     </ul>
   </li>
-  <li>Theme Customization:
+  <li>Support keyboard navigation and accessibility:
     <ul>
-      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
-      <li>Implemented sticky headers.</li>
-      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
-      <li>Ensured the layout remains responsive and mobile-friendly.</li>
+      <li>Allow users to quickly and consistently navigate application using keyboard without use of mouse.</li>
+      <li>Consider multiple os and browser combinations.</li>
+      <li>Ensure the layout remains responsive and mobile-friendly.</li>
     </ul>
   </li>
   <li>CI/CD Process Pipeline:
     <ul>
-      <li>Facilitate rapid local development,</li>
-      <li>Multiple deployments
-        <ul>
-          <li>using GitHub Actions to GitHub Pages</li>
-          <li>Additional deployment to Apache.</li>
-        </ul>
-      </li>
+      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
+      <li>update GitHub Actions build and test with latest dependencies.</li>
     </ul>
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, add support for keyboard navigation and accessibility in the angular application.</p>
 
 <hr />
 
@@ -178,7 +175,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Static Site Web Development</td>
+        <td>Web Development * Angular Development</td>
       </tr>
       
       
@@ -187,7 +184,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * Markdown * YAML</td>
+        <td>HTML * CSS * JSON * Typescript</td>
       </tr>
       
       
@@ -196,7 +193,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Ruby</td>
+        <td>VSCode * GIT * NPM * Angular CLI * Karma * Jasmine</td>
       </tr>
       
       
@@ -205,7 +202,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Static Blog * Responsive Design * CI/CD * Git Modules * Templating Engine</td>
+        <td>Single Page Application * Dependency Maintenance and Management * Responsive Design * CI/CD</td>
       </tr>
       
       
@@ -214,7 +211,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Jekyll</td>
+        <td>Angular * Angular Material</td>
       </tr>
       
       
@@ -223,7 +220,7 @@
       
       <tr>
         <td>deployment</td>
-        <td>Github Actions * Github Pages * Apache</td>
+        <td>Github Actions</td>
       </tr>
       
       
@@ -233,7 +230,7 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, markdown, yaml, vscode, git, ruby, jekyll, liquid-templates, github-actions, github-pages, apache</p>
+  <p>Tags: html, css, Typescript, vscode, git, Angular, github-actions</p>
   
 
   <p>Tags:
@@ -246,12 +243,8 @@
     css
      * 
     
-    <a href="/tags/markdown">markdown</a>
-    markdown
-     * 
-    
-    <a href="/tags/yaml">yaml</a>
-    yaml
+    <a href="/tags/typescript">Typescript</a>
+    Typescript
      * 
     
     <a href="/tags/vscode">vscode</a>
@@ -262,28 +255,12 @@
     git
      * 
     
-    <a href="/tags/ruby">ruby</a>
-    ruby
-     * 
-    
-    <a href="/tags/jekyll">jekyll</a>
-    jekyll
-     * 
-    
-    <a href="/tags/liquid-templates">liquid-templates</a>
-    liquid-templates
+    <a href="/tags/angular">Angular</a>
+    Angular
      * 
     
     <a href="/tags/github-actions">github-actions</a>
     github-actions
-     * 
-    
-    <a href="/tags/github-pages">github-pages</a>
-    github-pages
-     * 
-    
-    <a href="/tags/apache">apache</a>
-    apache
     
     
   </p> -->
@@ -296,9 +273,9 @@
     
     <li>
       <h3>
-        <a href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html">
-          Angular App Enhancement and Dependency Maintenance 
-          <small>23 Jul 2023</small>
+        <a href="/blog/2023/07/18/Web-Blog-Development.html">
+          Web Blog Development
+          <small>18 Jul 2023</small>
         </a>
       </h3>
     </li>
