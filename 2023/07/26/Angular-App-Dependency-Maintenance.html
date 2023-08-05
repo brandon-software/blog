@@ -9,12 +9,12 @@
 
   <title>
     
-    Why Angular App Development? &middot; Code-Sage
+    Angular App Dependency Maintenance &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/angular/2018/08/20/Why-Angular-App-Development.html">
+  <link rel="canonical" href="/blog/2023/07/26/Angular-App-Dependency-Maintenance.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,23 +118,43 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Why Angular App Development?</h1>
-  <span class="post-date">20 Aug 2018</span>
-  <p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+  <h1 class="post-title">Angular App Dependency Maintenance</h1>
+  <span class="post-date">26 Jul 2023</span>
+  <p><img src="/blog/public/image/angular.jpeg" alt="Angular" class="center-image" /></p>
 
 <hr />
 
-<p>A primary benefit of angular vs typical web application development is improving the user experience by reducing the number web server interactions and improving the responsiveness of the application.  Generally, the application is loaded once and then the user navigates through the application without the need to refresh the page.  The application is responsive and reacts to user input and page transitions, user interactions, etc are all managed by the angular application running in the browser.</p>
+<h2 id="objective">Objective</h2>
 
-<p>Consider the C# guide I published as a static website using Jekyll.  Each click on a new link typically results in a new page being loaded.  Although, the user experience is fast as a static site, the user experience could be improved by loading the entire guide as a single page application (SPA) and then the user navigates through the application without the need to refresh the page or “hit the server”.</p>
+<p>Enhance existing angular application to LTS.</p>
 
-<p>I have created an angular version of the C# guide.  Additionally, I have added a contextual search feature to the angular version of the guide where the only interaction with the server is the initial load.  The angular version of the guide is available at the following link:</p>
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p><a href="https://code-sage.com/angular/">Angular SPA C# Guide</a></p>
+<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
 
-<p>Regards,</p>
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
-<p>Brandon Dsouza</p>
+<ol>
+  <li>Update Angular Project to build, test, and execute using latest Angular 16:
+    <ul>
+      <li>Update angular dependencies.</li>
+      <li>Update application code to function with latest supported Typescript.</li>
+      <li>Ensure application retains previous form and functionality.</li>
+      <li>Update tests to function with latest dependencies.</li>
+      <li>Update stories (Storybook) to latest support version.</li>
+    </ul>
+  </li>
+  <li>CI/CD Process Pipeline:
+    <ul>
+      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
+      <li>update GitHub Actions build and test with latest dependencies.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compability with latest support.</p>
+
+<hr />
 
 
   <h2>Skills Footprint:</h2>
@@ -179,7 +199,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Single Page Application * Responsive Design</td>
+        <td>Single Page Application * Dependency Maintenance and Management * Responsive Design * CI/CD</td>
       </tr>
       
       
@@ -188,7 +208,16 @@
       
       <tr>
         <td>packages</td>
-        <td>Angular * Angular Material</td>
+        <td>Angular * Angular Material * Storybook</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>deployment</td>
+        <td>Github Actions</td>
       </tr>
       
       
@@ -198,7 +227,7 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, Typescript, vscode, git, Angular</p>
+  <p>Tags: html, css, Typescript, vscode, git, Angular, github-actions</p>
   
 
   <p>Tags:
@@ -225,6 +254,10 @@
     
     <a href="/tags/angular">Angular</a>
     Angular
+     * 
+    
+    <a href="/tags/github-actions">github-actions</a>
+    github-actions
     
     
   </p> -->
@@ -255,15 +288,6 @@
     
     <li>
       <h3>
-        <a href="/blog/2023/07/26/Angular-App-Dependency-Maintenance.html">
-          Angular App Dependency Maintenance
-          <small>26 Jul 2023</small>
-        </a>
-      </h3>
-    </li>
-    
-    <li>
-      <h3>
         <a href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html">
           Angular App Enhancement and Dependency Maintenance 
           <small>23 Jul 2023</small>
@@ -285,6 +309,15 @@
         <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
           Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
           <small>13 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/angular/2018/08/20/Why-Angular-App-Development.html">
+          Why Angular App Development?
+          <small>20 Aug 2018</small>
         </a>
       </h3>
     </li>

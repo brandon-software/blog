@@ -4,7 +4,7 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-07-25T20:40:57+00:00</updated>
+ <updated>2023-08-05T23:34:41+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
@@ -13,11 +13,150 @@
 
  
  <entry>
+   <title>Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title>
+   <link href="https://code-sage.com/2023/08/04/Dash-App-Deployment-with-Powershell.html"/>
+   <updated>2023-08-04T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/deployment.jpeg&quot; alt=&quot;Deployment&quot; class=&quot;center-image rounded-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+
+&lt;p&gt;Phase 3: Seamless Dashboard Deployment and Updates&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Develop automated method to update dashboard application in windows environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Deploy dashboard to client workstation. Create Power Shell Installation Script/Tool for managing dependencies allowing for
+    &lt;ul&gt;
+      &lt;li&gt;install&lt;/li&gt;
+      &lt;li&gt;upgrade&lt;/li&gt;
+      &lt;li&gt;uninstall&lt;/li&gt;
+      &lt;li&gt;display package versions&lt;/li&gt;
+      &lt;li&gt;create/remove dashboard app shortcut on desktop&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Application Update and Start Script. Create Power Shell Script to
+    &lt;ul&gt;
+      &lt;li&gt;automate dashboard app updates&lt;/li&gt;
+      &lt;li&gt;start of flask Python app (dashboard).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)</title>
+   <link href="https://code-sage.com/2023/07/31/Data-Science-Visualization-with-Python.html"/>
+   <updated>2023-07-31T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/data-visualization.jpeg&quot; alt=&quot;Data Visualization&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+
+&lt;p&gt;Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Understand customer needs and develop usable/interactive dashboard with minimal user interface friction.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Project Setup
+    &lt;ul&gt;
+      &lt;li&gt;Python Environment&lt;/li&gt;
+      &lt;li&gt;Jupyter Notebook&lt;/li&gt;
+      &lt;li&gt;Data Analysis and Visualization Packages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Data Visualization and Dashboard Development
+    &lt;ul&gt;
+      &lt;li&gt;Understand data and identify key variables/metrics for interactive dashboard.&lt;/li&gt;
+      &lt;li&gt;Prototype pivot table, charts and graphs for review.&lt;/li&gt;
+      &lt;li&gt;Identify friction points and opportunities for improvement.&lt;/li&gt;
+      &lt;li&gt;Create an interactive dashboard to allow for seamless exploration of product, manufacture and market data.
+        &lt;ul&gt;
+          &lt;li&gt;All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)&lt;/li&gt;
+          &lt;li&gt;Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)&lt;/li&gt;
+          &lt;li&gt;Sales trends with adjustable timeframe window by product, category, and market (Daily/Weekly/Quarter/Annually).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Angular App Dependency Maintenance</title>
+   <link href="https://code-sage.com/2023/07/26/Angular-App-Dependency-Maintenance.html"/>
+   <updated>2023-07-26T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/angular.jpeg&quot; alt=&quot;Angular&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Enhance existing angular application to LTS.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update Angular Project to build, test, and execute using latest Angular 16:
+    &lt;ul&gt;
+      &lt;li&gt;Update angular dependencies.&lt;/li&gt;
+      &lt;li&gt;Update application code to function with latest supported Typescript.&lt;/li&gt;
+      &lt;li&gt;Ensure application retains previous form and functionality.&lt;/li&gt;
+      &lt;li&gt;Update tests to function with latest dependencies.&lt;/li&gt;
+      &lt;li&gt;Update stories (Storybook) to latest support version.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CI/CD Process Pipeline:
+    &lt;ul&gt;
+      &lt;li&gt;Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.&lt;/li&gt;
+      &lt;li&gt;update GitHub Actions build and test with latest dependencies.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compability with latest support.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Angular App Enhancement and Dependency Maintenance </title>
-   <link href="https://code-sage.com/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html"/>
+   <link href="https://code-sage.com/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html"/>
    <updated>2023-07-23T00:00:00+00:00</updated>
-   <id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance</id>
-   <content type="html">&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+   <id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance copy</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/angular2.jpeg&quot; alt=&quot;Angular&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
 &lt;p&gt;Enhance existing angular application to improve productivity and accessibility (keyboard navigation).&lt;/p&gt;
 
@@ -63,7 +202,11 @@
    <link href="https://code-sage.com/2023/07/18/Web-Blog-Development.html"/>
    <updated>2023-07-18T00:00:00+00:00</updated>
    <id>https://code-sage.com/blog/2023/07/18/Web-Blog-Development</id>
-   <content type="html">&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/web-blog.jpeg&quot; alt=&quot;Web Blog&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
 &lt;p&gt;Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.&lt;/p&gt;
 
@@ -102,6 +245,48 @@
 &lt;/ol&gt;
 
 &lt;p&gt;Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)</title>
+   <link href="https://code-sage.com/2023/07/13/Data-Science-Analysis-with-Python.html"/>
+   <updated>2023-07-13T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/deployment.jpeg&quot; alt=&quot;Deployment&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+
+&lt;p&gt;Phase 1: Data Analysis/Cleaning&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Develop iterative data analysis and process to for input into visualization dashboard.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Project Setup
+    &lt;ul&gt;
+      &lt;li&gt;Python Environment&lt;/li&gt;
+      &lt;li&gt;Jupyter Notebook&lt;/li&gt;
+      &lt;li&gt;Data Analysis and Visualization Packages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Data Analysis
+    &lt;ul&gt;
+      &lt;li&gt;Explore, understand, and create a dataset from raw data.&lt;/li&gt;
+      &lt;li&gt;Provide report of missing, duplicate, and invalid data for correction.&lt;/li&gt;
+      &lt;li&gt;Clean and process data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 </content>
@@ -172,6 +357,34 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     

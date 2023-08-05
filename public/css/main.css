@@ -58,10 +58,17 @@ body {
   text-align: center;
 } */
 
+/* style center-image to use 80% of the width of the page for small devices */
+@media (max-width: 768px) {
+  .center-image {
+    width: 75% !important;
+  }
+}
+
 .center-image {
   max-width: 400px;
   width: 50%;
   margin: 0 auto;
   display: block;
-  border-radius: 5px;
+  border-radius: 40px;
 }

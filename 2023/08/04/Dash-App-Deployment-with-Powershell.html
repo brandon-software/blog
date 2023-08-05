@@ -9,12 +9,12 @@
 
   <title>
     
-    Why Angular App Development? &middot; Code-Sage
+    Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3) &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/angular/2018/08/20/Why-Angular-App-Development.html">
+  <link rel="canonical" href="/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,23 +118,43 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Why Angular App Development?</h1>
-  <span class="post-date">20 Aug 2018</span>
-  <p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+  <h1 class="post-title">Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</h1>
+  <span class="post-date">04 Aug 2023</span>
+  <p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image rounded-image" /></p>
 
 <hr />
 
-<p>A primary benefit of angular vs typical web application development is improving the user experience by reducing the number web server interactions and improving the responsiveness of the application.  Generally, the application is loaded once and then the user navigates through the application without the need to refresh the page.  The application is responsive and reacts to user input and page transitions, user interactions, etc are all managed by the angular application running in the browser.</p>
+<h2 id="objective">Objective</h2>
 
-<p>Consider the C# guide I published as a static website using Jekyll.  Each click on a new link typically results in a new page being loaded.  Although, the user experience is fast as a static site, the user experience could be improved by loading the entire guide as a single page application (SPA) and then the user navigates through the application without the need to refresh the page or “hit the server”.</p>
+<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.</p>
 
-<p>I have created an angular version of the C# guide.  Additionally, I have added a contextual search feature to the angular version of the guide where the only interaction with the server is the initial load.  The angular version of the guide is available at the following link:</p>
+<p>Phase 3: Seamless Dashboard Deployment and Updates</p>
 
-<p><a href="https://code-sage.com/angular/">Angular SPA C# Guide</a></p>
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Regards,</p>
+<p>Develop automated method to update dashboard application in windows environment.</p>
 
-<p>Brandon Dsouza</p>
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Deploy dashboard to client workstation. Create Power Shell Installation Script/Tool for managing dependencies allowing for
+    <ul>
+      <li>install</li>
+      <li>upgrade</li>
+      <li>uninstall</li>
+      <li>display package versions</li>
+      <li>create/remove dashboard app shortcut on desktop</li>
+    </ul>
+  </li>
+  <li>Application Update and Start Script. Create Power Shell Script to
+    <ul>
+      <li>automate dashboard app updates</li>
+      <li>start of flask Python app (dashboard).</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
 
 
   <h2>Skills Footprint:</h2>
@@ -152,7 +172,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Angular Development</td>
+        <td>Data Science * Data Analysis * Data Visualization</td>
       </tr>
       
       
@@ -161,7 +181,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * JSON * Typescript</td>
+        <td>CSV * Spreadsheet * Charts * Graphs</td>
       </tr>
       
       
@@ -170,7 +190,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * NPM * Angular CLI * Karma * Jasmine</td>
+        <td>VSCode * GIT * Python</td>
       </tr>
       
       
@@ -179,7 +199,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Single Page Application * Responsive Design</td>
+        <td>CI/CD * Data Analysis * Data Visualization * Data Cleaning * Data Processing</td>
       </tr>
       
       
@@ -188,7 +208,16 @@
       
       <tr>
         <td>packages</td>
-        <td>Angular * Angular Material</td>
+        <td>win-get * pip</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>deployment</td>
+        <td>Power Shell Script</td>
       </tr>
       
       
@@ -198,22 +227,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, Typescript, vscode, git, Angular</p>
+  <p>Tags: vscode, git, python, pandas, numpy, matplotlib, seaborn, data-science, data-analysis, data-visualization</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/typescript">Typescript</a>
-    Typescript
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -223,8 +240,36 @@
     git
      * 
     
-    <a href="/tags/angular">Angular</a>
-    Angular
+    <a href="/tags/python">python</a>
+    python
+     * 
+    
+    <a href="/tags/pandas">pandas</a>
+    pandas
+     * 
+    
+    <a href="/tags/numpy">numpy</a>
+    numpy
+     * 
+    
+    <a href="/tags/matplotlib">matplotlib</a>
+    matplotlib
+     * 
+    
+    <a href="/tags/seaborn">seaborn</a>
+    seaborn
+     * 
+    
+    <a href="/tags/data-science">data-science</a>
+    data-science
+     * 
+    
+    <a href="/tags/data-analysis">data-analysis</a>
+    data-analysis
+     * 
+    
+    <a href="/tags/data-visualization">data-visualization</a>
+    data-visualization
     
     
   </p> -->
@@ -234,15 +279,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html">
-          Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)
-          <small>04 Aug 2023</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -285,6 +321,15 @@
         <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
           Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
           <small>13 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/angular/2018/08/20/Why-Angular-App-Development.html">
+          Why Angular App Development?
+          <small>20 Aug 2018</small>
         </a>
       </h3>
     </li>

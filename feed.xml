@@ -1,5 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-07-25T20:40:57+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Angular App Enhancement and Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html" rel="alternate" type="text/html" title="Angular App Enhancement and Dependency Maintenance" /><published>2023-07-23T00:00:00+00:00</published><updated>2023-07-23T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html"><![CDATA[<h2 id="objective">Objective</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-08-05T23:34:41+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title><link href="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html" rel="alternate" type="text/html" title="Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)" /><published>2023-08-04T00:00:00+00:00</published><updated>2023-08-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image rounded-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.</p>
+
+<p>Phase 3: Seamless Dashboard Deployment and Updates</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Develop automated method to update dashboard application in windows environment.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Deploy dashboard to client workstation. Create Power Shell Installation Script/Tool for managing dependencies allowing for
+    <ul>
+      <li>install</li>
+      <li>upgrade</li>
+      <li>uninstall</li>
+      <li>display package versions</li>
+      <li>create/remove dashboard app shortcut on desktop</li>
+    </ul>
+  </li>
+  <li>Application Update and Start Script. Create Power Shell Script to
+    <ul>
+      <li>automate dashboard app updates</li>
+      <li>start of flask Python app (dashboard).</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)</title><link href="https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python.html" rel="alternate" type="text/html" title="Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)" /><published>2023-07-31T00:00:00+00:00</published><updated>2023-07-31T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python.html"><![CDATA[<p><img src="/blog/public/image/data-visualization.jpeg" alt="Data Visualization" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.</p>
+
+<p>Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Understand customer needs and develop usable/interactive dashboard with minimal user interface friction.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Project Setup
+    <ul>
+      <li>Python Environment</li>
+      <li>Jupyter Notebook</li>
+      <li>Data Analysis and Visualization Packages</li>
+    </ul>
+  </li>
+  <li>Data Visualization and Dashboard Development
+    <ul>
+      <li>Understand data and identify key variables/metrics for interactive dashboard.</li>
+      <li>Prototype pivot table, charts and graphs for review.</li>
+      <li>Identify friction points and opportunities for improvement.</li>
+      <li>Create an interactive dashboard to allow for seamless exploration of product, manufacture and market data.
+        <ul>
+          <li>All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
+          <li>Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
+          <li>Sales trends with adjustable timeframe window by product, category, and market (Daily/Weekly/Quarter/Annually).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="scipy" /><category term="jupyter-notebook" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Angular App Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance.html" rel="alternate" type="text/html" title="Angular App Dependency Maintenance" /><published>2023-07-26T00:00:00+00:00</published><updated>2023-07-26T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance.html"><![CDATA[<p><img src="/blog/public/image/angular.jpeg" alt="Angular" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Enhance existing angular application to LTS.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Update Angular Project to build, test, and execute using latest Angular 16:
+    <ul>
+      <li>Update angular dependencies.</li>
+      <li>Update application code to function with latest supported Typescript.</li>
+      <li>Ensure application retains previous form and functionality.</li>
+      <li>Update tests to function with latest dependencies.</li>
+      <li>Update stories (Storybook) to latest support version.</li>
+    </ul>
+  </li>
+  <li>CI/CD Process Pipeline:
+    <ul>
+      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
+      <li>update GitHub Actions build and test with latest dependencies.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compability with latest support.</p>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Angular App Enhancement and Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html" rel="alternate" type="text/html" title="Angular App Enhancement and Dependency Maintenance" /><published>2023-07-23T00:00:00+00:00</published><updated>2023-07-23T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance%20copy</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html"><![CDATA[<p><img src="/blog/public/image/angular2.jpeg" alt="Angular" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
 
 <p>Enhance existing angular application to improve productivity and accessibility (keyboard navigation).</p>
 
@@ -36,7 +148,11 @@
 
 <p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, add support for keyboard navigation and accessibility in the angular application.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[Objective]]></summary></entry><entry><title type="html">Web Blog Development</title><link href="https://code-sage.com/blog/2023/07/18/Web-Blog-Development.html" rel="alternate" type="text/html" title="Web Blog Development" /><published>2023-07-18T00:00:00+00:00</published><updated>2023-07-18T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/18/Web-Blog-Development</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/18/Web-Blog-Development.html"><![CDATA[<h2 id="objective">Objective</h2>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Web Blog Development</title><link href="https://code-sage.com/blog/2023/07/18/Web-Blog-Development.html" rel="alternate" type="text/html" title="Web Blog Development" /><published>2023-07-18T00:00:00+00:00</published><updated>2023-07-18T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/18/Web-Blog-Development</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/18/Web-Blog-Development.html"><![CDATA[<p><img src="/blog/public/image/web-blog.jpeg" alt="Web Blog" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
 
 <p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
 
@@ -76,7 +192,40 @@
 
 <p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="markdown" /><category term="yaml" /><category term="vscode" /><category term="git" /><category term="ruby" /><category term="jekyll" /><category term="liquid-templates" /><category term="github-actions" /><category term="github-pages" /><category term="apache" /><summary type="html"><![CDATA[Objective]]></summary></entry><entry><title type="html">Why Angular App Development?</title><link href="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html" rel="alternate" type="text/html" title="Why Angular App Development?" /><published>2018-08-20T20:16:27+00:00</published><updated>2018-08-20T20:16:27+00:00</updated><id>https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development</id><content type="html" xml:base="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="markdown" /><category term="yaml" /><category term="vscode" /><category term="git" /><category term="ruby" /><category term="jekyll" /><category term="liquid-templates" /><category term="github-actions" /><category term="github-pages" /><category term="apache" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)</title><link href="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html" rel="alternate" type="text/html" title="Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)" /><published>2023-07-13T00:00:00+00:00</published><updated>2023-07-13T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.</p>
+
+<p>Phase 1: Data Analysis/Cleaning</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Develop iterative data analysis and process to for input into visualization dashboard.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Project Setup
+    <ul>
+      <li>Python Environment</li>
+      <li>Jupyter Notebook</li>
+      <li>Data Analysis and Visualization Packages</li>
+    </ul>
+  </li>
+  <li>Data Analysis
+    <ul>
+      <li>Explore, understand, and create a dataset from raw data.</li>
+      <li>Provide report of missing, duplicate, and invalid data for correction.</li>
+      <li>Clean and process data.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Why Angular App Development?</title><link href="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html" rel="alternate" type="text/html" title="Why Angular App Development?" /><published>2018-08-20T20:16:27+00:00</published><updated>2018-08-20T20:16:27+00:00</updated><id>https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development</id><content type="html" xml:base="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
 
 <hr />
 
@@ -127,6 +276,34 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     
