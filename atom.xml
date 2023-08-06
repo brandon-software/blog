@@ -4,7 +4,7 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-08-05T23:34:41+00:00</updated>
+ <updated>2023-08-06T00:26:21+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Dashboard Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title>
+   <title>Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title>
    <link href="https://code-sage.com/2023/08/04/Dash-App-Deployment-with-Powershell.html"/>
    <updated>2023-08-04T00:00:00+00:00</updated>
    <id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id>
