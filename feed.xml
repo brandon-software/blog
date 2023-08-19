@@ -1,5 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-08-06T00:26:21+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title><link href="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html" rel="alternate" type="text/html" title="Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)" /><published>2023-08-04T00:00:00+00:00</published><updated>2023-08-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image rounded-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-08-19T18:22:20+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Automated Web App Testing with PlayWright</title><link href="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html" rel="alternate" type="text/html" title="Automated Web App Testing with PlayWright" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html"><![CDATA[<p><img src="/blog/public/image/sp-playwright.jpg" alt="Testing" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Reduce manual testing to increase rate of responsiveness to business change request and reduce risk of regression.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Automate web app testing.  Additional considerations: Test iteration development cycles should be minimal, that is, ‘reduce thrashing’ and ‘quick turn around’ by assisted automated code generation.  Testing should support headless testing and be able to run in a CI/CD pipeline.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Project Setup
+    <ul>
+      <li>Python Environment</li>
+      <li>Add Pytest and PlayWright Packages</li>
+    </ul>
+  </li>
+  <li>Develop Tests
+    <ul>
+      <li>Identify ‘non-brittle’ test cases and scenarios.</li>
+      <li>Identify specific and unique selectors with a consideration of minimizing change.  That is, selectors should be stable and not change with each release.</li>
+      <li>Create tests and confirm tests pass and fail as expected.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, automated testing for a web app reduces development effort.  A substantial advantage can be achieved when you avoid manual testing, brittle tests, and can develop tests quickly. Additionally, we’re making sure these tests can be done without a visible browser and can be run in a pipeline that helps us keep our development process smooth.</p>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pytest" /><category term="playwright" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Soapbox: Why Refactor?</title><link href="https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor.html" rel="alternate" type="text/html" title="Soapbox: Why Refactor?" /><published>2023-08-11T00:00:00+00:00</published><updated>2023-08-11T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle-refactor.jpg" alt="Refactor" class="center-image" /></p>
+
+<hr />
+
+<p>While it is important to deliver features and meet deadlines,  it is also important to consider the long term maintainability of the software.  Refactoring is an essential  part of software development process and is a process that should be done continuously.</p>
+
+<p>Refactoring should include the following (elimination of code smells):</p>
+
+<ul>
+  <li>Identify and remove the following:
+    <ul>
+      <li>dead code</li>
+      <li>unused variables</li>
+      <li>duplicated code</li>
+      <li>overly complex code</li>
+    </ul>
+  </li>
+  <li>Improve the following:
+ naming of functions and variables
+    <ul>
+      <li>code structure</li>
+      <li>modularity</li>
+      <li>potential reuse</li>
+    </ul>
+  </li>
+</ul>
+
+<p>In essence, refactoring is the process of improving the design of existing code without changing its external behavior. Knowledge and proficiency of automated testing, version control, IDE utilization, Clean Code and SOLID principles, CI/CD, etc. are critical to continuously implement refactoring.</p>
+
+<p>A primary benefit of refactoring is a reduction of “technical debt”.   If a project has incorporated the ability to continuously refactor, delivering features faster and with less risk of regression is guaranteed.  A developer does not fear change and can confidently refactor code to improve the design of the software developed as well as enhance their ability to deliver new features faster.</p>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title><link href="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html" rel="alternate" type="text/html" title="Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)" /><published>2023-08-04T00:00:00+00:00</published><updated>2023-08-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image rounded-image" /></p>
 
 <hr />
 
@@ -105,9 +168,9 @@
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compability with latest support.</p>
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compatibility with latest support.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Angular App Enhancement and Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html" rel="alternate" type="text/html" title="Angular App Enhancement and Dependency Maintenance" /><published>2023-07-23T00:00:00+00:00</published><updated>2023-07-23T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance%20copy</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html"><![CDATA[<p><img src="/blog/public/image/angular2.jpeg" alt="Angular" class="center-image" /></p>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Angular App Enhancement and Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html" rel="alternate" type="text/html" title="Angular App Enhancement and Dependency Maintenance" /><published>2023-07-23T00:00:00+00:00</published><updated>2023-07-23T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html"><![CDATA[<p><img src="/blog/public/image/angular2.jpeg" alt="Angular" class="center-image" /></p>
 
 <hr />
 
@@ -192,7 +255,7 @@
 
 <p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="markdown" /><category term="yaml" /><category term="vscode" /><category term="git" /><category term="ruby" /><category term="jekyll" /><category term="liquid-templates" /><category term="github-actions" /><category term="github-pages" /><category term="apache" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)</title><link href="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html" rel="alternate" type="text/html" title="Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)" /><published>2023-07-13T00:00:00+00:00</published><updated>2023-07-13T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image" /></p>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="markdown" /><category term="yaml" /><category term="vscode" /><category term="git" /><category term="ruby" /><category term="jekyll" /><category term="liquid-templates" /><category term="github-actions" /><category term="github-pages" /><category term="apache" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)</title><link href="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html" rel="alternate" type="text/html" title="Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)" /><published>2023-07-13T00:00:00+00:00</published><updated>2023-07-13T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python.html"><![CDATA[<p><img src="/blog/public/image/data-analysis.jpeg" alt="Analysis" class="center-image" /></p>
 
 <hr />
 
@@ -225,790 +288,65 @@
   </li>
 </ol>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Why Angular App Development?</title><link href="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html" rel="alternate" type="text/html" title="Why Angular App Development?" /><published>2018-08-20T20:16:27+00:00</published><updated>2018-08-20T20:16:27+00:00</updated><id>https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development</id><content type="html" xml:base="https://code-sage.com/blog/angular/2018/08/20/Why-Angular-App-Development.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">(Universal) Data Import Tool</title><link href="https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python.html" rel="alternate" type="text/html" title="(Universal) Data Import Tool" /><published>2023-03-09T00:00:00+00:00</published><updated>2023-03-09T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python.html"><![CDATA[<p><img src="/blog/public/image/sp-tool-cube.jpg" alt="Tool" class="center-image" /></p>
 
 <hr />
 
-<p>A primary benefit of angular vs typical web application development is improving the user experience by reducing the number web server interactions and improving the responsiveness of the application.  Generally, the application is loaded once and then the user navigates through the application without the need to refresh the page.  The application is responsive and reacts to user input and page transitions, user interactions, etc are all managed by the angular application running in the browser.</p>
+<h2 id="objective">Objective</h2>
 
-<p>Consider the C# guide I published as a static website using Jekyll.  Each click on a new link typically results in a new page being loaded.  Although, the user experience is fast as a static site, the user experience could be improved by loading the entire guide as a single page application (SPA) and then the user navigates through the application without the need to refresh the page or “hit the server”.</p>
+<p>Organize and consolidate data sets from multiple sources for accounting/financial purposes.</p>
 
-<p>I have created an angular version of the C# guide.  Additionally, I have added a contextual search feature to the angular version of the guide where the only interaction with the server is the initial load.  The angular version of the guide is available at the following link:</p>
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p><a href="https://code-sage.com/angular/">Angular SPA C# Guide</a></p>
+<p>Develop import tool.   Tool should be able to import varied data sets based on meta data of each data set.  The meta data will be used to normalize the data sets into a common and consistent format.  The normalized data sets will be consolidated into a single data set for analysis and reporting.</p>
 
-<p>Regards,</p>
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
-<p>Brandon Dsouza</p>]]></content><author><name>Brandon DSouza</name></author><category term="Angular" /><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A concise guide to C# Language Features</title><link href="https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html" rel="alternate" type="text/html" title="A concise guide to C# Language Features" /><published>2017-06-07T20:16:27+00:00</published><updated>2017-06-07T20:16:27+00:00</updated><id>https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features</id><content type="html" xml:base="https://code-sage.com/blog/csharp/2017/06/07/A-concise-guide-to-CSharp-Language-Features.html"><![CDATA[<p><img src="/blog/public/image/code-sage-time.jpg" alt="Code Sage" class="center-image" /></p>
+<ol>
+  <li>Project Setup
+    <ul>
+      <li>Python Environment</li>
+      <li>Jupyter Notebook</li>
+      <li>Data Analysis Packages</li>
+    </ul>
+  </li>
+  <li>Iterative Data Analysis and Tool development
+    <ul>
+      <li>Explore, understand nuances of each data source.</li>
+      <li>Create meta data describing each data set</li>
+      <li>Refine tool and import data set.</li>
+    </ul>
+  </li>
+</ol>
 
-<hr />
+<p>Overall, the import tool is successfully able to import data sets from multiple sources and normalize the data sets into a common format.  Additional formats can be supported  by adding meta data describing the data set.</p>
 
-<p>My first venture into blogging was a collection of articles on C# language features.  The articles are organized progressively by version release i.e. chronologically and then alphabetically by language feature.</p>
-
-<p>To ease navigation when visiting the guide links to C# articles can be found below each article and in the menu.</p>
-
-<p>My motivation at the time for the C# guide was as follows to create a consistent and organized reference for C# language features not found elsewhere.</p>
-
-<p>How the world has changed since then!  The C# language has evolved and so has the internet.  The internet has become a much richer resource for learning C# language features.</p>
-
-<p>Regards,</p>
-
-<p>Brandon Dsouza</p>
-
-<p>PS Some notes about the code examples within the guide:</p>
-
-<ul>
-  <li>Using statements have been omitted for brevity.</li>
-  <li>Other than the missing using statements and namespace, all code compiles and executes.</li>
-</ul>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="csv" /><category term="json" /><category term="yaml" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Rapid Application Development with Django REST Starter App</title><link href="https://code-sage.com/blog/2022/08/19/DJango-Starter-App.html" rel="alternate" type="text/html" title="Rapid Application Development with Django REST Starter App" /><published>2022-08-19T00:00:00+00:00</published><updated>2022-08-19T00:00:00+00:00</updated><id>https://code-sage.com/blog/2022/08/19/DJango-Starter-App</id><content type="html" xml:base="https://code-sage.com/blog/2022/08/19/DJango-Starter-App.html"><![CDATA[<p><img src="/blog/public/image/sp-train-city.jpg" alt="Starter" class="center-image rounded-image" /></p>
 
 <hr />
 
-<div class="quick" style="margin:5%;">
-    <h6>C# articles</h6>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+<h2 id="objective">Objective</h2>
 
-    
-    
-    
-    
-    
+<p>Source a ready to use reusable back-end REST server app for prototyping, proof of concept, and main line development projects.</p>
 
-    
-    
-    
-    
-    
-    
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-    
-    
-    
-    
-    
-    
+<p>Deliver a “minimal” opinionated reusable starter REST repository with the following requirements/consideration:  enterprise capable and scalable REST API server/database, test coverage,  Open API support, JSON Web Token authentication, continuous integration, and continuous deployment.</p>
 
-    
-    
-    
-    
-    
-    
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
-    
-    
-    
-    
-    
-    
+<ol>
+  <li>
+    <p>Research/review potential open source existing repository/solutions and suitability. Several candidate repos were reviewed.  Only one was deemed suitable meeting/exceeding requirements.  <a href="https://github.com/Vivify-Ideas/python-django-drf-boilerplate">Django repo</a></p>
+  </li>
+  <li>
+    <p>Fork and create suitable base branch <a href="https://github.com/brandon-software/python-django-drf-starter/tree/starter">starter</a></p>
+  </li>
+  <li>
+    <p>Develop branch containing a sample todo api interface verify requirements i.e test, open api, JWT support, etc.  <a href="https://github.com/brandon-software/python-django-drf-starter/tree/REST-code-sample">REST sample branch</a></p>
+  </li>
+</ol>
 
-    
-    
-    
-    
-    
-    
+<p>Overall, the goal is to provide the ability to quickly create either a prototype or a ready-to-use, functioning back-end REST/Web server for applications. This technique can be utilized in a variety of scenarios including similar technology stacks such as ASP.NET Core, NodeJS, Spring, etc.</p>
 
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v2 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v2/Anonymous_methods/">Anonymous methods</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Co-_and_Contra-variance_for_delegates/">Co- and Contra-variance for delegates</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Delegate_inference/">Delegate inference</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Generics/">Generics</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Getter_and_setter_separate_accessibility/">Getter and setter separate accessibility</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Iterators/">Iterators</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Method_group_conversions__delegates_/">Method group conversions (delegates)</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Nullable_types/">Nullable types</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Partials/">Partials</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v2/Static_classes/">Static classes</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v3 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v3/Anonymous_types/">Anonymous types</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Auto-Implemented_properties/">Auto-Implemented properties</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Expression_trees/">Expression trees</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Extension_methods/">Extension methods</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Implicitly_typed_local_variables/">Implicitly typed local variables</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Lambda_expression/">Lambda expression</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Object_and_collection_initializers/">Object and collection initializers</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Partial_methods/">Partial methods</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v3/Query_expressions/">Query expressions</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v4 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v4/Generic_co-_and_contravariance/">Generic co- and contravariance</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v4/Named_and_optional_arguments/">Named and optional arguments</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v5 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v5/Asynchronous_methods/">Asynchronous methods</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v5/Caller_info_attributes/">Caller info attributes</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v6 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v6/A_note_for_CSharp_6_and_beyond/">A note for CSharp 6 and beyond</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Allow_await_in_catch_and_finally_blocks/">Allow await in catch and finally blocks</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Auto_property_initializers/">Auto property initializers</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Default_values_for_Read-only_Auto-properties/">Default values for Read-only Auto-properties</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Dictionary__index__initializers/">Dictionary (index) initializers</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Exception_filters/">Exception filters</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Expression-bodied_members/">Expression-bodied members</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Import_of_static_type_members_into_namespace/">Import of static type members into namespace</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/Null_propagator__null-conditional_operator__succinct_null_checking_/">Null propagator (null-conditional operator, succinct null checking)</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/String_interpolation/">String interpolation</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v6/nameof_operator/">nameof operator</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    <div style="display:inline;">
-        <h3 style="display:inline;">csharp v7 +</h3>
-    </div>
-    
-    
-
-    <a href="/blog/topics/csharp/v7/Binary_literals/">Binary literals</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Deconstruction/">Deconstruction</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Digit_separators/">Digit separators</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Expression_bodied_constructors_and_finalizers/">Expression bodied constructors and finalizers</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Expression_bodied_getters_and_setters/">Expression bodied getters and setters</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Generalized_async_return_types/">Generalized async return types</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Local_functions/">Local functions</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Out_variables/">Out variables</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Pattern_matching/">Pattern matching</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Ref_returns_and_locals/">Ref returns and locals</a>
-    *
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    <a href="/blog/topics/csharp/v7/Tuples/">Tuples</a>
-    *
-    
-    
-
-    
-    
-    
-</div>]]></content><author><name>Brandon DSouza</name></author><category term="CSharp" /><category term="html" /><category term="css" /><category term="markdown" /><category term="yaml" /><category term="vscode" /><category term="git" /><category term="ruby" /><category term="jekyll" /><category term="liquid-templates" /><category term="github-actions" /><category term="github-pages" /><category term="apache" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="django" /><category term="docker" /><category term="rest" /><category term="ci/cd" /><category term="jwt" /><category term="openapi" /><category term="drf" /><category term="drf-yasg" /><category term="djangorestframework-simplejwt" /><category term="owasp" /><summary type="html"><![CDATA[]]></summary></entry></feed>

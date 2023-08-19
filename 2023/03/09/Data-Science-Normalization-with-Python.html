@@ -9,12 +9,12 @@
 
   <title>
     
-    Web Blog Development &middot; Code-Sage
+    (Universal) Data Import Tool &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/18/Web-Blog-Development.html">
+  <link rel="canonical" href="/blog/2023/03/09/Data-Science-Normalization-with-Python.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,51 +118,40 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Web Blog Development</h1>
-  <span class="post-date">18 Jul 2023</span>
-  <p><img src="/blog/public/image/web-blog.jpeg" alt="Web Blog" class="center-image" /></p>
+  <h1 class="post-title">(Universal) Data Import Tool</h1>
+  <span class="post-date">09 Mar 2023</span>
+  <p><img src="/blog/public/image/sp-tool-cube.jpg" alt="Tool" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
+<p>Organize and consolidate data sets from multiple sources for accounting/financial purposes.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+<p>Develop import tool.   Tool should be able to import varied data sets based on meta data of each data set.  The meta data will be used to normalize the data sets into a common and consistent format.  The normalized data sets will be consolidated into a single data set for analysis and reporting.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Jekyll Project Update:
+  <li>Project Setup
     <ul>
-      <li>Major version updates to Ruby and Jekyll.</li>
-      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
+      <li>Python Environment</li>
+      <li>Jupyter Notebook</li>
+      <li>Data Analysis Packages</li>
     </ul>
   </li>
-  <li>Theme Customization:
+  <li>Iterative Data Analysis and Tool development
     <ul>
-      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
-      <li>Implemented sticky headers.</li>
-      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
-      <li>Ensured the layout remains responsive and mobile-friendly.</li>
-    </ul>
-  </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate rapid local development,</li>
-      <li>Multiple deployments
-        <ul>
-          <li>using GitHub Actions to GitHub Pages</li>
-          <li>Additional deployment to Apache.</li>
-        </ul>
-      </li>
+      <li>Explore, understand nuances of each data source.</li>
+      <li>Create meta data describing each data set</li>
+      <li>Refine tool and import data set.</li>
     </ul>
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+<p>Overall, the import tool is successfully able to import data sets from multiple sources and normalize the data sets into a common format.  Additional formats can be supported  by adding meta data describing the data set.</p>
 
 <hr />
 
@@ -182,7 +171,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Static Site Web Development</td>
+        <td>Data Science * Data Analysis</td>
       </tr>
       
       
@@ -191,7 +180,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * Markdown * YAML</td>
+        <td>CSV * Spreadsheet</td>
       </tr>
       
       
@@ -200,7 +189,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Ruby</td>
+        <td>VSCode * GIT * Python * Jupyter Notebook</td>
       </tr>
       
       
@@ -209,7 +198,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Static Blog * Responsive Design * CI/CD * Git Modules * Templating Engine</td>
+        <td>Dataset Creation * Data Normalization * Data Processing</td>
       </tr>
       
       
@@ -218,16 +207,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Jekyll</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Github Actions * Github Pages * Apache</td>
+        <td>csv * json * yaml</td>
       </tr>
       
       
@@ -237,26 +217,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, markdown, yaml, vscode, git, ruby, jekyll, liquid-templates, github-actions, github-pages, apache</p>
+  <p>Tags: vscode, git, python, csv, json, yaml, data-science, data-analysis</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/markdown">markdown</a>
-    markdown
-     * 
-    
-    <a href="/tags/yaml">yaml</a>
-    yaml
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -266,28 +230,28 @@
     git
      * 
     
-    <a href="/tags/ruby">ruby</a>
-    ruby
+    <a href="/tags/python">python</a>
+    python
      * 
     
-    <a href="/tags/jekyll">jekyll</a>
-    jekyll
+    <a href="/tags/csv">csv</a>
+    csv
      * 
     
-    <a href="/tags/liquid-templates">liquid-templates</a>
-    liquid-templates
+    <a href="/tags/json">json</a>
+    json
      * 
     
-    <a href="/tags/github-actions">github-actions</a>
-    github-actions
+    <a href="/tags/yaml">yaml</a>
+    yaml
      * 
     
-    <a href="/tags/github-pages">github-pages</a>
-    github-pages
+    <a href="/tags/data-science">data-science</a>
+    data-science
      * 
     
-    <a href="/tags/apache">apache</a>
-    apache
+    <a href="/tags/data-analysis">data-analysis</a>
+    data-analysis
     
     
   </p> -->
@@ -354,18 +318,18 @@
     
     <li>
       <h3>
-        <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
-          Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
-          <small>13 Jul 2023</small>
+        <a href="/blog/2023/07/18/Web-Blog-Development.html">
+          Web Blog Development
+          <small>18 Jul 2023</small>
         </a>
       </h3>
     </li>
     
     <li>
       <h3>
-        <a href="/blog/2023/03/09/Data-Science-Normalization-with-Python.html">
-          (Universal) Data Import Tool
-          <small>09 Mar 2023</small>
+        <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
+          Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
+          <small>13 Jul 2023</small>
         </a>
       </h3>
     </li>

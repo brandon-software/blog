@@ -9,12 +9,12 @@
 
   <title>
     
-    Web Blog Development &middot; Code-Sage
+    Automated Web App Testing with PlayWright &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/18/Web-Blog-Development.html">
+  <link rel="canonical" href="/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,51 +118,39 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Web Blog Development</h1>
-  <span class="post-date">18 Jul 2023</span>
-  <p><img src="/blog/public/image/web-blog.jpeg" alt="Web Blog" class="center-image" /></p>
+  <h1 class="post-title">Automated Web App Testing with PlayWright</h1>
+  <span class="post-date">16 Aug 2023</span>
+  <p><img src="/blog/public/image/sp-playwright.jpg" alt="Testing" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
+<p>Reduce manual testing to increase rate of responsiveness to business change request and reduce risk of regression.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+<p>Automate web app testing.  Additional considerations: Test iteration development cycles should be minimal, that is, ‘reduce thrashing’ and ‘quick turn around’ by assisted automated code generation.  Testing should support headless testing and be able to run in a CI/CD pipeline.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Jekyll Project Update:
+  <li>Project Setup
     <ul>
-      <li>Major version updates to Ruby and Jekyll.</li>
-      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
+      <li>Python Environment</li>
+      <li>Add Pytest and PlayWright Packages</li>
     </ul>
   </li>
-  <li>Theme Customization:
+  <li>Develop Tests
     <ul>
-      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
-      <li>Implemented sticky headers.</li>
-      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
-      <li>Ensured the layout remains responsive and mobile-friendly.</li>
-    </ul>
-  </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate rapid local development,</li>
-      <li>Multiple deployments
-        <ul>
-          <li>using GitHub Actions to GitHub Pages</li>
-          <li>Additional deployment to Apache.</li>
-        </ul>
-      </li>
+      <li>Identify ‘non-brittle’ test cases and scenarios.</li>
+      <li>Identify specific and unique selectors with a consideration of minimizing change.  That is, selectors should be stable and not change with each release.</li>
+      <li>Create tests and confirm tests pass and fail as expected.</li>
     </ul>
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+<p>Overall, automated testing for a web app reduces development effort.  A substantial advantage can be achieved when you avoid manual testing, brittle tests, and can develop tests quickly. Additionally, we’re making sure these tests can be done without a visible browser and can be run in a pipeline that helps us keep our development process smooth.</p>
 
 <hr />
 
@@ -182,7 +170,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Static Site Web Development</td>
+        <td>Test Automation</td>
       </tr>
       
       
@@ -191,7 +179,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * Markdown * YAML</td>
+        <td></td>
       </tr>
       
       
@@ -200,7 +188,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Ruby</td>
+        <td>VSCode * GIT * Python * PyTest * PlayWright</td>
       </tr>
       
       
@@ -209,7 +197,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Static Blog * Responsive Design * CI/CD * Git Modules * Templating Engine</td>
+        <td>Regression Testing * Continuous Integration * Continuous Deployment * Refactoring * Clean Code</td>
       </tr>
       
       
@@ -218,16 +206,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Jekyll</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Github Actions * Github Pages * Apache</td>
+        <td>pytest * playwright</td>
       </tr>
       
       
@@ -237,26 +216,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, markdown, yaml, vscode, git, ruby, jekyll, liquid-templates, github-actions, github-pages, apache</p>
+  <p>Tags: vscode, git, python, pytest, playwright</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/markdown">markdown</a>
-    markdown
-     * 
-    
-    <a href="/tags/yaml">yaml</a>
-    yaml
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -266,28 +229,16 @@
     git
      * 
     
-    <a href="/tags/ruby">ruby</a>
-    ruby
+    <a href="/tags/python">python</a>
+    python
      * 
     
-    <a href="/tags/jekyll">jekyll</a>
-    jekyll
+    <a href="/tags/pytest">pytest</a>
+    pytest
      * 
     
-    <a href="/tags/liquid-templates">liquid-templates</a>
-    liquid-templates
-     * 
-    
-    <a href="/tags/github-actions">github-actions</a>
-    github-actions
-     * 
-    
-    <a href="/tags/github-pages">github-pages</a>
-    github-pages
-     * 
-    
-    <a href="/tags/apache">apache</a>
-    apache
+    <a href="/tags/playwright">playwright</a>
+    playwright
     
     
   </p> -->
@@ -297,15 +248,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html">
-          Automated Web App Testing with PlayWright
-          <small>16 Aug 2023</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -348,6 +290,15 @@
         <a href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html">
           Angular App Enhancement and Dependency Maintenance
           <small>23 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/18/Web-Blog-Development.html">
+          Web Blog Development
+          <small>18 Jul 2023</small>
         </a>
       </h3>
     </li>

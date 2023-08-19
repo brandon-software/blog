@@ -4,13 +4,94 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-08-06T00:26:21+00:00</updated>
+ <updated>2023-08-19T18:22:20+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Automated Web App Testing with PlayWright</title>
+   <link href="https://code-sage.com/2023/08/16/Automated-Web-App-Testing-with-Playwright.html"/>
+   <updated>2023-08-16T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-playwright.jpg&quot; alt=&quot;Testing&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Reduce manual testing to increase rate of responsiveness to business change request and reduce risk of regression.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Automate web app testing.  Additional considerations: Test iteration development cycles should be minimal, that is, ‘reduce thrashing’ and ‘quick turn around’ by assisted automated code generation.  Testing should support headless testing and be able to run in a CI/CD pipeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Project Setup
+    &lt;ul&gt;
+      &lt;li&gt;Python Environment&lt;/li&gt;
+      &lt;li&gt;Add Pytest and PlayWright Packages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Develop Tests
+    &lt;ul&gt;
+      &lt;li&gt;Identify ‘non-brittle’ test cases and scenarios.&lt;/li&gt;
+      &lt;li&gt;Identify specific and unique selectors with a consideration of minimizing change.  That is, selectors should be stable and not change with each release.&lt;/li&gt;
+      &lt;li&gt;Create tests and confirm tests pass and fail as expected.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, automated testing for a web app reduces development effort.  A substantial advantage can be achieved when you avoid manual testing, brittle tests, and can develop tests quickly. Additionally, we’re making sure these tests can be done without a visible browser and can be run in a pipeline that helps us keep our development process smooth.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Soapbox: Why Refactor?</title>
+   <link href="https://code-sage.com/2023/08/11/Soapbox-Why-Refactor.html"/>
+   <updated>2023-08-11T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/ad-puzzle-refactor.jpg&quot; alt=&quot;Refactor&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;While it is important to deliver features and meet deadlines,  it is also important to consider the long term maintainability of the software.  Refactoring is an essential  part of software development process and is a process that should be done continuously.&lt;/p&gt;
+
+&lt;p&gt;Refactoring should include the following (elimination of code smells):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Identify and remove the following:
+    &lt;ul&gt;
+      &lt;li&gt;dead code&lt;/li&gt;
+      &lt;li&gt;unused variables&lt;/li&gt;
+      &lt;li&gt;duplicated code&lt;/li&gt;
+      &lt;li&gt;overly complex code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Improve the following:
+ naming of functions and variables
+    &lt;ul&gt;
+      &lt;li&gt;code structure&lt;/li&gt;
+      &lt;li&gt;modularity&lt;/li&gt;
+      &lt;li&gt;potential reuse&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In essence, refactoring is the process of improving the design of existing code without changing its external behavior. Knowledge and proficiency of automated testing, version control, IDE utilization, Clean Code and SOLID principles, CI/CD, etc. are critical to continuously implement refactoring.&lt;/p&gt;
+
+&lt;p&gt;A primary benefit of refactoring is a reduction of “technical debt”.   If a project has incorporated the ability to continuously refactor, delivering features faster and with less risk of regression is guaranteed.  A developer does not fear change and can confidently refactor code to improve the design of the software developed as well as enhance their ability to deliver new features faster.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title>
@@ -141,17 +222,17 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compability with latest support.&lt;/p&gt;
+&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compatibility with latest support.&lt;/p&gt;
 
 &lt;hr /&gt;
 </content>
  </entry>
  
  <entry>
-   <title>Angular App Enhancement and Dependency Maintenance </title>
-   <link href="https://code-sage.com/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance-copy.html"/>
+   <title>Angular App Enhancement and Dependency Maintenance</title>
+   <link href="https://code-sage.com/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html"/>
    <updated>2023-07-23T00:00:00+00:00</updated>
-   <id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance copy</id>
+   <id>https://code-sage.com/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/angular2.jpeg&quot; alt=&quot;Angular&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -255,7 +336,7 @@
    <link href="https://code-sage.com/2023/07/13/Data-Science-Analysis-with-Python.html"/>
    <updated>2023-07-13T00:00:00+00:00</updated>
    <id>https://code-sage.com/blog/2023/07/13/Data-Science-Analysis-with-Python</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/deployment.jpeg&quot; alt=&quot;Deployment&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/data-analysis.jpeg&quot; alt=&quot;Analysis&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -287,6 +368,85 @@
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(Universal) Data Import Tool</title>
+   <link href="https://code-sage.com/2023/03/09/Data-Science-Normalization-with-Python.html"/>
+   <updated>2023-03-09T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-tool-cube.jpg&quot; alt=&quot;Tool&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Organize and consolidate data sets from multiple sources for accounting/financial purposes.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Develop import tool.   Tool should be able to import varied data sets based on meta data of each data set.  The meta data will be used to normalize the data sets into a common and consistent format.  The normalized data sets will be consolidated into a single data set for analysis and reporting.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Project Setup
+    &lt;ul&gt;
+      &lt;li&gt;Python Environment&lt;/li&gt;
+      &lt;li&gt;Jupyter Notebook&lt;/li&gt;
+      &lt;li&gt;Data Analysis Packages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Iterative Data Analysis and Tool development
+    &lt;ul&gt;
+      &lt;li&gt;Explore, understand nuances of each data source.&lt;/li&gt;
+      &lt;li&gt;Create meta data describing each data set&lt;/li&gt;
+      &lt;li&gt;Refine tool and import data set.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the import tool is successfully able to import data sets from multiple sources and normalize the data sets into a common format.  Additional formats can be supported  by adding meta data describing the data set.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rapid Application Development with Django REST Starter App</title>
+   <link href="https://code-sage.com/2022/08/19/DJango-Starter-App.html"/>
+   <updated>2022-08-19T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2022/08/19/DJango-Starter-App</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-train-city.jpg&quot; alt=&quot;Starter&quot; class=&quot;center-image rounded-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Source a ready to use reusable back-end REST server app for prototyping, proof of concept, and main line development projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Deliver a “minimal” opinionated reusable starter REST repository with the following requirements/consideration:  enterprise capable and scalable REST API server/database, test coverage,  Open API support, JSON Web Token authentication, continuous integration, and continuous deployment.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Research/review potential open source existing repository/solutions and suitability. Several candidate repos were reviewed.  Only one was deemed suitable meeting/exceeding requirements.  &lt;a href=&quot;https://github.com/Vivify-Ideas/python-django-drf-boilerplate&quot;&gt;Django repo&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fork and create suitable base branch &lt;a href=&quot;https://github.com/brandon-software/python-django-drf-starter/tree/starter&quot;&gt;starter&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Develop branch containing a sample todo api interface verify requirements i.e test, open api, JWT support, etc.  &lt;a href=&quot;https://github.com/brandon-software/python-django-drf-starter/tree/REST-code-sample&quot;&gt;REST sample branch&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the goal is to provide the ability to quickly create either a prototype or a ready-to-use, functioning back-end REST/Web server for applications. This technique can be utilized in a variety of scenarios including similar technology stacks such as ASP.NET Core, NodeJS, Spring, etc.&lt;/p&gt;
 
 &lt;hr /&gt;
 </content>
@@ -357,6 +517,34 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     

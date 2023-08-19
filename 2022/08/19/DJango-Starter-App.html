@@ -9,12 +9,12 @@
 
   <title>
     
-    Web Blog Development &middot; Code-Sage
+    Rapid Application Development with Django REST Starter App &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/18/Web-Blog-Development.html">
+  <link rel="canonical" href="/blog/2022/08/19/DJango-Starter-App.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,51 +118,35 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Web Blog Development</h1>
-  <span class="post-date">18 Jul 2023</span>
-  <p><img src="/blog/public/image/web-blog.jpeg" alt="Web Blog" class="center-image" /></p>
+  <h1 class="post-title">Rapid Application Development with Django REST Starter App</h1>
+  <span class="post-date">19 Aug 2022</span>
+  <p><img src="/blog/public/image/sp-train-city.jpg" alt="Starter" class="center-image rounded-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance web blogging productivity by enabling sharing of daily/weekly work efforts, engaging with the community, and creating an online web portfolio of skills and projects.</p>
+<p>Source a ready to use reusable back-end REST server app for prototyping, proof of concept, and main line development projects.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Refresh (update software package versions, theme) for existing Jekyll static blog project.  Improve UI design for readability and navigation.  The goal is to create a responsive and fast blog that facilitates publishing blog content efficiently as well as consuming blog content.  Additional considerations: easy theme updates and rapid development and deployment.</p>
+<p>Deliver a “minimal” opinionated reusable starter REST repository with the following requirements/consideration:  enterprise capable and scalable REST API server/database, test coverage,  Open API support, JSON Web Token authentication, continuous integration, and continuous deployment.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Jekyll Project Update:
-    <ul>
-      <li>Major version updates to Ruby and Jekyll.</li>
-      <li>Changed and integrated Jekyll theme using Git modules for easy theme updates.</li>
-    </ul>
+  <li>
+    <p>Research/review potential open source existing repository/solutions and suitability. Several candidate repos were reviewed.  Only one was deemed suitable meeting/exceeding requirements.  <a href="https://github.com/Vivify-Ideas/python-django-drf-boilerplate">Django repo</a></p>
   </li>
-  <li>Theme Customization:
-    <ul>
-      <li>Adapted post, page layouts and CSS to match UI design objectives.</li>
-      <li>Implemented sticky headers.</li>
-      <li>Customized menu and links supporting navigation of CSharp Guide.  Developed a custom script to iterate through Markdown files within the defined folder structure.</li>
-      <li>Ensured the layout remains responsive and mobile-friendly.</li>
-    </ul>
+  <li>
+    <p>Fork and create suitable base branch <a href="https://github.com/brandon-software/python-django-drf-starter/tree/starter">starter</a></p>
   </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate rapid local development,</li>
-      <li>Multiple deployments
-        <ul>
-          <li>using GitHub Actions to GitHub Pages</li>
-          <li>Additional deployment to Apache.</li>
-        </ul>
-      </li>
-    </ul>
+  <li>
+    <p>Develop branch containing a sample todo api interface verify requirements i.e test, open api, JWT support, etc.  <a href="https://github.com/brandon-software/python-django-drf-starter/tree/REST-code-sample">REST sample branch</a></p>
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on updating dependencies the Jekyll project, ensuring rapid local development, and the ability to iteratively deliver a responsive static blog that meets UI and navigation goals.</p>
+<p>Overall, the goal is to provide the ability to quickly create either a prototype or a ready-to-use, functioning back-end REST/Web server for applications. This technique can be utilized in a variety of scenarios including similar technology stacks such as ASP.NET Core, NodeJS, Spring, etc.</p>
 
 <hr />
 
@@ -182,7 +166,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Static Site Web Development</td>
+        <td>Web/REST Development * Database Development * Automated Testing * Continuous Integration * Continuous Deployment</td>
       </tr>
       
       
@@ -191,7 +175,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * Markdown * YAML</td>
+        <td>REST API * SQL Database * OPEN API * JWT * OWASP</td>
       </tr>
       
       
@@ -200,7 +184,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Ruby</td>
+        <td>VSCode * GIT * Python * Docker</td>
       </tr>
       
       
@@ -209,7 +193,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Static Blog * Responsive Design * CI/CD * Git Modules * Templating Engine</td>
+        <td>CI/CD</td>
       </tr>
       
       
@@ -218,7 +202,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Jekyll</td>
+        <td>Django * djangorestframework * drf-yasg * djangorestframework-simplejwt</td>
       </tr>
       
       
@@ -227,7 +211,7 @@
       
       <tr>
         <td>deployment</td>
-        <td>Github Actions * Github Pages * Apache</td>
+        <td>docker * docker-compose</td>
       </tr>
       
       
@@ -237,26 +221,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, markdown, yaml, vscode, git, ruby, jekyll, liquid-templates, github-actions, github-pages, apache</p>
+  <p>Tags: vscode, git, python, django, docker, rest, ci/cd, jwt, openapi, drf, drf-yasg, djangorestframework-simplejwt, owasp</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/markdown">markdown</a>
-    markdown
-     * 
-    
-    <a href="/tags/yaml">yaml</a>
-    yaml
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -266,28 +234,48 @@
     git
      * 
     
-    <a href="/tags/ruby">ruby</a>
-    ruby
+    <a href="/tags/python">python</a>
+    python
      * 
     
-    <a href="/tags/jekyll">jekyll</a>
-    jekyll
+    <a href="/tags/django">django</a>
+    django
      * 
     
-    <a href="/tags/liquid-templates">liquid-templates</a>
-    liquid-templates
+    <a href="/tags/docker">docker</a>
+    docker
      * 
     
-    <a href="/tags/github-actions">github-actions</a>
-    github-actions
+    <a href="/tags/rest">rest</a>
+    rest
      * 
     
-    <a href="/tags/github-pages">github-pages</a>
-    github-pages
+    <a href="/tags/ci-cd">ci/cd</a>
+    ci/cd
      * 
     
-    <a href="/tags/apache">apache</a>
-    apache
+    <a href="/tags/jwt">jwt</a>
+    jwt
+     * 
+    
+    <a href="/tags/openapi">openapi</a>
+    openapi
+     * 
+    
+    <a href="/tags/drf">drf</a>
+    drf
+     * 
+    
+    <a href="/tags/drf-yasg">drf-yasg</a>
+    drf-yasg
+     * 
+    
+    <a href="/tags/djangorestframework-simplejwt">djangorestframework-simplejwt</a>
+    djangorestframework-simplejwt
+     * 
+    
+    <a href="/tags/owasp">owasp</a>
+    owasp
     
     
   </p> -->
@@ -354,6 +342,15 @@
     
     <li>
       <h3>
+        <a href="/blog/2023/07/18/Web-Blog-Development.html">
+          Web Blog Development
+          <small>18 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
         <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
           Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
           <small>13 Jul 2023</small>
@@ -366,15 +363,6 @@
         <a href="/blog/2023/03/09/Data-Science-Normalization-with-Python.html">
           (Universal) Data Import Tool
           <small>09 Mar 2023</small>
-        </a>
-      </h3>
-    </li>
-    
-    <li>
-      <h3>
-        <a href="/blog/2022/08/19/DJango-Starter-App.html">
-          Rapid Application Development with Django REST Starter App
-          <small>19 Aug 2022</small>
         </a>
       </h3>
     </li>
