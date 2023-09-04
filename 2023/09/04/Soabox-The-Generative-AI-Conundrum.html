@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+    Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers' Trajectories &middot; Code-Sage
+    
+  </title>
+
+  
+  <link rel="canonical" href="/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html">
+  
+  <link rel="stylesheet" href="/blog/public/css/main.css">
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/blog/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/atom.xml">
+
+  
+</head>
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="author-container">
+        <img src="/blog/public/image/brandon.png" alt="author" class="author-image">
+        <p>A Software Engineer's Blog
+ by<br>
+            Brandon D'Souza
+        </p>
+    </div>
+</div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/blog/">Home</a>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/about/">About</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="sidebar-nav-item"
+      href="/blog/csharp/">CSharp Guide</a>
+    
+    
+    
+    
+    
+  </nav>
+  <div class="sidebar-item">
+    <ul class="social-media-list">
+        
+        <li>
+            <a href="https://linkedin.com/in/brandon-dsouza">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </li>
+        
+        
+        <li>
+            <a href="https://github.com/brandon-software"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">brandon-software</span></a>
+
+        </li>
+        
+    </ul>
+    <span>Version: 2.0.0</span>
+    <p>
+        <span>&copy; 2023 Code-Sage.com. All rights reserved.</span>
+    </p>
+</div>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead sticky">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blog/" title="Home">Code-Sage</a>
+            <small></small>
+          </h3>
+        </div>
+        <div class="cs-sticky-page content">
+          <div class="post">
+  <h1 class="post-title">Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers' Trajectories</h1>
+  <span class="post-date">04 Sep 2023</span>
+  <p><img src="/blog/public/image/sp-generative-ai-human.jpg" alt="AI Conundrum" class="center-image" /></p>
+
+<hr />
+
+<p>In the ever-evolving landscape of software development, Generative Artificial Intelligence (AI) emerges as both a boon and a challenge. As AI increasingly influences code quality and developers’ roles, understanding its dual impact on professionals of varying experience levels becomes pivotal.</p>
+
+<p>Let’s explore how AI can be both a guiding light and a potential pitfall, particularly in the context of developers’ diverse expertise.</p>
+
+<h2 id="the-double-edged-sword-of-ai">The Double-Edged Sword of AI:</h2>
+
+<h3 id="positive-impacts">Positive Impacts:</h3>
+
+<p>Using AI, I have found projects that used to take months now take weeks, features that took weeks now take days, etc.  I find AI particularly useful for the following tasks:</p>
+
+<ul>
+  <li>Enhanced efficiency: AI-driven tools serve as a great primer for developers, helping them write code faster. Feedback is instant, and suggestions are contextually relevant, reducing the time spent on manual research and coding.</li>
+  <li>Debugging and testing: AI-powered tools can identify bugs and vulnerabilities, improving code quality and reducing the chances of errors escaping into production.</li>
+  <li>Assisted learning: For developers, AI can offer instant feedback, acting as a knowledgeable mentor that guides them through best practices.</li>
+</ul>
+
+<p>There is a lot to be said about the efficiency of AI and how it can help us get to the next level of development.  Not just code that works but code that is architected to be efficient, secure, and maintainable.  With our guidance, AI can help us get efficiently produce good quality code and reduce technical debt.</p>
+
+<h3 id="potential-hazards-and-pitfalls">Potential hazards and pitfalls:</h3>
+
+<p>I find the lack of understanding of underlying principles can result in the same patterns that plague the pre-AI development.  This failure to understand the underlying principles can result in potentially serious bottlenecks.  That is, in using AI with technologies I am not familiar with I have found myself spending more time in frustration trying to “resolve” the issue with AI instead of “thinking through and understanding” and resolving the problem the AI had not “encountered” in its training.  Additionally, we should all be aware of the following AI pitfalls:</p>
+
+<ul>
+  <li>Lack of available training data: AI tools require large amounts of training data to function effectively. However, this data may not always be available, particularly for niche use cases or new technologies or versions of software components.</li>
+  <li>Dependency concerns: Over reliance on AI tools can lead to a decline in fundamental coding skills, creating a generation of developers heavily reliant on automation.</li>
+  <li>Homogenization of code: AI tools may favor certain coding patterns, potentially stifling creativity and diversity in code bases.</li>
+  <li>Hallucinations: AI tools may generate code that is syntactically correct but semantically incorrect. This can lead to bugs and vulnerabilities in production code.</li>
+</ul>
+
+<p>Overall, AI can provide answers but what is the intent of the questions?  With the help of AI, we can still generate working but inefficient code with costly technical debt.</p>
+
+<p>With the faults of “AI and us”, we can certainly “block ourselves from growth” and allow AI to lead us down the “probable path of the moment” vs the “strategic path of born of experience”.</p>
+
+<h2 id="harnessing-experience">Harnessing Experience:</h2>
+
+<h3 id="experienced-developers">Experienced Developers:</h3>
+<p>Having traversed the coding landscape, experienced developers can leverage AI for strategic tasks. By identifying where automation enhances efficiency and where personal experience adds value.  Experienced developers will have the ability to readily over-come challenges faced by less experienced developers and AI.</p>
+
+<h3 id="less-experienced-developers">Less Experienced Developers:</h3>
+<p>For novice developers, AI serves as a guiding beacon. However, it’s crucial they don’t treat AI as a crutch. Instead, they should approach it as an enabler that complements learning. Engaging with AI tools while striving to understand the principles they automate will create a solid foundation for growth.</p>
+
+<h3 id="the-path-to-leveling-up">The Path to “Leveling Up”:</h3>
+
+<ul>
+  <li>Embrace continuous learning: Both experienced and less experienced developers should prioritize continuous learning. This includes understanding how AI tools work, recognizing their limitations, and enhancing core coding skills.</li>
+  <li>Balance automation and manual coding: Rather than entirely outsourcing tasks to AI, developers should strategically choose where automation benefits them and where hands-on coding sharpens their skills.  Developers should always be able to read, write, and understand code.</li>
+  <li>Collaborate and seek guidance: Engaging with experienced developers can provide valuable insights. Their guidance helps less experienced developers make informed decisions about AI tool usage.</li>
+  <li>Experiment and innovate: Use AI as a launchpad for innovation. Experiment with creative uses of AI-driven suggestions to create high-quality code.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion:</h2>
+<p>The AI surge in the realm of code quality is both transformative and challenging. For developers, whether seasoned or new, it’s an opportunity to tread thoughtfully. By harnessing AI’s strengths and mitigating its potential pitfalls, professionals can ensure a harmonious coexistence between technology and craftsmanship.</p>
+
+<p>It is important to understand AI is a tool to help the developer.  The developer is responsible for many aspects of the code including quality, efficiency, maintainability, security, etc.  AI is a tool to assist the developer with these aspects, not replace the developer.</p>
+
+<p>Will we use this to our advantage or disadvantage?  Discipline in “software engineering” fundamentals is still required.  Are we asking AI to assist us? Or are we asking AI to do the work for us?</p>
+
+<hr />
+
+
+  <h2>Skills Footprint:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Technical Specifics</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      
+      
+      
+      <tr>
+        <td>general</td>
+        <td>Software Engineering * Software Craftsmanship * Code Quality * Generative Artificial Intelligence * Technical Debt</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>standards</td>
+        <td></td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>tools</td>
+        <td>vs code * github copilot * chatgpt</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>concepts</td>
+        <td>AI</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>packages</td>
+        <td></td>
+      </tr>
+      
+      
+      
+    </tbody>
+  </table>
+
+  <!-- Display tags -->
+  <!-- 
+  <p>Tags: </p>
+  
+
+  <p>Tags:
+    
+  </p> -->
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html">
+          Automated Web App Testing with PlayWright
+          <small>16 Aug 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/08/11/Soapbox-Why-Refactor.html">
+          Soapbox: Why Refactor?
+          <small>11 Aug 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html">
+          Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)
+          <small>04 Aug 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
+          Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)
+          <small>31 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/26/Angular-App-Dependency-Maintenance.html">
+          Angular App Dependency Maintenance
+          <small>26 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html">
+          Angular App Enhancement and Dependency Maintenance
+          <small>23 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/18/Web-Blog-Development.html">
+          Web Blog Development
+          <small>18 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/13/Data-Science-Analysis-with-Python.html">
+          Data Science - Analysis/Cleaning with Python (Business Sales Dashboard - Phase 1)
+          <small>13 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/03/09/Data-Science-Normalization-with-Python.html">
+          (Universal) Data Import Tool
+          <small>09 Mar 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2022/08/19/DJango-Starter-App.html">
+          Rapid Application Development with Django REST Starter App
+          <small>19 Aug 2022</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/blog/public/js/script.js'></script>
+  </body>
+
+</html>

@@ -1,5 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-08-19T18:22:20+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Automated Web App Testing with PlayWright</title><link href="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html" rel="alternate" type="text/html" title="Automated Web App Testing with PlayWright" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html"><![CDATA[<p><img src="/blog/public/image/sp-playwright.jpg" alt="Testing" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-09-04T22:39:06+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories</title><link href="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html" rel="alternate" type="text/html" title="Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html"><![CDATA[<p><img src="/blog/public/image/sp-generative-ai-human.jpg" alt="AI Conundrum" class="center-image" /></p>
+
+<hr />
+
+<p>In the ever-evolving landscape of software development, Generative Artificial Intelligence (AI) emerges as both a boon and a challenge. As AI increasingly influences code quality and developers’ roles, understanding its dual impact on professionals of varying experience levels becomes pivotal.</p>
+
+<p>Let’s explore how AI can be both a guiding light and a potential pitfall, particularly in the context of developers’ diverse expertise.</p>
+
+<h2 id="the-double-edged-sword-of-ai">The Double-Edged Sword of AI:</h2>
+
+<h3 id="positive-impacts">Positive Impacts:</h3>
+
+<p>Using AI, I have found projects that used to take months now take weeks, features that took weeks now take days, etc.  I find AI particularly useful for the following tasks:</p>
+
+<ul>
+  <li>Enhanced efficiency: AI-driven tools serve as a great primer for developers, helping them write code faster. Feedback is instant, and suggestions are contextually relevant, reducing the time spent on manual research and coding.</li>
+  <li>Debugging and testing: AI-powered tools can identify bugs and vulnerabilities, improving code quality and reducing the chances of errors escaping into production.</li>
+  <li>Assisted learning: For developers, AI can offer instant feedback, acting as a knowledgeable mentor that guides them through best practices.</li>
+</ul>
+
+<p>There is a lot to be said about the efficiency of AI and how it can help us get to the next level of development.  Not just code that works but code that is architected to be efficient, secure, and maintainable.  With our guidance, AI can help us get efficiently produce good quality code and reduce technical debt.</p>
+
+<h3 id="potential-hazards-and-pitfalls">Potential hazards and pitfalls:</h3>
+
+<p>I find the lack of understanding of underlying principles can result in the same patterns that plague the pre-AI development.  This failure to understand the underlying principles can result in potentially serious bottlenecks.  That is, in using AI with technologies I am not familiar with I have found myself spending more time in frustration trying to “resolve” the issue with AI instead of “thinking through and understanding” and resolving the problem the AI had not “encountered” in its training.  Additionally, we should all be aware of the following AI pitfalls:</p>
+
+<ul>
+  <li>Lack of available training data: AI tools require large amounts of training data to function effectively. However, this data may not always be available, particularly for niche use cases or new technologies or versions of software components.</li>
+  <li>Dependency concerns: Over reliance on AI tools can lead to a decline in fundamental coding skills, creating a generation of developers heavily reliant on automation.</li>
+  <li>Homogenization of code: AI tools may favor certain coding patterns, potentially stifling creativity and diversity in code bases.</li>
+  <li>Hallucinations: AI tools may generate code that is syntactically correct but semantically incorrect. This can lead to bugs and vulnerabilities in production code.</li>
+</ul>
+
+<p>Overall, AI can provide answers but what is the intent of the questions?  With the help of AI, we can still generate working but inefficient code with costly technical debt.</p>
+
+<p>With the faults of “AI and us”, we can certainly “block ourselves from growth” and allow AI to lead us down the “probable path of the moment” vs the “strategic path of born of experience”.</p>
+
+<h2 id="harnessing-experience">Harnessing Experience:</h2>
+
+<h3 id="experienced-developers">Experienced Developers:</h3>
+<p>Having traversed the coding landscape, experienced developers can leverage AI for strategic tasks. By identifying where automation enhances efficiency and where personal experience adds value.  Experienced developers will have the ability to readily over-come challenges faced by less experienced developers and AI.</p>
+
+<h3 id="less-experienced-developers">Less Experienced Developers:</h3>
+<p>For novice developers, AI serves as a guiding beacon. However, it’s crucial they don’t treat AI as a crutch. Instead, they should approach it as an enabler that complements learning. Engaging with AI tools while striving to understand the principles they automate will create a solid foundation for growth.</p>
+
+<h3 id="the-path-to-leveling-up">The Path to “Leveling Up”:</h3>
+
+<ul>
+  <li>Embrace continuous learning: Both experienced and less experienced developers should prioritize continuous learning. This includes understanding how AI tools work, recognizing their limitations, and enhancing core coding skills.</li>
+  <li>Balance automation and manual coding: Rather than entirely outsourcing tasks to AI, developers should strategically choose where automation benefits them and where hands-on coding sharpens their skills.  Developers should always be able to read, write, and understand code.</li>
+  <li>Collaborate and seek guidance: Engaging with experienced developers can provide valuable insights. Their guidance helps less experienced developers make informed decisions about AI tool usage.</li>
+  <li>Experiment and innovate: Use AI as a launchpad for innovation. Experiment with creative uses of AI-driven suggestions to create high-quality code.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion:</h2>
+<p>The AI surge in the realm of code quality is both transformative and challenging. For developers, whether seasoned or new, it’s an opportunity to tread thoughtfully. By harnessing AI’s strengths and mitigating its potential pitfalls, professionals can ensure a harmonious coexistence between technology and craftsmanship.</p>
+
+<p>It is important to understand AI is a tool to help the developer.  The developer is responsible for many aspects of the code including quality, efficiency, maintainability, security, etc.  AI is a tool to assist the developer with these aspects, not replace the developer.</p>
+
+<p>Will we use this to our advantage or disadvantage?  Discipline in “software engineering” fundamentals is still required.  Are we asking AI to assist us? Or are we asking AI to do the work for us?</p>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Automated Web App Testing with PlayWright</title><link href="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html" rel="alternate" type="text/html" title="Automated Web App Testing with PlayWright" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html"><![CDATA[<p><img src="/blog/public/image/sp-playwright.jpg" alt="Testing" class="center-image" /></p>
 
 <hr />
 
@@ -37,7 +98,7 @@
 
 <p>While it is important to deliver features and meet deadlines,  it is also important to consider the long term maintainability of the software.  Refactoring is an essential  part of software development process and is a process that should be done continuously.</p>
 
-<p>Refactoring should include the following (elimination of code smells):</p>
+<p>Refactoring should include the following tasks (i.e elimination of code smells):</p>
 
 <ul>
   <li>Identify and remove the following:
@@ -48,9 +109,9 @@
       <li>overly complex code</li>
     </ul>
   </li>
-  <li>Improve the following:
- naming of functions and variables
+  <li>Communicating with project maintainers (including your future self!) and other developers through improving the following:
     <ul>
+      <li>naming of functions and variables</li>
       <li>code structure</li>
       <li>modularity</li>
       <li>potential reuse</li>
@@ -321,32 +382,4 @@
 
 <p>Overall, the import tool is successfully able to import data sets from multiple sources and normalize the data sets into a common format.  Additional formats can be supported  by adding meta data describing the data set.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="csv" /><category term="json" /><category term="yaml" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Rapid Application Development with Django REST Starter App</title><link href="https://code-sage.com/blog/2022/08/19/DJango-Starter-App.html" rel="alternate" type="text/html" title="Rapid Application Development with Django REST Starter App" /><published>2022-08-19T00:00:00+00:00</published><updated>2022-08-19T00:00:00+00:00</updated><id>https://code-sage.com/blog/2022/08/19/DJango-Starter-App</id><content type="html" xml:base="https://code-sage.com/blog/2022/08/19/DJango-Starter-App.html"><![CDATA[<p><img src="/blog/public/image/sp-train-city.jpg" alt="Starter" class="center-image rounded-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Source a ready to use reusable back-end REST server app for prototyping, proof of concept, and main line development projects.</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Deliver a “minimal” opinionated reusable starter REST repository with the following requirements/consideration:  enterprise capable and scalable REST API server/database, test coverage,  Open API support, JSON Web Token authentication, continuous integration, and continuous deployment.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>
-    <p>Research/review potential open source existing repository/solutions and suitability. Several candidate repos were reviewed.  Only one was deemed suitable meeting/exceeding requirements.  <a href="https://github.com/Vivify-Ideas/python-django-drf-boilerplate">Django repo</a></p>
-  </li>
-  <li>
-    <p>Fork and create suitable base branch <a href="https://github.com/brandon-software/python-django-drf-starter/tree/starter">starter</a></p>
-  </li>
-  <li>
-    <p>Develop branch containing a sample todo api interface verify requirements i.e test, open api, JWT support, etc.  <a href="https://github.com/brandon-software/python-django-drf-starter/tree/REST-code-sample">REST sample branch</a></p>
-  </li>
-</ol>
-
-<p>Overall, the goal is to provide the ability to quickly create either a prototype or a ready-to-use, functioning back-end REST/Web server for applications. This technique can be utilized in a variety of scenarios including similar technology stacks such as ASP.NET Core, NodeJS, Spring, etc.</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="django" /><category term="docker" /><category term="rest" /><category term="ci/cd" /><category term="jwt" /><category term="openapi" /><category term="drf" /><category term="drf-yasg" /><category term="djangorestframework-simplejwt" /><category term="owasp" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="csv" /><category term="json" /><category term="yaml" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry></feed>

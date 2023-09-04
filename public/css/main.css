@@ -3,6 +3,45 @@ body {
   overflow: hidden;
 }
 
+.post-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.post-text {
+  flex: 1 1 auto;
+}
+
+.first-image {
+  max-width: 90%;
+  max-height: 250px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+  .post-wrapper {
+    flex-direction: column;
+  }
+
+  .post-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.post-line {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* image element on left of p element */
 .author-image {
