@@ -4,13 +4,51 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-09-05T15:24:18+00:00</updated>
+ <updated>2023-09-24T16:37:35+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>CI/CD of Python Web App with GitHub Actions</title>
+   <link href="https://code-sage.com/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html"/>
+   <updated>2023-09-22T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-manufacturing-packaging.jpg&quot; alt=&quot;GitHub Action&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Enhance web application quality and speed up development iterations.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Automate build, testing, and deployment of Python web application using GitHub Actions.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create GitHub Actions Workflow to
+    &lt;ul&gt;
+      &lt;li&gt;trigger job upon check in to branch&lt;/li&gt;
+      &lt;li&gt;checkout branch&lt;/li&gt;
+      &lt;li&gt;install python&lt;/li&gt;
+      &lt;li&gt;install app dependencies (pip)&lt;/li&gt;
+      &lt;li&gt;install test dependencies (pytest, playwright, browser)&lt;/li&gt;
+      &lt;li&gt;run tests&lt;/li&gt;
+      &lt;li&gt;merge to production branch (if tests successful)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;test-and-verify-github-actions-workflow-is-working-as-expected&quot;&gt;Test and verify GitHub Actions Workflow is working as expected&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers' Trajectories</title>
@@ -587,6 +625,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     

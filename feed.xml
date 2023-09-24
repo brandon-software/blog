@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-09-05T15:24:18+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories</title><link href="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html" rel="alternate" type="text/html" title="Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html"><![CDATA[<p><img src="/blog/public/image/sp-generative-ai-human.jpg" alt="AI Conundrum" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2023-09-24T16:37:35+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">CI/CD of Python Web App with GitHub Actions</title><link href="https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html" rel="alternate" type="text/html" title="CI/CD of Python Web App with GitHub Actions" /><published>2023-09-22T00:00:00+00:00</published><updated>2023-09-22T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html"><![CDATA[<p><img src="/blog/public/image/sp-manufacturing-packaging.jpg" alt="GitHub Action" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Enhance web application quality and speed up development iterations.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Automate build, testing, and deployment of Python web application using GitHub Actions.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Create GitHub Actions Workflow to
+    <ul>
+      <li>trigger job upon check in to branch</li>
+      <li>checkout branch</li>
+      <li>install python</li>
+      <li>install app dependencies (pip)</li>
+      <li>install test dependencies (pytest, playwright, browser)</li>
+      <li>run tests</li>
+      <li>merge to production branch (if tests successful)</li>
+    </ul>
+  </li>
+  <li>
+    <h2 id="test-and-verify-github-actions-workflow-is-working-as-expected">Test and verify GitHub Actions Workflow is working as expected</h2>
+  </li>
+</ol>]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="github actions" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-manufacturing-packaging.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-manufacturing-packaging.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories</title><link href="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html" rel="alternate" type="text/html" title="Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum.html"><![CDATA[<p><img src="/blog/public/image/sp-generative-ai-human.jpg" alt="AI Conundrum" class="center-image" /></p>
 
 <hr />
 
@@ -349,37 +378,4 @@
   </li>
 </ol>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">(Universal) Data Import Tool</title><link href="https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python.html" rel="alternate" type="text/html" title="(Universal) Data Import Tool" /><published>2023-03-09T00:00:00+00:00</published><updated>2023-03-09T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/03/09/Data-Science-Normalization-with-Python.html"><![CDATA[<p><img src="/blog/public/image/sp-tool-cube.jpg" alt="Tool" class="center-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Organize and consolidate data sets from multiple sources for accounting/financial purposes.</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Develop import tool.   Tool should be able to import varied data sets based on meta data of each data set.  The meta data will be used to normalize the data sets into a common and consistent format.  The normalized data sets will be consolidated into a single data set for analysis and reporting.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Project Setup
-    <ul>
-      <li>Python Environment</li>
-      <li>Jupyter Notebook</li>
-      <li>Data Analysis Packages</li>
-    </ul>
-  </li>
-  <li>Iterative Data Analysis and Tool development
-    <ul>
-      <li>Explore, understand nuances of each data source.</li>
-      <li>Create meta data describing each data set</li>
-      <li>Refine tool and import data set.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>Overall, the import tool is successfully able to import data sets from multiple sources and normalize the data sets into a common format.  Additional formats can be supported  by adding meta data describing the data set.</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="csv" /><category term="json" /><category term="yaml" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="data-science" /><category term="data-analysis" /><summary type="html"><![CDATA[]]></summary></entry></feed>
