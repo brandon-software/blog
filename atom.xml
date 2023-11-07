@@ -4,7 +4,7 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-09-27T23:03:59+00:00</updated>
+ <updated>2023-11-07T21:52:47+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
@@ -63,9 +63,9 @@
 
 &lt;p&gt;Let’s explore how AI can be both a guiding light and a potential pitfall, particularly in the context of developers’ diverse expertise.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-double-edged-sword-of-ai&quot;&gt;The Double-Edged Sword of AI:&lt;/h2&gt;
+&lt;h2 id=&quot;the-double-edged-sword-of-ai&quot;&gt;The Double-Edged Sword of AI&lt;/h2&gt;
 
-&lt;h3 id=&quot;positive-impacts&quot;&gt;Positive Impacts:&lt;/h3&gt;
+&lt;h3 id=&quot;positive-impacts&quot;&gt;Positive Impacts&lt;/h3&gt;
 
 &lt;p&gt;Using AI, I have found projects that used to take months now take weeks, features that took weeks now take days, etc.  I find AI particularly useful for the following tasks:&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 
 &lt;p&gt;There is a lot to be said about the efficiency of AI and how it can help us get to the next level of development.  Not just code that works but code that is architected to be efficient, secure, and maintainable.  With our guidance, AI can help us efficiently produce good quality code and reduce technical debt.&lt;/p&gt;
 
-&lt;h3 id=&quot;potential-hazards-and-pitfalls&quot;&gt;Potential hazards and pitfalls:&lt;/h3&gt;
+&lt;h3 id=&quot;potential-hazards-and-pitfalls&quot;&gt;Potential hazards and pitfalls&lt;/h3&gt;
 
 &lt;p&gt;I find the lack of understanding of underlying principles can result in the same patterns that plague the pre-AI development.  This failure to understand the underlying principles can result in potentially serious bottlenecks.  That is, in using AI with technologies I am not familiar with I have found myself spending more time in frustration trying to “resolve” the issue with AI instead of “thinking through and understanding” and resolving the problem the AI had not “encountered” in its training.  Additionally, we should all be aware of the following AI pitfalls:&lt;/p&gt;
 
@@ -92,15 +92,17 @@
 
 &lt;p&gt;With our (AI and humans) collective faults, we can certainly block ourselves from growth and allow AI to lead us down the “meandering path of the moment” vs the “strategic path of born of experience”.&lt;/p&gt;
 
-&lt;h2 id=&quot;harnessing-experience&quot;&gt;Harnessing Experience:&lt;/h2&gt;
+&lt;h2 id=&quot;harnessing-experience&quot;&gt;Harnessing Experience&lt;/h2&gt;
 
-&lt;h3 id=&quot;experienced-developers&quot;&gt;Experienced Developers:&lt;/h3&gt;
+&lt;h3 id=&quot;experienced-developers&quot;&gt;Experienced Developers&lt;/h3&gt;
+
 &lt;p&gt;Having traversed the coding landscape, experienced developers can leverage AI for strategic tasks. By identifying where automation enhances efficiency and where personal experience adds value.  Experienced developers will have the ability to readily overcome challenges faced by less experienced developers and AI.&lt;/p&gt;
 
-&lt;h3 id=&quot;less-experienced-developers&quot;&gt;Less Experienced Developers:&lt;/h3&gt;
+&lt;h3 id=&quot;less-experienced-developers&quot;&gt;Less Experienced Developers&lt;/h3&gt;
+
 &lt;p&gt;For novice developers, AI serves as a guiding beacon. However, it’s crucial they don’t treat AI as a crutch. Instead, they should approach it as an enabler that complements learning. Engaging with AI tools while striving to understand the principles they automate will create a solid foundation for growth.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-path-to-leveling-up&quot;&gt;The Path to “Leveling Up”:&lt;/h3&gt;
+&lt;h3 id=&quot;the-path-to-leveling-up&quot;&gt;The Path to “Leveling Up”&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Embrace continuous learning: Both experienced and less experienced developers should prioritize continuous learning. This includes understanding how AI tools work, recognizing their limitations, and enhancing core coding skills.&lt;/li&gt;
@@ -109,7 +111,8 @@
   &lt;li&gt;Experiment and innovate: Use AI as a launchpad for innovation. Experiment with creative uses of AI-driven suggestions to create high-quality code.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion:&lt;/h2&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
 &lt;p&gt;The AI surge in the realm of code quality is both transformative and challenging. For developers, whether seasoned or new, it’s an opportunity to tread thoughtfully. By harnessing AI’s strengths and mitigating its potential pitfalls, professionals can ensure a harmonious coexistence between technology and craftsmanship.&lt;/p&gt;
 
 &lt;p&gt;It is important to understand AI is a tool to help the developer.  The developer is responsible for many aspects of the code including quality, efficiency, maintainability, security, etc.  AI is a tool to assist the developer with these aspects, not replace the developer.&lt;/p&gt;
@@ -212,7 +215,7 @@
 
 &lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
-&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.&lt;/p&gt;
 
 &lt;p&gt;Phase 3: Seamless Dashboard Deployment and Updates&lt;/p&gt;
 
@@ -255,7 +258,7 @@
 
 &lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
-&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.&lt;/p&gt;
 
 &lt;p&gt;Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization&lt;/p&gt;
 
@@ -282,7 +285,7 @@
         &lt;ul&gt;
           &lt;li&gt;All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)&lt;/li&gt;
           &lt;li&gt;Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)&lt;/li&gt;
-          &lt;li&gt;Sales trends with adjustable timeframe window by product, category, and market (Daily/Weekly/Quarter/Annually).&lt;/li&gt;
+          &lt;li&gt;Sales trends with adjustable time frame window by product, category, and market (Daily/Weekly/Quarter/Annually).&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -450,7 +453,7 @@
 
 &lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
 
-&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportuinites.&lt;/p&gt;
+&lt;p&gt;Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.&lt;/p&gt;
 
 &lt;p&gt;Phase 1: Data Analysis/Cleaning&lt;/p&gt;
 
