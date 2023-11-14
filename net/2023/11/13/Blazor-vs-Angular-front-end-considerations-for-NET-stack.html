@@ -9,12 +9,12 @@
 
   <title>
     
-    Data Science - Visualization with Python (Business Sales Dashboard - Phase 2) &middot; Code-Sage
+    Blazor vs Angular front end considerations for .NET stack &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
+  <link rel="canonical" href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,49 +118,34 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)</h1>
-  <span class="post-date">31 Jul 2023</span>
-  <p><img src="/blog/public/image/data-visualization.jpeg" alt="Data Visualization" class="center-image" /></p>
+  <h1 class="post-title">Blazor vs Angular front end considerations for .NET stack</h1>
+  <span class="post-date">13 Nov 2023</span>
+  <p><img src="/blog/public/image/ad-puzzle-refactor.jpg" alt="Blazor" class="center-image" /></p>
 
 <hr />
 
-<h2 id="objective">Objective</h2>
+<p>A primary benefit of NET Blazor development is leveraging existing .NET knowledge and skills for web front end, windows, and mobile app development.</p>
 
-<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.</p>
-
-<p>Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Understand customer needs and develop usable/interactive dashboard with minimal user interface friction.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+<p>A popular tech stack for enterprises who have committed to Microsoft Windows as their development platform of choice is the use of .NET ASP Framework/core along with Angular as the front end for application development.  It may seem like a no-brainer to choose Blazor over Angular when choosing frontend development however it is important to note there are some significant differences beyond obvious language and tooling aspects.</p>
 
 <ol>
-  <li>Project Setup
-    <ul>
-      <li>Python Environment</li>
-      <li>Jupyter Notebook</li>
-      <li>Data Analysis and Visualization Packages</li>
-    </ul>
+  <li>
+    <p><strong>Runtime:</strong> Angular applications run directly in the JavaScript engine of the browser. JavaScript is a dynamic, interpreted language, and all modern browsers have a built-in JavaScript engine to execute it. When an Angular application runs, the Angular framework, along with your application code, is downloaded and executed in the browser’s JavaScript engine.</p>
+
+    <p>On the other hand, Blazor WebAssembly apps run in a WebAssembly-based .NET runtime. WebAssembly (often abbreviated as wasm) is a binary instruction format for a stack-based virtual machine. It’s designed as a portable target for the compilation of high-level languages like C, C++, and Rust, enabling deployment on the web for client and server applications. When a Blazor WebAssembly application runs, the .NET runtime, the Blazor framework, and your application code are downloaded and executed in the WebAssembly runtime in the browser.</p>
   </li>
-  <li>Data Visualization and Dashboard Development
-    <ul>
-      <li>Understand data and identify key variables/metrics for interactive dashboard.</li>
-      <li>Prototype pivot table, charts and graphs for review.</li>
-      <li>Identify friction points and opportunities for improvement.</li>
-      <li>Create an interactive dashboard to allow for seamless exploration of product, manufacture and market data.
-        <ul>
-          <li>All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Sales trends with adjustable time frame window by product, category, and market (Daily/Weekly/Quarter/Annually).</li>
-        </ul>
-      </li>
-    </ul>
+  <li>
+    <p><strong>Interoperability:</strong> Angular has direct access to browser APIs via JavaScript. This means you can use any browser API directly from your Angular code because it’s all JavaScript. You can manipulate the DOM, use the Fetch API for HTTP requests, use WebSockets, and more, all directly from your Angular code.</p>
+
+    <p>Blazor WebAssembly, on the other hand, needs to use JavaScript interop to access browser APIs not abstracted by .NET. While .NET provides many abstractions for things like HTTP requests (HttpClient) and timers (System.Timers.Timer), there are many browser APIs that are not directly available in .NET. To use these APIs, Blazor provides a way to interoperate with JavaScript. You can write JavaScript code and call it from your C# code, and vice versa. This allows you to do anything you could do in a JavaScript application, but it does add a layer of complexity compared to Angular’s direct access to browser APIs.</p>
   </li>
 </ol>
 
-<hr />
+<p>Other notable considerations, on the down side, hot-reloading is not perfect and results in some friction.  Overall, there are many wins as .NET Blazor has a variety of configurations options from server, streaming, client and even auto rendering options.  This allows for considerable flexibility in web browser deployment.  This flexibility combined with component re-use across MAUI (IOS/Android/Windows apps) feels like you are getting a lot for free.</p>
+
+<p>If, however, your enterprise has made significant investments in Javascript development or are heavily dependent on 3rd party Javascript components, be aware that there is also friction in managing the Javascript interop with CSharp.</p>
+
+<p>In conclusion,  despite the friction and commitment to .NET ecosystem,  Blazor development has significant potential for reducing development costs, increasing component re-use, and is quite certainly a strategic choice for enterprises who are already committed to .NET ecosystem.  Additionally, with the release of .NET 8, Blazor has reached a maturity that is worthy of consideration for conservative Enterprises who prefer a more proven technology stack.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -178,7 +163,7 @@
       
       <tr>
         <td>general</td>
-        <td>Data Science * Data Analysis * Data Visualization</td>
+        <td>Web Development * Mobile Development * Desktop Development</td>
       </tr>
       
       
@@ -187,7 +172,7 @@
       
       <tr>
         <td>standards</td>
-        <td>CSV * Spreadsheet * Charts * Graphs * Pivot Tables</td>
+        <td>HTML * CSS * JSON * CSharp * Javascript * Typescript</td>
       </tr>
       
       
@@ -196,7 +181,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Python * Jupyter Notebook</td>
+        <td>Visual Studio * VSCode * GIT</td>
       </tr>
       
       
@@ -205,7 +190,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Dataset Creation * Data Cleaning * Data Processing</td>
+        <td>IOS Apps * Android Apps * Windows Apps * Single Page Application * Responsive Design</td>
       </tr>
       
       
@@ -214,16 +199,7 @@
       
       <tr>
         <td>packages</td>
-        <td>pandas * yaml * numpy * dash * flask * plotly * matplotlib * seaborn</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Power Shell Script</td>
+        <td>NET * MAUI * ASP NET * Blazor * Angular</td>
       </tr>
       
       
@@ -233,10 +209,18 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: vscode, git, python, pandas, numpy, matplotlib, seaborn, scipy, jupyter-notebook, data-science, data-analysis, data-visualization</p>
+  <p>Tags: html, css, vscode, git, ASP NET, MAUI, Blazor, Angular</p>
   
 
   <p>Tags:
+    
+    <a href="/tags/html">html</a>
+    html
+     * 
+    
+    <a href="/tags/css">css</a>
+    css
+     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -246,44 +230,20 @@
     git
      * 
     
-    <a href="/tags/python">python</a>
-    python
+    <a href="/tags/asp-net">ASP NET</a>
+    ASP NET
      * 
     
-    <a href="/tags/pandas">pandas</a>
-    pandas
+    <a href="/tags/maui">MAUI</a>
+    MAUI
      * 
     
-    <a href="/tags/numpy">numpy</a>
-    numpy
+    <a href="/tags/blazor">Blazor</a>
+    Blazor
      * 
     
-    <a href="/tags/matplotlib">matplotlib</a>
-    matplotlib
-     * 
-    
-    <a href="/tags/seaborn">seaborn</a>
-    seaborn
-     * 
-    
-    <a href="/tags/scipy">scipy</a>
-    scipy
-     * 
-    
-    <a href="/tags/jupyter-notebook">jupyter-notebook</a>
-    jupyter-notebook
-     * 
-    
-    <a href="/tags/data-science">data-science</a>
-    data-science
-     * 
-    
-    <a href="/tags/data-analysis">data-analysis</a>
-    data-analysis
-     * 
-    
-    <a href="/tags/data-visualization">data-visualization</a>
-    data-visualization
+    <a href="/tags/angular">Angular</a>
+    Angular
     
     
   </p> -->
@@ -293,15 +253,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
-          Blazor vs Angular front end considerations for .NET stack
-          <small>13 Nov 2023</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -344,6 +295,15 @@
         <a href="/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html">
           Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)
           <small>04 Aug 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
+          Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)
+          <small>31 Jul 2023</small>
         </a>
       </h3>
     </li>
