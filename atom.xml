@@ -4,7 +4,7 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2023-11-14T02:48:52+00:00</updated>
+ <updated>2024-01-23T19:49:23+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
@@ -17,7 +17,7 @@
    <link href="https://code-sage.com/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html"/>
    <updated>2023-11-13T15:16:27+00:00</updated>
    <id>https://code-sage.com/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/ad-puzzle-refactor.jpg&quot; alt=&quot;Blazor&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/ad-puzzle.jpg&quot; alt=&quot;Blazor&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
