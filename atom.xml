@@ -4,13 +4,88 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2024-01-23T19:49:59+00:00</updated>
+ <updated>2024-01-29T21:05:31+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>SoapBox: Schedule and prioritize Dependency Maintenance</title>
+   <link href="https://code-sage.com/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html"/>
+   <updated>2024-01-27T20:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-machine-belt-gears-above.jpg&quot; alt=&quot;Dependency Maintainence&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Regular and proactive dependency maintenance is a must in keeping a software project secure, up-to-date, and well-aligned with evolving requirements and standards.  Updates should be prioritized according to urgency of potential impact to a project.&lt;/p&gt;
+
+&lt;h1 id=&quot;urgent-dependency-maintainence-to-be-completed-asap&quot;&gt;Urgent Dependency Maintainence to be completed ASAP&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Security Vulnerabilities: Addressing security vulnerabilities should always be the highest priority to protect your software from potential threats.&lt;/li&gt;
+  &lt;li&gt;Bug Fixes: Critical bugs affecting the functionality or stability of your software.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;typical-dependency-maintainence-based-on-specifics-of-project-priorities&quot;&gt;Typical Dependency Maintainence based on specifics of project priorities&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Feature Requirements: updating dependencies to facilitate new project feature requirements.&lt;/li&gt;
+  &lt;li&gt;Policy or Compliance Changes: If there are changes in organizational policies or industry compliance standards that impact your dependencies, addressing these changes is important for maintaining compliance.&lt;/li&gt;
+  &lt;li&gt;End-of-Life or Deprecation: Dependencies that have reached their end-of-life or are deprecated should be prioritized to avoid using outdated or unsupported components.&lt;/li&gt;
+  &lt;li&gt;Typical dependency revisions:  updating dependencies addressing compatibility issues, non-critical bug fixes, performance improvements, ensures that your software continues to work seamlessly and is ready to move forward.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lts-dependency-maintainence-based-on-specifics-of-project-priorities&quot;&gt;LTS Dependency Maintainence based on specifics of project priorities&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Framework or Language Updates: Addressing updates to the underlying programming language or framework can be important for long-term compatibility&lt;/li&gt;
+  &lt;li&gt;New Platform Support: If your project needs to be deployed on a new platform, updating dependencies for compatibility with that platform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Proactive maintenance of dependencies is a strategic imperative. It not only mitigates risks associated with security and performance but also positions the software for sustained relevance and competitiveness in the dynamic realm of software development. Regularly assessing and updating dependencies should be a fundamental aspect of any software maintenance strategy, ensuring a resilient and forward-looking software ecosystem.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Custom Dev Ops Tool - Break fix</title>
+   <link href="https://code-sage.com/devops/2023/12/17/Custom-Dev-Ops-Tool-Break-fix.html"/>
+   <updated>2023-12-17T20:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2023/12/17/Custom-Dev-Ops-Tool-Break-fix</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-puzzle-piece-missing.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Fix a break to custom Dev Ops Tool which clones Dev, Test, etc. environments from a production system (db, web server, software framework and components).&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Dev Ops tool has functioned for years and facilitated CI/CD of E-Commerce system.  Recently, the custom tool fails to provide a working dev/test environment from production system.  Identify and resolve issue.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Identify likely causes of issue
+    &lt;ul&gt;
+      &lt;li&gt;Consider potential dependency changes in production vs cloned environments.&lt;/li&gt;
+      &lt;li&gt;Cloned environment uses ‘latest’ dependencies.&lt;/li&gt;
+      &lt;li&gt;Cause appears to be a ‘new’ change in production system/dependencies.&lt;/li&gt;
+      &lt;li&gt;Issue identified as ‘new’ serialization of server configuration in db not handled during the cloning process.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Resolve unhandled serialization of server configuration issue.
+    &lt;ul&gt;
+      &lt;li&gt;Identify solution from possible fixes.&lt;/li&gt;
+      &lt;li&gt;Implement solution and verify custom Dev Ops tool is working correctly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting ‘broken’ custom Dev Ops tool by logically investigating where ‘breaking changes’ were likely to be introduced and eliminating potential culprits i.e.  (db, web server, software framework and components) until resolved.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Blazor vs Angular front end considerations for .NET stack</title>
@@ -86,9 +161,9 @@
  
  <entry>
    <title>Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers' Trajectories</title>
-   <link href="https://code-sage.com/2023/09/04/Soabox-The-Generative-AI-Conundrum.html"/>
+   <link href="https://code-sage.com/2023/09/04/Soapbox-The-Generative-AI-Conundrum.html"/>
    <updated>2023-09-04T00:00:00+00:00</updated>
-   <id>https://code-sage.com/blog/2023/09/04/Soabox-The-Generative-AI-Conundrum</id>
+   <id>https://code-sage.com/blog/2023/09/04/Soapbox-The-Generative-AI-Conundrum</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-generative-ai-human.jpg&quot; alt=&quot;AI Conundrum&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -662,6 +737,20 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     

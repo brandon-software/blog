@@ -9,12 +9,12 @@
 
   <title>
     
-    CI/CD of Python Web App with GitHub Actions &middot; Code-Sage
+    Custom Dev Ops Tool - Break fix &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html">
+  <link rel="canonical" href="/blog/devops/2023/12/17/Custom-Dev-Ops-Tool-Break-fix.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,38 +118,40 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">CI/CD of Python Web App with GitHub Actions</h1>
-  <span class="post-date">22 Sep 2023</span>
-  <p><img src="/blog/public/image/sp-manufacturing-packaging.jpg" alt="GitHub Action" class="center-image" /></p>
+  <h1 class="post-title">Custom Dev Ops Tool - Break fix</h1>
+  <span class="post-date">17 Dec 2023</span>
+  <p><img src="/blog/public/image/sp-puzzle-piece-missing.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance web application quality and speed up development iterations.</p>
+<p>Fix a break to custom Dev Ops Tool which clones Dev, Test, etc. environments from a production system (db, web server, software framework and components).</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Automate build, testing, and deployment of Python web application using GitHub Actions.</p>
+<p>Dev Ops tool has functioned for years and facilitated CI/CD of E-Commerce system.  Recently, the custom tool fails to provide a working dev/test environment from production system.  Identify and resolve issue.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Create GitHub Actions Workflow to
+  <li>Identify likely causes of issue
     <ul>
-      <li>trigger job upon check in to branch</li>
-      <li>checkout branch</li>
-      <li>install python</li>
-      <li>install app dependencies (pip)</li>
-      <li>install test dependencies (pytest, playwright, browser)</li>
-      <li>run tests</li>
-      <li>merge to production branch (if tests successful)</li>
+      <li>Consider potential dependency changes in production vs cloned environments.</li>
+      <li>Cloned environment uses ‘latest’ dependencies.</li>
+      <li>Cause appears to be a ‘new’ change in production system/dependencies.</li>
+      <li>Issue identified as ‘new’ serialization of server configuration in db not handled during the cloning process.</li>
     </ul>
   </li>
-  <li>Test and verify GitHub Actions Workflow is working as expected</li>
+  <li>Resolve unhandled serialization of server configuration issue.
+    <ul>
+      <li>Identify solution from possible fixes.</li>
+      <li>Implement solution and verify custom Dev Ops tool is working correctly.</li>
+    </ul>
+  </li>
 </ol>
 
-<hr />
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting ‘broken’ custom Dev Ops tool by logically investigating where ‘breaking changes’ were likely to be introduced and eliminating potential culprits i.e.  (db, web server, software framework and components) until resolved.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -167,7 +169,7 @@
       
       <tr>
         <td>general</td>
-        <td>CI/CD * Automated Testing * Automated Deployment</td>
+        <td>Breaking Changes * CI/CD * Automated Testing * Automated Deployment</td>
       </tr>
       
       
@@ -176,7 +178,7 @@
       
       <tr>
         <td>standards</td>
-        <td></td>
+        <td>HTML * CSS * JSON * Source Control * Dependency Maintenance * Dependency Management</td>
       </tr>
       
       
@@ -185,7 +187,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GitHub Actions * GIT * Python * PIP * PyTest * PlayWright</td>
+        <td>VSCode * Docker * GIT * BASH * SSH * Python * Pytest</td>
       </tr>
       
       
@@ -194,7 +196,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>CI/CD * Regression Testing * Continuous Integration * Continuous Deployment * Refactoring * Clean Code</td>
+        <td>DevOps * Containerization * Troubleshooting</td>
       </tr>
       
       
@@ -203,16 +205,7 @@
       
       <tr>
         <td>packages</td>
-        <td>pip * pytest * playwright</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>GitHub Actions</td>
+        <td>Docker CLI * PyTest * SeleniumBase</td>
       </tr>
       
       
@@ -222,17 +215,25 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: vscode, github actions</p>
+  <p>Tags: html, css, vscode, git</p>
   
 
   <p>Tags:
+    
+    <a href="/tags/html">html</a>
+    html
+     * 
+    
+    <a href="/tags/css">css</a>
+    css
+     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
      * 
     
-    <a href="/tags/github-actions">github actions</a>
-    github actions
+    <a href="/tags/git">git</a>
+    git
     
     
   </p> -->
@@ -254,18 +255,18 @@
     
     <li>
       <h3>
-        <a href="/blog/devops/2023/12/17/Custom-Dev-Ops-Tool-Break-fix.html">
-          Custom Dev Ops Tool - Break fix
-          <small>17 Dec 2023</small>
+        <a href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
+          Blazor vs Angular front end considerations for .NET stack
+          <small>13 Nov 2023</small>
         </a>
       </h3>
     </li>
     
     <li>
       <h3>
-        <a href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
-          Blazor vs Angular front end considerations for .NET stack
-          <small>13 Nov 2023</small>
+        <a href="/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html">
+          CI/CD of Python Web App with GitHub Actions
+          <small>22 Sep 2023</small>
         </a>
       </h3>
     </li>
