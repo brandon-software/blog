@@ -9,12 +9,12 @@
 
   <title>
     
-    Angular App Dependency Maintenance &middot; Code-Sage
+    NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0) &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/26/Angular-App-Dependency-Maintenance.html">
+  <link rel="canonical" href="/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,43 +118,42 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Angular App Dependency Maintenance</h1>
-  <span class="post-date">26 Jul 2023</span>
-  <p><img src="/blog/public/image/angular.jpeg" alt="Angular" class="center-image" /></p>
+  <h1 class="post-title">NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)</h1>
+  <span class="post-date">24 Feb 2024</span>
+  <p><img src="/blog/public/image/ad-puzzle-modernization.jpg" alt="NET Core" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance existing angular application to LTS.</p>
+<p>Modernize legacy NET Application for maintainability and new feature enhancements.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
+<p>Minimal changes to update application components (dependencies, code base, and database) to upgrade to latest NET Core LTS (8.0 from NET Core 3.1).</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
-<ol>
-  <li>Update Angular Project to build, test, and execute using latest Angular 16:
-    <ul>
-      <li>Update angular dependencies.</li>
-      <li>Update application code to function with latest supported Typescript.</li>
-      <li>Ensure application retains previous form and functionality.</li>
-      <li>Update tests to function with latest dependencies.</li>
-      <li>Update stories (Storybook) to latest support version.</li>
-    </ul>
-  </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
-      <li>update GitHub Actions build and test with latest dependencies.</li>
-    </ul>
-  </li>
-</ol>
+<p>1) Update dependencies (net core 3.1 to 8.0).  This includes dependency changes to:</p>
+<ul>
+  <li>.csproj (dotnet upgrade tool)</li>
+  <li>global.json</li>
+  <li>Dockerfile</li>
+</ul>
 
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compatibility with latest support.</p>
+<p>2) Update database version (MySQL 5.7 to 8.0)</p>
+<ul>
+  <li>.csproj (update MySQL dependencies)</li>
+  <li>code changes to correctly initialize mysql connection</li>
+</ul>
 
-<hr />
+<p>3) Troubleshoot and fix build errors and runtime failures</p>
+<ul>
+  <li>update needed code, environment, and configuration settings for updated versions of MySQL and .NET Core</li>
+  <li>(dev env enhancement) support for local development using HTTPS</li>
+</ul>
+
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (build and runtime) encountered to continue development and long term support of NET Core web application.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -172,7 +171,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Angular Development</td>
+        <td>Dependency Maintenance</td>
       </tr>
       
       
@@ -181,7 +180,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * JSON * Typescript</td>
+        <td>Clean Code * OWASP</td>
       </tr>
       
       
@@ -190,7 +189,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * NPM * Angular CLI * Karma * Jasmine</td>
+        <td>VSCode * Docker * GIT * BASH * SSH * CSharp * .NET Core</td>
       </tr>
       
       
@@ -199,7 +198,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Single Page Application * Dependency Maintenance and Management * Responsive Design * CI/CD</td>
+        <td>Security * Troubleshooting * Performance</td>
       </tr>
       
       
@@ -208,16 +207,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Angular * Angular Material * Storybook</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Github Actions</td>
+        <td>dotnet cli</td>
       </tr>
       
       
@@ -227,22 +217,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, Typescript, vscode, git, Angular, github-actions</p>
+  <p>Tags: vscode, git</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/typescript">Typescript</a>
-    Typescript
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -250,14 +228,6 @@
     
     <a href="/tags/git">git</a>
     git
-     * 
-    
-    <a href="/tags/angular">Angular</a>
-    Angular
-     * 
-    
-    <a href="/tags/github-actions">github-actions</a>
-    github-actions
     
     
   </p> -->
@@ -267,15 +237,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html">
-          NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)
-          <small>24 Feb 2024</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -354,6 +315,15 @@
         <a href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
           Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)
           <small>31 Jul 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/26/Angular-App-Dependency-Maintenance.html">
+          Angular App Dependency Maintenance
+          <small>26 Jul 2023</small>
         </a>
       </h3>
     </li>

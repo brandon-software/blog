@@ -1,17 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-01-29T21:06:22+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">SoapBox: Schedule and prioritize Dependency Maintenance</title><link href="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html" rel="alternate" type="text/html" title="SoapBox: Schedule and prioritize Dependency Maintenance" /><published>2024-01-27T20:16:27+00:00</published><updated>2024-01-27T20:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html"><![CDATA[<p><img src="/blog/public/image/sp-machine-belt-gears-above.jpg" alt="Dependency Maintainence" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-02-27T18:46:37+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)</title><link href="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html" rel="alternate" type="text/html" title="NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)" /><published>2024-02-24T20:16:27+00:00</published><updated>2024-02-24T20:16:27+00:00</updated><id>https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization</id><content type="html" xml:base="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle-modernization.jpg" alt="NET Core" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Modernize legacy NET Application for maintainability and new feature enhancements.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Minimal changes to update application components (dependencies, code base, and database) to upgrade to latest NET Core LTS (8.0 from NET Core 3.1).</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<p>1) Update dependencies (net core 3.1 to 8.0).  This includes dependency changes to:</p>
+<ul>
+  <li>.csproj (dotnet upgrade tool)</li>
+  <li>global.json</li>
+  <li>Dockerfile</li>
+</ul>
+
+<p>2) Update database version (MySQL 5.7 to 8.0)</p>
+<ul>
+  <li>.csproj (update MySQL dependencies)</li>
+  <li>code changes to correctly initialize mysql connection</li>
+</ul>
+
+<p>3) Troubleshoot and fix build errors and runtime failures</p>
+<ul>
+  <li>update needed code, environment, and configuration settings for updated versions of MySQL and .NET Core</li>
+  <li>(dev env enhancement) support for local development using HTTPS</li>
+</ul>
+
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (build and runtime) encountered to continue development and long term support of NET Core web application.</p>]]></content><author><name>Brandon DSouza</name></author><category term="Application-Modernization" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">SoapBox: Schedule and prioritize Dependency Maintenance</title><link href="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html" rel="alternate" type="text/html" title="SoapBox: Schedule and prioritize Dependency Maintenance" /><published>2024-01-27T20:16:27+00:00</published><updated>2024-01-27T20:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html"><![CDATA[<p><img src="/blog/public/image/sp-machine-belt-gears-above.jpg" alt="Dependency Maintenance" class="center-image" /></p>
 
 <hr />
 
 <p>Regular and proactive dependency maintenance is a must in keeping a software project secure, up-to-date, and well-aligned with evolving requirements and standards.  Updates should be prioritized according to urgency of potential impact to a project.</p>
 
-<h1 id="urgent-dependency-maintainence-to-be-completed-asap">Urgent Dependency Maintainence to be completed ASAP</h1>
+<h2 id="urgent-dependency-maintenance-to-be-completed-asap">Urgent Dependency Maintenance to be completed ASAP</h2>
+
 <ul>
   <li>Security Vulnerabilities: Addressing security vulnerabilities should always be the highest priority to protect your software from potential threats.</li>
   <li>Bug Fixes: Critical bugs affecting the functionality or stability of your software.</li>
 </ul>
 
-<h1 id="typical-dependency-maintainence-based-on-specifics-of-project-priorities">Typical Dependency Maintainence based on specifics of project priorities</h1>
+<h2 id="typical-dependency-maintenance-based-on-specifics-of-project-priorities">Typical Dependency Maintenance based on specifics of project priorities</h2>
+
 <ul>
   <li>Feature Requirements: updating dependencies to facilitate new project feature requirements.</li>
   <li>Policy or Compliance Changes: If there are changes in organizational policies or industry compliance standards that impact your dependencies, addressing these changes is important for maintaining compliance.</li>
@@ -19,7 +54,8 @@
   <li>Typical dependency revisions:  updating dependencies addressing compatibility issues, non-critical bug fixes, performance improvements, ensures that your software continues to work seamlessly and is ready to move forward.</li>
 </ul>
 
-<h1 id="lts-dependency-maintainence-based-on-specifics-of-project-priorities">LTS Dependency Maintainence based on specifics of project priorities</h1>
+<h2 id="lts-dependency-maintenance-based-on-specifics-of-project-priorities">LTS Dependency Maintenance based on specifics of project priorities</h2>
+
 <ul>
   <li>Framework or Language Updates: Addressing updates to the underlying programming language or framework can be important for long-term compatibility</li>
   <li>New Platform Support: If your project needs to be deployed on a new platform, updating dependencies for compatibility with that platform</li>
@@ -311,38 +347,4 @@
   </li>
 </ol>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="scipy" /><category term="jupyter-notebook" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Angular App Dependency Maintenance</title><link href="https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance.html" rel="alternate" type="text/html" title="Angular App Dependency Maintenance" /><published>2023-07-26T00:00:00+00:00</published><updated>2023-07-26T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/26/Angular-App-Dependency-Maintenance.html"><![CDATA[<p><img src="/blog/public/image/angular.jpeg" alt="Angular" class="center-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Enhance existing angular application to LTS.</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Update Angular Project to build, test, and execute using latest Angular 16:
-    <ul>
-      <li>Update angular dependencies.</li>
-      <li>Update application code to function with latest supported Typescript.</li>
-      <li>Ensure application retains previous form and functionality.</li>
-      <li>Update tests to function with latest dependencies.</li>
-      <li>Update stories (Storybook) to latest support version.</li>
-    </ul>
-  </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
-      <li>update GitHub Actions build and test with latest dependencies.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, updated stories for compatibility with latest support.</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="html" /><category term="css" /><category term="Typescript" /><category term="vscode" /><category term="git" /><category term="Angular" /><category term="github-actions" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="scipy" /><category term="jupyter-notebook" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry></feed>
