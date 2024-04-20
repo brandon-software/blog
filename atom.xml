@@ -4,13 +4,60 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2024-02-27T18:46:21+00:00</updated>
+ <updated>2024-04-20T15:29:36+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title>
+   <link href="https://code-sage.com/devops/2024/04/20/VPS-Monitor-Utility.html"/>
+   <updated>2024-04-20T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/vps_monitor.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Facilitate root cause analysis and improve response to a slowing production VPS.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Develop a VPS monitoring and alerting utility to monitor VPS health and send alerts when certain thresholds are exceeded.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Monitor a VPS and send an email alert if the following is above a specified thresholds.
+    &lt;ul&gt;
+      &lt;li&gt;Load average&lt;/li&gt;
+      &lt;li&gt;CPU usage&lt;/li&gt;
+      &lt;li&gt;Memory usage&lt;/li&gt;
+      &lt;li&gt;Disk usage&lt;/li&gt;
+      &lt;li&gt;Number of processes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Alert emails are throttled to one per hour (or specified).
+    &lt;ul&gt;
+      &lt;li&gt;If an alert condition is still present, another “VPS - Alert” email will be sent after an hour.&lt;/li&gt;
+      &lt;li&gt;If an alert condition is no longer present, an email will be sent to indicate “VPS - OK”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“VPS Log” with Summary email is sent once a day (or specified).
+    &lt;ul&gt;
+      &lt;li&gt;mean, median, min and max are calculated/included for each parameter&lt;/li&gt;
+      &lt;li&gt;monitor log file is removed after sending&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation was centered around effectively monitoring and alerting on the health and performance metrics of the VPS. This aimed to enhance response time and identify the root cause of the production VPS slowdown. After analyzing additional VPS application logs, it was determined that external factors (such as DOS attack) were eliminated and a specific application was identified as the cause. To track and alert on the performance of this application, additional custom alerting and monitoring were implemented. The slowdown issue was resolved after identifying and resolving the application specific issue.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)</title>
@@ -782,6 +829,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     

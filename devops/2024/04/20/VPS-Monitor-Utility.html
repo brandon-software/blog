@@ -9,12 +9,12 @@
 
   <title>
     
-    Data Science - Visualization with Python (Business Sales Dashboard - Phase 2) &middot; Code-Sage
+    VPS Monitoring and Alerting Utility - Troubleshooting Production VPS &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
+  <link rel="canonical" href="/blog/devops/2024/04/20/VPS-Monitor-Utility.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,49 +118,47 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)</h1>
-  <span class="post-date">31 Jul 2023</span>
-  <p><img src="/blog/public/image/data-visualization.jpeg" alt="Data Visualization" class="center-image" /></p>
+  <h1 class="post-title">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</h1>
+  <span class="post-date">20 Apr 2024</span>
+  <p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.</p>
-
-<p>Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization</p>
+<p>Facilitate root cause analysis and improve response to a slowing production VPS.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Understand customer needs and develop usable/interactive dashboard with minimal user interface friction.</p>
+<p>Develop a VPS monitoring and alerting utility to monitor VPS health and send alerts when certain thresholds are exceeded.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Project Setup
+  <li>Monitor a VPS and send an email alert if the following is above a specified thresholds.
     <ul>
-      <li>Python Environment</li>
-      <li>Jupyter Notebook</li>
-      <li>Data Analysis and Visualization Packages</li>
+      <li>Load average</li>
+      <li>CPU usage</li>
+      <li>Memory usage</li>
+      <li>Disk usage</li>
+      <li>Number of processes</li>
     </ul>
   </li>
-  <li>Data Visualization and Dashboard Development
+  <li>Alert emails are throttled to one per hour (or specified).
     <ul>
-      <li>Understand data and identify key variables/metrics for interactive dashboard.</li>
-      <li>Prototype pivot table, charts and graphs for review.</li>
-      <li>Identify friction points and opportunities for improvement.</li>
-      <li>Create an interactive dashboard to allow for seamless exploration of product, manufacture and market data.
-        <ul>
-          <li>All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Sales trends with adjustable time frame window by product, category, and market (Daily/Weekly/Quarter/Annually).</li>
-        </ul>
-      </li>
+      <li>If an alert condition is still present, another “VPS - Alert” email will be sent after an hour.</li>
+      <li>If an alert condition is no longer present, an email will be sent to indicate “VPS - OK”</li>
+    </ul>
+  </li>
+  <li>“VPS Log” with Summary email is sent once a day (or specified).
+    <ul>
+      <li>mean, median, min and max are calculated/included for each parameter</li>
+      <li>monitor log file is removed after sending</li>
     </ul>
   </li>
 </ol>
 
-<hr />
+<p>Overall, the technical implementation was centered around effectively monitoring and alerting on the health and performance metrics of the VPS. This aimed to enhance response time and identify the root cause of the production VPS slowdown. After analyzing additional VPS application logs, it was determined that external factors (such as DOS attack) were eliminated and a specific application was identified as the cause. To track and alert on the performance of this application, additional custom alerting and monitoring were implemented. The slowdown issue was resolved after identifying and resolving the application specific issue.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -178,7 +176,7 @@
       
       <tr>
         <td>general</td>
-        <td>Data Science * Data Analysis * Data Visualization</td>
+        <td>Troubleshooting * Monitoring * Observability * CI/CD * Automated Deployment</td>
       </tr>
       
       
@@ -187,7 +185,7 @@
       
       <tr>
         <td>standards</td>
-        <td>CSV * Spreadsheet * Charts * Graphs * Pivot Tables</td>
+        <td>Source Control</td>
       </tr>
       
       
@@ -196,7 +194,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * Python * Jupyter Notebook</td>
+        <td>VSCode * GIT * BASH * SSH</td>
       </tr>
       
       
@@ -205,7 +203,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Dataset Creation * Data Cleaning * Data Processing</td>
+        <td>DevOps * Containerization * Troubleshooting</td>
       </tr>
       
       
@@ -214,16 +212,7 @@
       
       <tr>
         <td>packages</td>
-        <td>pandas * yaml * numpy * dash * flask * plotly * matplotlib * seaborn</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Power Shell Script</td>
+        <td>Docker CLI</td>
       </tr>
       
       
@@ -233,7 +222,7 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: vscode, git, python, pandas, numpy, matplotlib, seaborn, scipy, jupyter-notebook, data-science, data-analysis, data-visualization</p>
+  <p>Tags: vscode, git</p>
   
 
   <p>Tags:
@@ -244,46 +233,6 @@
     
     <a href="/tags/git">git</a>
     git
-     * 
-    
-    <a href="/tags/python">python</a>
-    python
-     * 
-    
-    <a href="/tags/pandas">pandas</a>
-    pandas
-     * 
-    
-    <a href="/tags/numpy">numpy</a>
-    numpy
-     * 
-    
-    <a href="/tags/matplotlib">matplotlib</a>
-    matplotlib
-     * 
-    
-    <a href="/tags/seaborn">seaborn</a>
-    seaborn
-     * 
-    
-    <a href="/tags/scipy">scipy</a>
-    scipy
-     * 
-    
-    <a href="/tags/jupyter-notebook">jupyter-notebook</a>
-    jupyter-notebook
-     * 
-    
-    <a href="/tags/data-science">data-science</a>
-    data-science
-     * 
-    
-    <a href="/tags/data-analysis">data-analysis</a>
-    data-analysis
-     * 
-    
-    <a href="/tags/data-visualization">data-visualization</a>
-    data-visualization
     
     
   </p> -->
@@ -293,15 +242,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/devops/2024/04/20/VPS-Monitor-Utility.html">
-          VPS Monitoring and Alerting Utility - Troubleshooting Production VPS
-          <small>20 Apr 2024</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -380,6 +320,15 @@
         <a href="/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html">
           Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)
           <small>04 Aug 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/07/31/Data-Science-Visualization-with-Python.html">
+          Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)
+          <small>31 Jul 2023</small>
         </a>
       </h3>
     </li>

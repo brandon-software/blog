@@ -1,5 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-02-27T18:46:21+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)</title><link href="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html" rel="alternate" type="text/html" title="NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)" /><published>2024-02-24T20:16:27+00:00</published><updated>2024-02-24T20:16:27+00:00</updated><id>https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization</id><content type="html" xml:base="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle-modernization.jpg" alt="NET Core" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-04-20T15:29:36+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title><link href="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html" rel="alternate" type="text/html" title="VPS Monitoring and Alerting Utility - Troubleshooting Production VPS" /><published>2024-04-20T12:16:27+00:00</published><updated>2024-04-20T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html"><![CDATA[<p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Facilitate root cause analysis and improve response to a slowing production VPS.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Develop a VPS monitoring and alerting utility to monitor VPS health and send alerts when certain thresholds are exceeded.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Monitor a VPS and send an email alert if the following is above a specified thresholds.
+    <ul>
+      <li>Load average</li>
+      <li>CPU usage</li>
+      <li>Memory usage</li>
+      <li>Disk usage</li>
+      <li>Number of processes</li>
+    </ul>
+  </li>
+  <li>Alert emails are throttled to one per hour (or specified).
+    <ul>
+      <li>If an alert condition is still present, another “VPS - Alert” email will be sent after an hour.</li>
+      <li>If an alert condition is no longer present, an email will be sent to indicate “VPS - OK”</li>
+    </ul>
+  </li>
+  <li>“VPS Log” with Summary email is sent once a day (or specified).
+    <ul>
+      <li>mean, median, min and max are calculated/included for each parameter</li>
+      <li>monitor log file is removed after sending</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation was centered around effectively monitoring and alerting on the health and performance metrics of the VPS. This aimed to enhance response time and identify the root cause of the production VPS slowdown. After analyzing additional VPS application logs, it was determined that external factors (such as DOS attack) were eliminated and a specific application was identified as the cause. To track and alert on the performance of this application, additional custom alerting and monitoring were implemented. The slowdown issue was resolved after identifying and resolving the application specific issue.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/vps_monitor.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/vps_monitor.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)</title><link href="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html" rel="alternate" type="text/html" title="NET Core Application Modernization - Dependency Upgrade (3.1 to 8.0)" /><published>2024-02-24T20:16:27+00:00</published><updated>2024-02-24T20:16:27+00:00</updated><id>https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization</id><content type="html" xml:base="https://code-sage.com/blog/application-modernization/2024/02/24/NET-Core-App-Modernization.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle-modernization.jpg" alt="NET Core" class="center-image" /></p>
 
 <hr />
 
@@ -307,44 +345,4 @@
   </li>
 </ol>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)</title><link href="https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python.html" rel="alternate" type="text/html" title="Data Science - Visualization with Python (Business Sales Dashboard - Phase 2)" /><published>2023-07-31T00:00:00+00:00</published><updated>2023-07-31T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2023/07/31/Data-Science-Visualization-with-Python.html"><![CDATA[<p><img src="/blog/public/image/data-visualization.jpeg" alt="Data Visualization" class="center-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.</p>
-
-<p>Phase 2: Deliver Usable Interactive Dashboard for Business Data Visualization</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Understand customer needs and develop usable/interactive dashboard with minimal user interface friction.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Project Setup
-    <ul>
-      <li>Python Environment</li>
-      <li>Jupyter Notebook</li>
-      <li>Data Analysis and Visualization Packages</li>
-    </ul>
-  </li>
-  <li>Data Visualization and Dashboard Development
-    <ul>
-      <li>Understand data and identify key variables/metrics for interactive dashboard.</li>
-      <li>Prototype pivot table, charts and graphs for review.</li>
-      <li>Identify friction points and opportunities for improvement.</li>
-      <li>Create an interactive dashboard to allow for seamless exploration of product, manufacture and market data.
-        <ul>
-          <li>All Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Granular Product Manufacturing, Sales, by Market By Period (Daily/Weekly/Quarter/Annually)</li>
-          <li>Sales trends with adjustable time frame window by product, category, and market (Daily/Weekly/Quarter/Annually).</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ol>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="scipy" /><category term="jupyter-notebook" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry></feed>
