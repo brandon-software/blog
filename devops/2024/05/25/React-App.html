@@ -9,12 +9,12 @@
 
   <title>
     
-    Blazor vs Angular front end considerations for .NET stack &middot; Code-Sage
+    React App Development &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
+  <link rel="canonical" href="/blog/devops/2024/05/25/React-App.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,34 +118,52 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Blazor vs Angular front end considerations for .NET stack</h1>
-  <span class="post-date">13 Nov 2023</span>
-  <p><img src="/blog/public/image/ad-puzzle.jpg" alt="Blazor" class="center-image" /></p>
+  <h1 class="post-title">React App Development</h1>
+  <span class="post-date">25 May 2024</span>
+  <p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
-<p>A primary benefit of NET Blazor development is leveraging existing .NET knowledge and skills for web front end, windows, and mobile app development.</p>
+<h2 id="objective">Objective</h2>
 
-<p>A popular tech stack for enterprises who have committed to Microsoft Windows as their development platform of choice is the use of .NET ASP Framework/core along with Angular as the front end for application development.  It may seem like a no-brainer to choose Blazor over Angular when choosing frontend development however it is important to note there are some significant differences beyond obvious language and tooling aspects.</p>
+<p>Develop a front end app/UI to allow user interaction with a specific data set used for maintaining recurring/scheduled events.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Phase 1: The application will be designed to allow users to filter, view, edit, and save changes to a mocked data set.  The application will be built using React and will be designed to be responsive, intuitive, and easy to use for managing scheduled events.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>
-    <p><strong>Runtime:</strong> Angular applications run directly in the JavaScript engine of the browser. JavaScript is a dynamic, interpreted language, and all modern browsers have a built-in JavaScript engine to execute it. When an Angular application runs, the Angular framework, along with your application code, is downloaded and executed in the browser’s JavaScript engine.</p>
-
-    <p>On the other hand, Blazor WebAssembly apps run in a WebAssembly-based .NET runtime. WebAssembly (often abbreviated as wasm) is a binary instruction format for a stack-based virtual machine. It’s designed as a portable target for the compilation of high-level languages like C, C++, and Rust, enabling deployment on the web for client and server applications. When a Blazor WebAssembly application runs, the .NET runtime, the Blazor framework, and your application code are downloaded and executed in the WebAssembly runtime in the browser.</p>
+  <li>Develop React Application:
+    <ul>
+      <li>Create a new React App.</li>
+      <li>Implement feature/component to:
+        <ul>
+          <li>filter and display the data set.</li>
+          <li>allow users to edit the data set.</li>
+          <li>manage multiple dates per recurring/scheduled event such as scheduled exceptions.</li>
+          <li>save changes to the data set and minimize potential loss of data by api errors/failures through use of local storage/retry.</li>
+        </ul>
+      </li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Interoperability:</strong> Angular has direct access to browser APIs via JavaScript. This means you can use any browser API directly from your Angular code because it’s all JavaScript. You can manipulate the DOM, use the Fetch API for HTTP requests, use WebSockets, and more, all directly from your Angular code.</p>
-
-    <p>Blazor WebAssembly, on the other hand, needs to use JavaScript interop to access browser APIs not abstracted by .NET. While .NET provides many abstractions for things like HTTP requests (HttpClient) and timers (System.Timers.Timer), there are many browser APIs that are not directly available in .NET. To use these APIs, Blazor provides a way to interoperate with JavaScript. You can write JavaScript code and call it from your C# code, and vice versa. This allows you to do anything you could do in a JavaScript application, but it does add a layer of complexity compared to Angular’s direct access to browser APIs.</p>
+  <li>Implement UI/UX with the following considerations:
+    <ul>
+      <li>Responsive design to ensure the application works well on different screen sizes.</li>
+      <li>Styling the application to make it visually appealing.</li>
+      <li>Intuitive and easy to use interaction for managing recurring/scheduled events.</li>
+      <li>Seamless and streamlined User Experience and business process flow.</li>
+    </ul>
+  </li>
+  <li>Testing:
+    <ul>
+      <li>Write unit tests for the components using Jest and React Testing Library.</li>
+    </ul>
   </li>
 </ol>
 
-<p>Other notable considerations, on the down side, hot-reloading is not perfect and results in some friction.  Overall, there are many wins as .NET Blazor has a variety of configurations options from server, streaming, client and even auto rendering options.  This allows for considerable flexibility in web browser deployment.  This flexibility combined with component re-use across MAUI (IOS/Android/Windows apps) feels like you are getting a lot for free.</p>
-
-<p>If, however, your enterprise has made significant investments in Javascript development or are heavily dependent on 3rd party Javascript components, be aware that there is also friction in managing the Javascript interop with CSharp.</p>
-
-<p>In conclusion,  despite the friction and commitment to .NET ecosystem,  Blazor development has significant potential for reducing development costs, increasing component re-use, and is quite certainly a strategic choice for enterprises who are already committed to .NET ecosystem.  Additionally, with the release of .NET 8, Blazor has reached a maturity that is worthy of consideration for conservative Enterprises who prefer a more proven technology stack.</p>
+<p>Overall, the technical implementation focused on developing a React application that allowed users to interact with a specific data set. The application was designed to be responsive, accessible, and visually appealing. Testing was an important part of the development process to ensure the application worked as expected and allowed for refactoring design changes.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -163,7 +181,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Mobile Development * Desktop Development</td>
+        <td>Web Development * React Development</td>
       </tr>
       
       
@@ -172,7 +190,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * JSON * CSharp * Javascript * Typescript</td>
+        <td>HTML * CSS * JSON * Typescript * REST * JSON</td>
       </tr>
       
       
@@ -181,7 +199,7 @@
       
       <tr>
         <td>tools</td>
-        <td>Visual Studio * VSCode * GIT</td>
+        <td>VSCode * GIT * NPM * React * Jest</td>
       </tr>
       
       
@@ -190,7 +208,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>IOS Apps * Android Apps * Windows Apps * Single Page Application * Responsive Design</td>
+        <td>Front End Development * Responsive Design * UI/UX</td>
       </tr>
       
       
@@ -199,7 +217,16 @@
       
       <tr>
         <td>packages</td>
-        <td>NET * MAUI * ASP NET * Blazor * Angular</td>
+        <td>React * Jest</td>
+      </tr>
+      
+      
+      
+      
+      
+      <tr>
+        <td>deployment</td>
+        <td>Github Actions</td>
       </tr>
       
       
@@ -209,18 +236,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, vscode, git, ASP NET, MAUI, Blazor, Angular</p>
+  <p>Tags: vscode, git</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -228,22 +247,6 @@
     
     <a href="/tags/git">git</a>
     git
-     * 
-    
-    <a href="/tags/asp-net">ASP NET</a>
-    ASP NET
-     * 
-    
-    <a href="/tags/maui">MAUI</a>
-    MAUI
-     * 
-    
-    <a href="/tags/blazor">Blazor</a>
-    Blazor
-     * 
-    
-    <a href="/tags/angular">Angular</a>
-    Angular
     
     
   </p> -->
@@ -253,15 +256,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/devops/2024/05/25/React-App.html">
-          React App Development
-          <small>25 May 2024</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -295,6 +289,15 @@
         <a href="/blog/devops/2023/12/17/Custom-Dev-Ops-Tool-Break-fix.html">
           Custom Dev Ops Tool - Break fix
           <small>17 Dec 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html">
+          Blazor vs Angular front end considerations for .NET stack
+          <small>13 Nov 2023</small>
         </a>
       </h3>
     </li>

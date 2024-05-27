@@ -1,5 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-04-20T15:29:03+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title><link href="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html" rel="alternate" type="text/html" title="VPS Monitoring and Alerting Utility - Troubleshooting Production VPS" /><published>2024-04-20T12:16:27+00:00</published><updated>2024-04-20T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html"><![CDATA[<p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-05-27T00:15:06+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">React App Development</title><link href="https://code-sage.com/blog/devops/2024/05/25/React-App.html" rel="alternate" type="text/html" title="React App Development" /><published>2024-05-25T12:16:27+00:00</published><updated>2024-05-25T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/05/25/React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/05/25/React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Develop a front end app/UI to allow user interaction with a specific data set used for maintaining recurring/scheduled events.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Phase 1: The application will be designed to allow users to filter, view, edit, and save changes to a mocked data set.  The application will be built using React and will be designed to be responsive, intuitive, and easy to use for managing scheduled events.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Develop React Application:
+    <ul>
+      <li>Create a new React App.</li>
+      <li>Implement feature/component to:
+        <ul>
+          <li>filter and display the data set.</li>
+          <li>allow users to edit the data set.</li>
+          <li>manage multiple dates per recurring/scheduled event such as scheduled exceptions.</li>
+          <li>save changes to the data set and minimize potential loss of data by api errors/failures through use of local storage/retry.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Implement UI/UX with the following considerations:
+    <ul>
+      <li>Responsive design to ensure the application works well on different screen sizes.</li>
+      <li>Styling the application to make it visually appealing.</li>
+      <li>Intuitive and easy to use interaction for managing recurring/scheduled events.</li>
+      <li>Seamless and streamlined User Experience and business process flow.</li>
+    </ul>
+  </li>
+  <li>Testing:
+    <ul>
+      <li>Write unit tests for the components using Jest and React Testing Library.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Overall, the technical implementation focused on developing a React application that allowed users to interact with a specific data set. The application was designed to be responsive, accessible, and visually appealing. Testing was an important part of the development process to ensure the application worked as expected and allowed for refactoring design changes.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title><link href="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html" rel="alternate" type="text/html" title="VPS Monitoring and Alerting Utility - Troubleshooting Production VPS" /><published>2024-04-20T12:16:27+00:00</published><updated>2024-04-20T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html"><![CDATA[<p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -311,38 +354,4 @@
 
 <p>A primary benefit of refactoring is a reduction of “technical debt”.   If a project has incorporated the ability to continuously refactor, delivering features faster and with less risk of regression is guaranteed.  A developer does not fear change and can confidently refactor code to improve the design of the software developed as well as enhance their ability to deliver new features faster.</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)</title><link href="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html" rel="alternate" type="text/html" title="Deployment and Updates with PowerShell (Business Sales Dashboard - Phase 3)" /><published>2023-08-04T00:00:00+00:00</published><updated>2023-08-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/04/Dash-App-Deployment-with-Powershell.html"><![CDATA[<p><img src="/blog/public/image/deployment.jpeg" alt="Deployment" class="center-image rounded-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Create an interactive dashboard that offers valuable business insights into product sales, manufacturing, and market data to allow for seamless exploration of key metrics, facilitating informed decision-making and enhancing understanding of the sales and manufacturing processes as well as market trends and opportunities.</p>
-
-<p>Phase 3: Seamless Dashboard Deployment and Updates</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Develop automated method to update dashboard application in windows environment.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Deploy dashboard to client workstation. Create Power Shell Installation Script/Tool for managing dependencies allowing for
-    <ul>
-      <li>install</li>
-      <li>upgrade</li>
-      <li>uninstall</li>
-      <li>display package versions</li>
-      <li>create/remove dashboard app shortcut on desktop</li>
-    </ul>
-  </li>
-  <li>Application Update and Start Script. Create Power Shell Script to
-    <ul>
-      <li>automate dashboard app updates</li>
-      <li>start of flask Python app (dashboard).</li>
-    </ul>
-  </li>
-</ol>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary></entry></feed>
