@@ -1,5 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-05-27T00:14:28+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">React App Development</title><link href="https://code-sage.com/blog/devops/2024/05/25/React-App.html" rel="alternate" type="text/html" title="React App Development" /><published>2024-05-25T12:16:27+00:00</published><updated>2024-05-25T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/05/25/React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/05/25/React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-08-25T17:35:06+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Log file Monitoring and Alerting Utility - Improving Web App Observability</title><link href="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html" rel="alternate" type="text/html" title="Log file Monitoring and Alerting Utility - Improving Web App Observability" /><published>2024-08-23T12:16:27+00:00</published><updated>2024-08-23T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html"><![CDATA[<p><img src="/blog/public/image/sp-monitor.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Proactively monitor web app.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Develop a log file scanning utility to scan and alert according to specified criteria.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Log file utility should allow specifying .
+    <ul>
+      <li>last modified date of log file to scan</li>
+      <li>Log file path/folder</li>
+      <li>Log file name prefix</li>
+      <li>Line search/matching criteria</li>
+    </ul>
+  </li>
+  <li>“Log Scan” email is sent once a day (or specified) only if search criteria matches.</li>
+</ol>
+
+<p>Overall, the technical implementation was centered around identifying how the log file scanning utility could be used to proactively monitor the web app. The utility was designed to scan multiple log files produced by different system components for specific criteria and send alerts. This allowed for the early detection of potential issues and improved response time to any problems that may arise. The utility was configured to run at specified intervals and send alerts only when concerning logs entries are found, reducing the amount of unnecessary notifications and ensuring that the team was informed of any critical issues in a timely manner.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-monitor.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-monitor.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">NET Core Web API Development</title><link href="https://code-sage.com/blog/devops/2024/06/29/NET-Core-Web-API-Development.html" rel="alternate" type="text/html" title="NET Core Web API Development" /><published>2024-06-29T12:16:27+00:00</published><updated>2024-06-29T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/06/29/NET-Core-Web-API-Development</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/06/29/NET-Core-Web-API-Development.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle1.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Enhance the existing .NET Core Web API reduce technical debt and add requested features.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Identify and implement the necessary changes to the existing .NET Core Web API to improve and automate the build and test processes during development.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Automate the build and test processes:
+    <ul>
+      <li>Add missing controller and end-to-end tests.</li>
+      <li>Facilitate automation of build and test processes to ensure code quality and reliability.</li>
+    </ul>
+  </li>
+  <li>Refactor the existing .NET Core Web API:
+    <ul>
+      <li>Review web api for OWASP vulnerabilities and implement fixes.</li>
+      <li>Identify and remove any unnecessary code.</li>
+      <li>Add logging and error handling to improve the reliability and maintainability of the code.</li>
+      <li>Review code structure and organization and update for consistency.</li>
+    </ul>
+  </li>
+  <li>Implement requested features with consistent implementation, testing, security review, etc. minimizing technical debt.</li>
+</ol>
+
+<p>Overall, the technical implementation focused on enhancing the existing .NET Core Web API by automating the build and test processes, refactoring the codebase, and implementing additional features. The changes aimed to improve the code quality, reliability, and security of the web api. The implementation was successful in reducing technical debt and enhancing the overall performance and functionality of the .NET Core Web API.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="REST API" /><category term="CSharp" /><category term="NET Core" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">React App Development</title><link href="https://code-sage.com/blog/devops/2024/05/25/React-App.html" rel="alternate" type="text/html" title="React App Development" /><published>2024-05-25T12:16:27+00:00</published><updated>2024-05-25T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/05/25/React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/05/25/React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -291,67 +349,4 @@
 
 <p>Will we use this to our advantage or disadvantage?  Discipline in “software engineering” fundamentals is still required.  Are we asking AI to assist us? Or are we asking AI to do the work for us?</p>
 
-<hr />]]></content><author><name>Brandon DSouza</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Automated Web App Testing with PlayWright</title><link href="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html" rel="alternate" type="text/html" title="Automated Web App Testing with PlayWright" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html"><![CDATA[<p><img src="/blog/public/image/sp-playwright.jpg" alt="Testing" class="center-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Reduce manual testing to increase rate of responsiveness to business change request and reduce risk of regression.</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Automate web app testing.  Additional considerations: Test iteration development cycles should be minimal, that is, ‘reduce thrashing’ and ‘quick turn around’ by assisted automated code generation.  Testing should support headless testing and be able to run in a CI/CD pipeline.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Project Setup
-    <ul>
-      <li>Python Environment</li>
-      <li>Add Pytest and PlayWright Packages</li>
-    </ul>
-  </li>
-  <li>Develop Tests
-    <ul>
-      <li>Identify ‘non-brittle’ test cases and scenarios.</li>
-      <li>Identify specific and unique selectors with a consideration of minimizing change.  That is, selectors should be stable and not change with each release.</li>
-      <li>Create tests and confirm tests pass and fail as expected.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>Overall, automated testing for a web app reduces development effort.  A substantial advantage can be achieved when you avoid manual testing, brittle tests, and can develop tests quickly. Additionally, we’re making sure these tests can be done without a visible browser and can be run in a pipeline that helps us keep our development process smooth.</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pytest" /><category term="playwright" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Soapbox: Why Refactor?</title><link href="https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor.html" rel="alternate" type="text/html" title="Soapbox: Why Refactor?" /><published>2023-08-11T00:00:00+00:00</published><updated>2023-08-11T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor</id><content type="html" xml:base="https://code-sage.com/blog/2023/08/11/Soapbox-Why-Refactor.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle-refactor.jpg" alt="Refactor" class="center-image" /></p>
-
-<hr />
-
-<p>While it is important to deliver features and meet deadlines,  it is also important to consider the long term maintainability of the software.  Refactoring is an essential  part of software development process and is a process that should be done continuously.</p>
-
-<p>Refactoring should include the following tasks (i.e elimination of code smells):</p>
-
-<ul>
-  <li>Identify and remove the following:
-    <ul>
-      <li>dead code</li>
-      <li>unused variables</li>
-      <li>duplicated code</li>
-      <li>overly complex code</li>
-    </ul>
-  </li>
-  <li>Communicating with project maintainers (including your future self!) and other developers through improving the following:
-    <ul>
-      <li>naming of functions and variables</li>
-      <li>code structure</li>
-      <li>modularity</li>
-      <li>potential reuse</li>
-    </ul>
-  </li>
-</ul>
-
-<p>In essence, refactoring is the process of improving the design of existing code without changing its external behavior. Knowledge and proficiency of automated testing, version control, IDE utilization, Clean Code and SOLID principles, CI/CD, etc. are critical to continuously implement refactoring.</p>
-
-<p>A primary benefit of refactoring is a reduction of “technical debt”.   If a project has incorporated the ability to continuously refactor, delivering features faster and with less risk of regression is guaranteed.  A developer does not fear change and can confidently refactor code to improve the design of the software developed as well as enhance their ability to deliver new features faster.</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<hr />]]></content><author><name>Brandon DSouza</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

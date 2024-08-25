@@ -9,12 +9,12 @@
 
   <title>
     
-    Angular App Enhancement and Dependency Maintenance &middot; Code-Sage
+    Log file Monitoring and Alerting Utility - Improving Web App Observability &middot; Code-Sage
     
   </title>
 
   
-  <link rel="canonical" href="/blog/2023/07/23/Angular-App-Enhancement-and-Dependency-Maintenance.html">
+  <link rel="canonical" href="/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html">
   
   <link rel="stylesheet" href="/blog/public/css/main.css">
   <link rel="stylesheet" href="/blog/public/css/poole.css">
@@ -118,50 +118,35 @@
         </div>
         <div class="cs-sticky-page content">
           <div class="post">
-  <h1 class="post-title">Angular App Enhancement and Dependency Maintenance</h1>
-  <span class="post-date">23 Jul 2023</span>
-  <p><img src="/blog/public/image/angular2.jpeg" alt="Angular" class="center-image" /></p>
+  <h1 class="post-title">Log file Monitoring and Alerting Utility - Improving Web App Observability</h1>
+  <span class="post-date">23 Aug 2024</span>
+  <p><img src="/blog/public/image/sp-monitor.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
 <h2 id="objective">Objective</h2>
 
-<p>Enhance existing angular application to improve productivity and accessibility (keyboard navigation).</p>
+<p>Proactively monitor web app.</p>
 
 <h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
 
-<p>Dependency maintenance and management (update software package versions) for existing Angular project.  Add support for keyboard navigation and accessibility.</p>
+<p>Develop a log file scanning utility to scan and alert according to specified criteria.</p>
 
 <h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
 
 <ol>
-  <li>Update Angular Project to build, test, and execute using latest Angular 16:
+  <li>Log file utility should allow specifying .
     <ul>
-      <li>Update angular dependencies.</li>
-      <li>Update application code to function with latest supported Typescript.</li>
-      <li>Replace deprecated 3rd party dependencies with supported dependencies.</li>
-      <li>Ensure application retains previous form and functionality.</li>
-      <li>Update tests to function with latest dependencies.</li>
+      <li>last modified date of log file to scan</li>
+      <li>Log file path/folder</li>
+      <li>Log file name prefix</li>
+      <li>Line search/matching criteria</li>
     </ul>
   </li>
-  <li>Support keyboard navigation and accessibility:
-    <ul>
-      <li>Allow users to quickly and consistently navigate application using keyboard without use of mouse.</li>
-      <li>Consider multiple os and browser combinations.</li>
-      <li>Ensure the layout remains responsive and mobile-friendly.</li>
-    </ul>
-  </li>
-  <li>CI/CD Process Pipeline:
-    <ul>
-      <li>Facilitate continuous rapid local development and testing.  Code changes trigger local build and test.</li>
-      <li>update GitHub Actions build and test with latest dependencies.</li>
-    </ul>
-  </li>
+  <li>“Log Scan” email is sent once a day (or specified) only if search criteria matches.</li>
 </ol>
 
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (dependency deprecation, typescript) encountered to continue development and long term support of angular application.  Additionally, add support for keyboard navigation and accessibility in the angular application.</p>
-
-<hr />
+<p>Overall, the technical implementation was centered around identifying how the log file scanning utility could be used to proactively monitor the web app. The utility was designed to scan multiple log files produced by different system components for specific criteria and send alerts. This allowed for the early detection of potential issues and improved response time to any problems that may arise. The utility was configured to run at specified intervals and send alerts only when concerning logs entries are found, reducing the amount of unnecessary notifications and ensuring that the team was informed of any critical issues in a timely manner.</p>
 
 
   <h2>Skills Footprint:</h2>
@@ -179,7 +164,7 @@
       
       <tr>
         <td>general</td>
-        <td>Web Development * Angular Development</td>
+        <td>Troubleshooting * Monitoring * Observability * CI/CD * Automated Deployment</td>
       </tr>
       
       
@@ -188,7 +173,7 @@
       
       <tr>
         <td>standards</td>
-        <td>HTML * CSS * JSON * Typescript</td>
+        <td>Source Control</td>
       </tr>
       
       
@@ -197,7 +182,7 @@
       
       <tr>
         <td>tools</td>
-        <td>VSCode * GIT * NPM * Angular CLI * Karma * Jasmine</td>
+        <td>VSCode * GIT * BASH * SSH</td>
       </tr>
       
       
@@ -206,7 +191,7 @@
       
       <tr>
         <td>concepts</td>
-        <td>Single Page Application * Dependency Maintenance and Management * Responsive Design * CI/CD</td>
+        <td>DevOps * Containerization * Troubleshooting</td>
       </tr>
       
       
@@ -215,16 +200,7 @@
       
       <tr>
         <td>packages</td>
-        <td>Angular * Angular Material</td>
-      </tr>
-      
-      
-      
-      
-      
-      <tr>
-        <td>deployment</td>
-        <td>Github Actions</td>
+        <td>Docker CLI</td>
       </tr>
       
       
@@ -234,22 +210,10 @@
 
   <!-- Display tags -->
   <!-- 
-  <p>Tags: html, css, Typescript, vscode, git, Angular, github-actions</p>
+  <p>Tags: vscode, git</p>
   
 
   <p>Tags:
-    
-    <a href="/tags/html">html</a>
-    html
-     * 
-    
-    <a href="/tags/css">css</a>
-    css
-     * 
-    
-    <a href="/tags/typescript">Typescript</a>
-    Typescript
-     * 
     
     <a href="/tags/vscode">vscode</a>
     vscode
@@ -257,14 +221,6 @@
     
     <a href="/tags/git">git</a>
     git
-     * 
-    
-    <a href="/tags/angular">Angular</a>
-    Angular
-     * 
-    
-    <a href="/tags/github-actions">github-actions</a>
-    github-actions
     
     
   </p> -->
@@ -274,15 +230,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-    <li>
-      <h3>
-        <a href="/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html">
-          Log file Monitoring and Alerting Utility - Improving Web App Observability
-          <small>23 Aug 2024</small>
-        </a>
-      </h3>
-    </li>
     
     <li>
       <h3>
@@ -361,6 +308,15 @@
         <a href="/blog/2023/09/04/Soapbox-The-Generative-AI-Conundrum.html">
           Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers' Trajectories
           <small>04 Sep 2023</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/blog/2023/08/16/Automated-Web-App-Testing-with-Playwright.html">
+          Automated Web App Testing with PlayWright
+          <small>16 Aug 2023</small>
         </a>
       </h3>
     </li>

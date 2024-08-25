@@ -4,13 +4,89 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2024-05-27T00:14:28+00:00</updated>
+ <updated>2024-08-25T17:35:06+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Log file Monitoring and Alerting Utility - Improving Web App Observability</title>
+   <link href="https://code-sage.com/devops/2024/08/23/Web-App-Monitoring-Utility.html"/>
+   <updated>2024-08-23T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/sp-monitor.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Proactively monitor web app.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Develop a log file scanning utility to scan and alert according to specified criteria.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Log file utility should allow specifying .
+    &lt;ul&gt;
+      &lt;li&gt;last modified date of log file to scan&lt;/li&gt;
+      &lt;li&gt;Log file path/folder&lt;/li&gt;
+      &lt;li&gt;Log file name prefix&lt;/li&gt;
+      &lt;li&gt;Line search/matching criteria&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“Log Scan” email is sent once a day (or specified) only if search criteria matches.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation was centered around identifying how the log file scanning utility could be used to proactively monitor the web app. The utility was designed to scan multiple log files produced by different system components for specific criteria and send alerts. This allowed for the early detection of potential issues and improved response time to any problems that may arise. The utility was configured to run at specified intervals and send alerts only when concerning logs entries are found, reducing the amount of unnecessary notifications and ensuring that the team was informed of any critical issues in a timely manner.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NET Core Web API Development</title>
+   <link href="https://code-sage.com/devops/2024/06/29/NET-Core-Web-API-Development.html"/>
+   <updated>2024-06-29T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2024/06/29/NET-Core-Web-API-Development</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/ad-puzzle1.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Enhance the existing .NET Core Web API reduce technical debt and add requested features.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Identify and implement the necessary changes to the existing .NET Core Web API to improve and automate the build and test processes during development.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Automate the build and test processes:
+    &lt;ul&gt;
+      &lt;li&gt;Add missing controller and end-to-end tests.&lt;/li&gt;
+      &lt;li&gt;Facilitate automation of build and test processes to ensure code quality and reliability.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Refactor the existing .NET Core Web API:
+    &lt;ul&gt;
+      &lt;li&gt;Review web api for OWASP vulnerabilities and implement fixes.&lt;/li&gt;
+      &lt;li&gt;Identify and remove any unnecessary code.&lt;/li&gt;
+      &lt;li&gt;Add logging and error handling to improve the reliability and maintainability of the code.&lt;/li&gt;
+      &lt;li&gt;Review code structure and organization and update for consistency.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Implement requested features with consistent implementation, testing, security review, etc. minimizing technical debt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on enhancing the existing .NET Core Web API by automating the build and test processes, refactoring the codebase, and implementing additional features. The changes aimed to improve the code quality, reliability, and security of the web api. The implementation was successful in reducing technical debt and enhancing the overall performance and functionality of the .NET Core Web API.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>React App Development</title>
@@ -881,6 +957,20 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     
