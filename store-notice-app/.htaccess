@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} POST
+    RewriteCond %{REQUEST_URI} \.(json)$ [NC]
+    RewriteRule .* - [R=403,L]
+</IfModule>

@@ -1,0 +1,222 @@
+[
+    {
+        "market_name": "Local Pickup Subscription",
+        "short_name": "LocalSubscription",
+        "status": "",
+        "link": "local-subscription-pickup\/",
+        "hours_of_operation": "",
+        "address": "",
+        "shipping_id": "local_pickup:1",
+        "isActive": true,
+        "isHidden": true,
+        "interval_schedule": {
+            "interval": 1,
+            "relative_date": "2023-03-11"
+        },
+        "season_start": "2023-03-11"
+    },
+    {
+        "market_name": "Local Pickup Special",
+        "short_name": "Local Pickup Special (Semla Buns)",
+        "status": "",
+        "link": "local-pickup-special\/",
+        "hours_of_operation": "",
+        "address": "",
+        "shipping_id": "local_pickup:8",
+        "isActive": false,
+        "isHidden": true,
+        "interval_schedule": {
+            "interval": 1,
+            "relative_date": "2023-02-10"
+        },
+        "season_start": "2023-02-10",
+        "season_end": "2023-02-24"
+    },
+    {
+        "market_name": "Alpharetta Farmer's Market",
+        "short_name": "Alpharetta",
+        "status": "",
+        "link": "2024-alpharetta-farmers-market\/",
+        "hours_of_operation": "",
+        "address": "",
+        "shipping_id": "local_pickup:7",
+        "isActive": true,
+        "interval_schedule": {
+            "interval": 1,
+            "relative_date": "2024-04-06"
+        },
+        "scheduled_exceptions": [
+            "2023-10-28"
+        ],
+        "season_start": "2024-04-06",
+        "season_end": "2024-11-23"
+    },
+    {
+        "market_name": "Avondale Estates Farmer's Market",
+        "short_name": "Avondale Estates",
+        "link": "2020-avondale-estates-farmers-market-2\/",
+        "shipping_id": "local_pickup:11",
+        "scheduled_exceptions": [
+            "2024-04-07"
+        ],
+        "cancelled_exceptions": [
+            "2023-04-08"
+        ],
+        "isActive": true,
+        "season_start": "2022-03-27",
+        "season_end": "",
+        "interval_schedule": {
+            "interval": 2,
+            "relative_date": "2024-03-31"
+        }
+    },
+    {
+        "market_name": "Grant Park Farmer's Market",
+        "short_name": "Grant Park (Atlanta)",
+        "link": "2021-grant-park-farmers-market\/",
+        "shipping_id": "local_pickup:20",
+        "isActive": true,
+        "scheduled_exceptions": [
+            "2023-10-29"
+        ],
+        "cancelled_exceptions": [
+            "2023-12-10"
+        ],
+        "season_start": "2024-04-07",
+        "season_end": "",
+        "interval_schedule": {
+            "interval": 2,
+            "relative_date": "2024-04-07"
+        }
+    },
+    {
+        "market_name": "Oakhurst Farmer's Market",
+        "short_name": "Oakhurst (Decatur)",
+        "link": "2021-oakhurst-farmers-market\/",
+        "shipping_id": "local_pickup:22",
+        "isActive": false,
+        "season_start": "2022-03-26",
+        "interval_schedule": {
+            "interval": 4,
+            "relative_date": "2022-03-26"
+        }
+    },
+    {
+        "market_name": "Piedmont Park's Green Market",
+        "short_name": "Piedmont Park (Atlanta)",
+        "shipping_id": "local_pickup:10",
+        "link": "2024-piedmont-parks-green-market\/",
+        "isActive": true,
+        "scheduled_exceptions": [
+            "2024-04-13",
+            "2024-05-25",
+            "2024-06-29",
+            "2024-09-14",
+            "2024-10-26"
+        ],
+        "cancelled_exceptions": [
+            "2023-12-02"
+        ],
+        "season_start": "2024-03-30",
+        "season_end": "2024-12-07",
+        "interval_schedule": {
+            "interval": 1,
+            "relative_date": "2024-03-30"
+        }
+    },
+    {
+        "market_name": "Sandy Springs Farmer's Market",
+        "short_name": "Sandy Springs",
+        "shipping_id": "local_pickup:17",
+        "link": "2023-piedmont-parks-green-market\/",
+        "isActive": false,
+        "season_start": "2022-03-22",
+        "season_end": "",
+        "interval_schedule": {
+            "interval": 2,
+            "relative_date": "2022-03-22"
+        }
+    },
+    {
+        "market_name": "Alphaxmas Market 2023",
+        "short_name": "Alpharetta Christmas Market 2023",
+        "link": "event/alpharetta-christmas-market2023/",
+        "cutOffConstraint": "previous Wednesday",
+        "shipping_id": "local_pickup:18",
+        "isActive": true,
+        "season_start": "2023-12-02",
+        "season_end": "2023-12-03",
+        "interval_schedule": {
+            "interval": 3,
+            "relative_date": "2023-12-02"
+        }
+    },
+    {
+        "market_name": "Localxmas Special",
+        "short_name": "Local Pickup Christmas Special",
+        "status": "",
+        "link": "local-pickup\/",
+        "hours_of_operation": "",
+        "address": "",
+        "cutOffConstraint": "previous Wednesday",
+        "maxDaysBeforeAllowingOrder": 30,
+        "shipping_id": "local_pickup:31",
+        "isActive": true,
+        "isHidden": false,
+        "interval_schedule": {
+            "interval": 3,
+            "relative_date": "2023-12-23"
+        },
+        "season_start": "2023-12-23",
+        "season_end": "2023-12-23"
+    },
+    {
+        "market_name": "Fr\u00fchlingsfest 2023",
+        "short_name": "Fr\u00fchlingsfest 2023 (Avondale Estates)",
+        "link": "\/2023-fruhlingsfest\/",
+        "shipping_id": "local_pickup:27",
+        "isActive": false,
+        "season_start": "2023-03-01",
+        "season_end": "2023-03-20",
+        "interval_schedule": {
+            "interval": 3,
+            "relative_date": "2023-02-26"
+        }
+    },
+    {
+        "market_name": "USPS_FINAL",
+        "short_name": "USPS Last Pre-Christmas Shipping",
+        "shipping_id": "flat_rate:32",
+        "isActive": true,
+        "isHidden": true,
+        "cutOffConstraint": "previous Tuesday",
+        "maxDaysBeforeAllowingOrder": 11,
+        "season_start": "2023-12-18",
+        "season_end": "2023-12-18",
+        "interval_schedule": {
+            "interval": 3,
+            "relative_date": "2023-12-18"
+        }
+    },
+    {
+        "market_name": "USPS",
+        "short_name": "USPS",
+        "shipping_id": "flat_rate:28",
+        "isActive": true,
+        "isHidden": true,
+        "cutOffConstraint": "previous Sunday",
+        "maxDaysBeforeAllowingOrder": 11,
+        "season_start": "2024-02-07",
+        "season_end": "2024-12-11",
+        "ordinal_schedule": {
+            "day_of_week": "Wednesday",
+            "ordinals": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    }
+]

@@ -1,0 +1,39 @@
+{
+    "default_message":"Enjoy Free Delivery on orders over $50.",
+    "notices": [
+        {
+            "notice_name": "Valentine's Day Sale",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-14",
+            "isActive": true,
+            "notice": "Celebrate Valentine's Day with us! Enjoy a 20% discount on all items until *endDate*.<br>Use code VALENTINE20 at checkout."
+        },        {
+            "notice_name": "Mother's Day Sale",
+            "start_date": "2025-05-01",
+            "end_date": "2025-05-14",
+            "isActive": true,
+            "notice": "Celebrate Mother's Day with us! Enjoy a 20% discount on all items until *endDate*.<br>Use code MOTHER20 at checkout."
+        },
+        {
+            "notice_name": "Father's Day Sale",
+            "start_date": "2025-06-01",
+            "end_date": "2025-06-21",
+            "isActive": true,
+            "notice": "Father's Day is around the corner! Get a 20% discount on selected items until *endDate*.<br>Use code FATHER20 at checkout."
+        },
+        {
+            "notice_name": "Black Friday Sale",
+            "start_date": "2024-11-29",
+            "end_date": "2024-11-29",
+            "isActive": true,
+            "notice": "Black Friday Sale! Enjoy up to 30% off on all products until *endDate*.<br>Use code BF30 at checkout."
+        },
+        {
+            "notice_name": "Christmas Sale",
+            "start_date": "2024-11-30",
+            "end_date": "2024-12-20",
+            "isActive": true,
+            "notice": "Merry Christmas! Enjoy up to 25% off on all products until *endDate*.<br>Use code XMAS25 at checkout."
+        }
+    ]
+}

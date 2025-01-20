@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blog/store-notice-app/static/css/main.144459c2.css",
+    "main.js": "/blog/store-notice-app/static/js/main.193da56f.js",
+    "index.html": "/blog/store-notice-app/index.html",
+    "main.144459c2.css.map": "/blog/store-notice-app/static/css/main.144459c2.css.map",
+    "main.193da56f.js.map": "/blog/store-notice-app/static/js/main.193da56f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.144459c2.css",
+    "static/js/main.193da56f.js"
+  ]
+}

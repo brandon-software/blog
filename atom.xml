@@ -4,13 +4,134 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2024-08-25T17:34:44+00:00</updated>
+ <updated>2025-01-20T17:32:31+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Live React Portfolio Sample App - E-Shop Notifications</title>
+   <link href="https://code-sage.com/devops/2025/01/10/Portfollio-React-App.html"/>
+   <updated>2025-01-10T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2025/01/10/Portfollio-React-App</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/wa-3d-react.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;portfolio-app-notes&quot;&gt;Portfolio App Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;objective&quot;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;To demonstrate my React App development skills,  I have exposed a fully functional front end React App (with out a backend).  This portfolio sample features a simple intuitive, and easy to use mobile first User Interface.&lt;/p&gt;
+
+&lt;h3 id=&quot;application-title&quot;&gt;Application Title:&lt;/h3&gt;
+&lt;p&gt;Store Notices&lt;/p&gt;
+
+&lt;h3 id=&quot;application-overview&quot;&gt;Application Overview:&lt;/h3&gt;
+&lt;p&gt;The React App is a front end component designed to allow users (E-Shop managers) to maintain a data (store notifications) and meta data used for customer communications.  The data will be consumed/shared by a backend web component to display store notifications/banners e-commerce shop.&lt;/p&gt;
+
+&lt;h3 id=&quot;application-features&quot;&gt;Application Features:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mobile first, responsive design, mouse, touch, and keyboard accessible.&lt;/li&gt;
+  &lt;li&gt;Filter and display store notices&lt;/li&gt;
+  &lt;li&gt;Create, read, update delete, and copy store notices (CRUD and copy) and meta data, begin and end dates, enabled, etc.&lt;/li&gt;
+  &lt;li&gt;Keep changes in local storage to minimize potential loss of data by api errors/failures&lt;/li&gt;
+  &lt;li&gt;Notices are always sorted by begin date as follows, current active notice, future notices and past notices.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-is-the-react-app-different-from-the-production-version&quot;&gt;How is the React App different from the production version?&lt;/h3&gt;
+&lt;p&gt;The production version of the React App would have a backend API to store and retrieve the data.  Additionally, the production version of the app would is embedded as component of a web app that provides user authentication, authorization, role-based access control, e-store functionality, etc.  Also, a backend component would be used to actually display the store notices in e-commerce shop.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-the-portfolio-sample-react-app&quot;&gt;How to use the Portfolio Sample React App?&lt;/h2&gt;
+&lt;p&gt;Simply visit the url &lt;a href=&quot;/blog/store-notice-app/&quot; target=&quot;_blank&quot;&gt;Live React Portfolio Sample App - E-Shop Notifications&lt;/a&gt; and interact with the UI to filter, view, edit, and save changes to the default store notification and list of scheduled notifications.  Important Note: If saving fails, changes are saved in local storage and can be retried.  That is, the user is allowed to work offline and retry saving changes when the server is available.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-reset-portfolio-sample-react-app&quot;&gt;How to “reset” Portfolio Sample React App?&lt;/h2&gt;
+&lt;p&gt;To reset the React App to the “sample data”, simply refresh the page via the browser button.  If the page shows “Saving to server failed. Local changes still available.”,  Click the “X Refresh” (cancel) button to abort the changes you have made.   This action will restore the original sample data.&lt;/p&gt;
+
+&lt;h2 id=&quot;are-there-missing-desired-features&quot;&gt;Are there missing desired features?&lt;/h2&gt;
+&lt;p&gt;Yes, of course (as projects are never done) the app can be enhanced with basic features such as: prevent overlapping time frames for notifications, improved default start and end dates, for new notifications, etc.  However, these enhancements will need to be prioritized according to the value being delivered to the business.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I hope you enjoyed interacting with the React App and found it helpful.  If you have any questions or feedback, please feel free to reach out to me.  I am always looking to improve my skills and learn from others.  Thank you for your time and consideration.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Add Year-over-year Reporting Feature with Python (Business Sales Dashboard - App Enhancement & Maintenance)</title>
+   <link href="https://code-sage.com/2024/11/09/Dashboard-App-Enhancement-and-Dependency-Update-with-Python.html"/>
+   <updated>2024-11-09T00:00:00+00:00</updated>
+   <id>https://code-sage.com/blog/2024/11/09/Dashboard-App-Enhancement-and-Dependency-Update-with-Python</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/data-visualization-update.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Add 2 new features to the interactive dashboard.  1) Ability to visualize year-over-year insights of product sales, category sales, manufacturing, and market data.  2) Allow the ability to download the raw dataset for further analysis.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Create the desired dataset/pivot table and corresponding visualization for the year-over-year insights.  Add a download button to the dashboard to allow users to download the raw dataset.  Also, dependency updates and code refactoring to improve maintainability.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Project Setup
+    &lt;ul&gt;
+      &lt;li&gt;Python Environment&lt;/li&gt;
+      &lt;li&gt;Jupyter Notebook&lt;/li&gt;
+      &lt;li&gt;Data Analysis and Visualization Packages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Application Update
+    &lt;ul&gt;
+      &lt;li&gt;Update dashboard dependencies to latest compatible/ available.&lt;/li&gt;
+      &lt;li&gt;Explore, understand, and create a year-over-year dataset from raw data.&lt;/li&gt;
+      &lt;li&gt;Update the dashboard UI to include the new visualization.&lt;/li&gt;
+      &lt;li&gt;Add a download button to the dashboard to allow users to download the raw dataset.&lt;/li&gt;
+      &lt;li&gt;Update tests to include new features.&lt;/li&gt;
+      &lt;li&gt;Update CI/CD pipeline matrix to test against Python 3.12 and 3.11.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Automated Testing for BASH scripts with BATS</title>
+   <link href="https://code-sage.com/devops/2024/10/26/Automated-Testing-for-BASH-with-BATS.html"/>
+   <updated>2024-10-26T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/devops/2024/10/26/Automated-Testing-for-BASH-with-BATS</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/gears_skyline.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;Implement automated testing for production utility scripts to ensure reliability and functionality of the scripts.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
+
+&lt;p&gt;Select and implement a testing framework for BASH scripts to automate the testing process and validate the functionality of the scripts.  Create and implement test cases for BASH scripts.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;BATS (Bash Automated Testing System) was selected as the testing framework for BASH scripts due to its simplicity and ease of use.&lt;/li&gt;
+  &lt;li&gt;Install BATS and understand process.&lt;/li&gt;
+  &lt;li&gt;Refactor scripts to facilitate testability.&lt;/li&gt;
+  &lt;li&gt;Test cases were created to validate the functionality of the BASH scripts.&lt;/li&gt;
+  &lt;li&gt;The test results were reviewed to identify any issues or failures in the scripts.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Overall, the implementation of automated testing for BASH scripts using BATS significantly improved the reliability and maintainability of the scripts. The process involved selecting an appropriate testing framework, refactoring the scripts for better testability, creating comprehensive test cases, and reviewing the test results to ensure the scripts functioned as expected. This approach has streamlined the development workflow and enhanced the overall quality of the scripts.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Log file Monitoring and Alerting Utility - Improving Web App Observability</title>
@@ -93,7 +214,7 @@
    <link href="https://code-sage.com/devops/2024/05/25/React-App.html"/>
    <updated>2024-05-25T12:16:27+00:00</updated>
    <id>https://code-sage.com/blog/devops/2024/05/25/React-App</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/wa-3d-react.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/wa-3d-react_2.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -788,7 +909,7 @@
 
 &lt;h2 id=&quot;technical-goalsoverview&quot;&gt;Technical Goals/Overview&lt;/h2&gt;
 
-&lt;p&gt;Develop iterative data analysis and process to for input into visualization dashboard.&lt;/p&gt;
+&lt;p&gt;Analyze data and develop iterative process to produce clean data sets for consumption by a visualization dashboard.&lt;/p&gt;
 
 &lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
 
@@ -957,6 +1078,27 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
     
     
     

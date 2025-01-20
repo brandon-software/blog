@@ -1,5 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2024-08-25T17:34:44+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Log file Monitoring and Alerting Utility - Improving Web App Observability</title><link href="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html" rel="alternate" type="text/html" title="Log file Monitoring and Alerting Utility - Improving Web App Observability" /><published>2024-08-23T12:16:27+00:00</published><updated>2024-08-23T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html"><![CDATA[<p><img src="/blog/public/image/sp-monitor.jpg" alt="Dev Ops" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2025-01-20T17:32:31+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Live React Portfolio Sample App - E-Shop Notifications</title><link href="https://code-sage.com/blog/devops/2025/01/10/Portfollio-React-App.html" rel="alternate" type="text/html" title="Live React Portfolio Sample App - E-Shop Notifications" /><published>2025-01-10T12:16:27+00:00</published><updated>2025-01-10T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2025/01/10/Portfollio-React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2025/01/10/Portfollio-React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="portfolio-app-notes">Portfolio App Notes</h2>
+
+<h3 id="objective">Objective</h3>
+<p>To demonstrate my React App development skills,  I have exposed a fully functional front end React App (with out a backend).  This portfolio sample features a simple intuitive, and easy to use mobile first User Interface.</p>
+
+<h3 id="application-title">Application Title:</h3>
+<p>Store Notices</p>
+
+<h3 id="application-overview">Application Overview:</h3>
+<p>The React App is a front end component designed to allow users (E-Shop managers) to maintain a data (store notifications) and meta data used for customer communications.  The data will be consumed/shared by a backend web component to display store notifications/banners e-commerce shop.</p>
+
+<h3 id="application-features">Application Features:</h3>
+
+<ul>
+  <li>Mobile first, responsive design, mouse, touch, and keyboard accessible.</li>
+  <li>Filter and display store notices</li>
+  <li>Create, read, update delete, and copy store notices (CRUD and copy) and meta data, begin and end dates, enabled, etc.</li>
+  <li>Keep changes in local storage to minimize potential loss of data by api errors/failures</li>
+  <li>Notices are always sorted by begin date as follows, current active notice, future notices and past notices.</li>
+</ul>
+
+<h3 id="how-is-the-react-app-different-from-the-production-version">How is the React App different from the production version?</h3>
+<p>The production version of the React App would have a backend API to store and retrieve the data.  Additionally, the production version of the app would is embedded as component of a web app that provides user authentication, authorization, role-based access control, e-store functionality, etc.  Also, a backend component would be used to actually display the store notices in e-commerce shop.</p>
+
+<h2 id="how-to-use-the-portfolio-sample-react-app">How to use the Portfolio Sample React App?</h2>
+<p>Simply visit the url <a href="/blog/store-notice-app/" target="_blank">Live React Portfolio Sample App - E-Shop Notifications</a> and interact with the UI to filter, view, edit, and save changes to the default store notification and list of scheduled notifications.  Important Note: If saving fails, changes are saved in local storage and can be retried.  That is, the user is allowed to work offline and retry saving changes when the server is available.</p>
+
+<h2 id="how-to-reset-portfolio-sample-react-app">How to “reset” Portfolio Sample React App?</h2>
+<p>To reset the React App to the “sample data”, simply refresh the page via the browser button.  If the page shows “Saving to server failed. Local changes still available.”,  Click the “X Refresh” (cancel) button to abort the changes you have made.   This action will restore the original sample data.</p>
+
+<h2 id="are-there-missing-desired-features">Are there missing desired features?</h2>
+<p>Yes, of course (as projects are never done) the app can be enhanced with basic features such as: prevent overlapping time frames for notifications, improved default start and end dates, for new notifications, etc.  However, these enhancements will need to be prioritized according to the value being delivered to the business.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>I hope you enjoyed interacting with the React App and found it helpful.  If you have any questions or feedback, please feel free to reach out to me.  I am always looking to improve my skills and learn from others.  Thank you for your time and consideration.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Add Year-over-year Reporting Feature with Python (Business Sales Dashboard - App Enhancement &amp;amp; Maintenance)</title><link href="https://code-sage.com/blog/2024/11/09/Dashboard-App-Enhancement-and-Dependency-Update-with-Python.html" rel="alternate" type="text/html" title="Add Year-over-year Reporting Feature with Python (Business Sales Dashboard - App Enhancement &amp;amp; Maintenance)" /><published>2024-11-09T00:00:00+00:00</published><updated>2024-11-09T00:00:00+00:00</updated><id>https://code-sage.com/blog/2024/11/09/Dashboard-App-Enhancement-and-Dependency-Update-with-Python</id><content type="html" xml:base="https://code-sage.com/blog/2024/11/09/Dashboard-App-Enhancement-and-Dependency-Update-with-Python.html"><![CDATA[<p><img src="/blog/public/image/data-visualization-update.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Add 2 new features to the interactive dashboard.  1) Ability to visualize year-over-year insights of product sales, category sales, manufacturing, and market data.  2) Allow the ability to download the raw dataset for further analysis.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Create the desired dataset/pivot table and corresponding visualization for the year-over-year insights.  Add a download button to the dashboard to allow users to download the raw dataset.  Also, dependency updates and code refactoring to improve maintainability.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>Project Setup
+    <ul>
+      <li>Python Environment</li>
+      <li>Jupyter Notebook</li>
+      <li>Data Analysis and Visualization Packages</li>
+    </ul>
+  </li>
+  <li>Application Update
+    <ul>
+      <li>Update dashboard dependencies to latest compatible/ available.</li>
+      <li>Explore, understand, and create a year-over-year dataset from raw data.</li>
+      <li>Update the dashboard UI to include the new visualization.</li>
+      <li>Add a download button to the dashboard to allow users to download the raw dataset.</li>
+      <li>Update tests to include new features.</li>
+      <li>Update CI/CD pipeline matrix to test against Python 3.12 and 3.11.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="git" /><category term="python" /><category term="pandas" /><category term="numpy" /><category term="matplotlib" /><category term="seaborn" /><category term="data-science" /><category term="data-analysis" /><category term="data-visualization" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/data-visualization-update.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/data-visualization-update.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Automated Testing for BASH scripts with BATS</title><link href="https://code-sage.com/blog/devops/2024/10/26/Automated-Testing-for-BASH-with-BATS.html" rel="alternate" type="text/html" title="Automated Testing for BASH scripts with BATS" /><published>2024-10-26T12:16:27+00:00</published><updated>2024-10-26T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/10/26/Automated-Testing-for-BASH-with-BATS</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/10/26/Automated-Testing-for-BASH-with-BATS.html"><![CDATA[<p><img src="/blog/public/image/gears_skyline.jpg" alt="Dev Ops" class="center-image" /></p>
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>Implement automated testing for production utility scripts to ensure reliability and functionality of the scripts.</p>
+
+<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
+
+<p>Select and implement a testing framework for BASH scripts to automate the testing process and validate the functionality of the scripts.  Create and implement test cases for BASH scripts.</p>
+
+<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
+
+<ol>
+  <li>BATS (Bash Automated Testing System) was selected as the testing framework for BASH scripts due to its simplicity and ease of use.</li>
+  <li>Install BATS and understand process.</li>
+  <li>Refactor scripts to facilitate testability.</li>
+  <li>Test cases were created to validate the functionality of the BASH scripts.</li>
+  <li>The test results were reviewed to identify any issues or failures in the scripts.</li>
+</ol>
+
+<p>Overall, the implementation of automated testing for BASH scripts using BATS significantly improved the reliability and maintainability of the scripts. The process involved selecting an appropriate testing framework, refactoring the scripts for better testability, creating comprehensive test cases, and reviewing the test results to ensure the scripts functioned as expected. This approach has streamlined the development workflow and enhanced the overall quality of the scripts.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/gears_skyline.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/gears_skyline.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Log file Monitoring and Alerting Utility - Improving Web App Observability</title><link href="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html" rel="alternate" type="text/html" title="Log file Monitoring and Alerting Utility - Improving Web App Observability" /><published>2024-08-23T12:16:27+00:00</published><updated>2024-08-23T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/08/23/Web-App-Monitoring-Utility.html"><![CDATA[<p><img src="/blog/public/image/sp-monitor.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -57,7 +151,7 @@
   <li>Implement requested features with consistent implementation, testing, security review, etc. minimizing technical debt.</li>
 </ol>
 
-<p>Overall, the technical implementation focused on enhancing the existing .NET Core Web API by automating the build and test processes, refactoring the codebase, and implementing additional features. The changes aimed to improve the code quality, reliability, and security of the web api. The implementation was successful in reducing technical debt and enhancing the overall performance and functionality of the .NET Core Web API.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="REST API" /><category term="CSharp" /><category term="NET Core" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">React App Development</title><link href="https://code-sage.com/blog/devops/2024/05/25/React-App.html" rel="alternate" type="text/html" title="React App Development" /><published>2024-05-25T12:16:27+00:00</published><updated>2024-05-25T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/05/25/React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/05/25/React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react.jpg" alt="Dev Ops" class="center-image" /></p>
+<p>Overall, the technical implementation focused on enhancing the existing .NET Core Web API by automating the build and test processes, refactoring the codebase, and implementing additional features. The changes aimed to improve the code quality, reliability, and security of the web api. The implementation was successful in reducing technical debt and enhancing the overall performance and functionality of the .NET Core Web API.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="REST API" /><category term="CSharp" /><category term="NET Core" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">React App Development</title><link href="https://code-sage.com/blog/devops/2024/05/25/React-App.html" rel="alternate" type="text/html" title="React App Development" /><published>2024-05-25T12:16:27+00:00</published><updated>2024-05-25T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/05/25/React-App</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/05/25/React-App.html"><![CDATA[<p><img src="/blog/public/image/wa-3d-react_2.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -100,7 +194,7 @@
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on developing a React application that allowed users to interact with a specific data set. The application was designed to be responsive, accessible, and visually appealing. Testing was an important part of the development process to ensure the application worked as expected and allowed for refactoring design changes.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/wa-3d-react.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title><link href="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html" rel="alternate" type="text/html" title="VPS Monitoring and Alerting Utility - Troubleshooting Production VPS" /><published>2024-04-20T12:16:27+00:00</published><updated>2024-04-20T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html"><![CDATA[<p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
+<p>Overall, the technical implementation focused on developing a React application that allowed users to interact with a specific data set. The application was designed to be responsive, accessible, and visually appealing. Testing was an important part of the development process to ensure the application worked as expected and allowed for refactoring design changes.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/wa-3d-react_2.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/wa-3d-react_2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">VPS Monitoring and Alerting Utility - Troubleshooting Production VPS</title><link href="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html" rel="alternate" type="text/html" title="VPS Monitoring and Alerting Utility - Troubleshooting Production VPS" /><published>2024-04-20T12:16:27+00:00</published><updated>2024-04-20T12:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/04/20/VPS-Monitor-Utility.html"><![CDATA[<p><img src="/blog/public/image/vps_monitor.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -231,122 +325,4 @@
   </li>
 </ol>
 
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting ‘broken’ custom Dev Ops tool by logically investigating where ‘breaking changes’ were likely to be introduced and eliminating potential culprits i.e.  (db, web server, software framework and components) until resolved.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="html" /><category term="css" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-puzzle-piece-missing.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-puzzle-piece-missing.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Blazor vs Angular front end considerations for .NET stack</title><link href="https://code-sage.com/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html" rel="alternate" type="text/html" title="Blazor vs Angular front end considerations for .NET stack" /><published>2023-11-13T15:16:27+00:00</published><updated>2023-11-13T15:16:27+00:00</updated><id>https://code-sage.com/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack</id><content type="html" xml:base="https://code-sage.com/blog/net/2023/11/13/Blazor-vs-Angular-front-end-considerations-for-NET-stack.html"><![CDATA[<p><img src="/blog/public/image/ad-puzzle.jpg" alt="Blazor" class="center-image" /></p>
-
-<hr />
-
-<p>A primary benefit of NET Blazor development is leveraging existing .NET knowledge and skills for web front end, windows, and mobile app development.</p>
-
-<p>A popular tech stack for enterprises who have committed to Microsoft Windows as their development platform of choice is the use of .NET ASP Framework/core along with Angular as the front end for application development.  It may seem like a no-brainer to choose Blazor over Angular when choosing frontend development however it is important to note there are some significant differences beyond obvious language and tooling aspects.</p>
-
-<ol>
-  <li>
-    <p><strong>Runtime:</strong> Angular applications run directly in the JavaScript engine of the browser. JavaScript is a dynamic, interpreted language, and all modern browsers have a built-in JavaScript engine to execute it. When an Angular application runs, the Angular framework, along with your application code, is downloaded and executed in the browser’s JavaScript engine.</p>
-
-    <p>On the other hand, Blazor WebAssembly apps run in a WebAssembly-based .NET runtime. WebAssembly (often abbreviated as wasm) is a binary instruction format for a stack-based virtual machine. It’s designed as a portable target for the compilation of high-level languages like C, C++, and Rust, enabling deployment on the web for client and server applications. When a Blazor WebAssembly application runs, the .NET runtime, the Blazor framework, and your application code are downloaded and executed in the WebAssembly runtime in the browser.</p>
-  </li>
-  <li>
-    <p><strong>Interoperability:</strong> Angular has direct access to browser APIs via JavaScript. This means you can use any browser API directly from your Angular code because it’s all JavaScript. You can manipulate the DOM, use the Fetch API for HTTP requests, use WebSockets, and more, all directly from your Angular code.</p>
-
-    <p>Blazor WebAssembly, on the other hand, needs to use JavaScript interop to access browser APIs not abstracted by .NET. While .NET provides many abstractions for things like HTTP requests (HttpClient) and timers (System.Timers.Timer), there are many browser APIs that are not directly available in .NET. To use these APIs, Blazor provides a way to interoperate with JavaScript. You can write JavaScript code and call it from your C# code, and vice versa. This allows you to do anything you could do in a JavaScript application, but it does add a layer of complexity compared to Angular’s direct access to browser APIs.</p>
-  </li>
-</ol>
-
-<p>Other notable considerations, on the down side, hot-reloading is not perfect and results in some friction.  Overall, there are many wins as .NET Blazor has a variety of configurations options from server, streaming, client and even auto rendering options.  This allows for considerable flexibility in web browser deployment.  This flexibility combined with component re-use across MAUI (IOS/Android/Windows apps) feels like you are getting a lot for free.</p>
-
-<p>If, however, your enterprise has made significant investments in Javascript development or are heavily dependent on 3rd party Javascript components, be aware that there is also friction in managing the Javascript interop with CSharp.</p>
-
-<p>In conclusion,  despite the friction and commitment to .NET ecosystem,  Blazor development has significant potential for reducing development costs, increasing component re-use, and is quite certainly a strategic choice for enterprises who are already committed to .NET ecosystem.  Additionally, with the release of .NET 8, Blazor has reached a maturity that is worthy of consideration for conservative Enterprises who prefer a more proven technology stack.</p>]]></content><author><name>Brandon DSouza</name></author><category term="NET" /><category term="html" /><category term="css" /><category term="vscode" /><category term="git" /><category term="ASP NET" /><category term="MAUI" /><category term="Blazor" /><category term="Angular" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CI/CD of Python Web App with GitHub Actions</title><link href="https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html" rel="alternate" type="text/html" title="CI/CD of Python Web App with GitHub Actions" /><published>2023-09-22T00:00:00+00:00</published><updated>2023-09-22T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/22/CI-CD-of-Python-Web-App-With-GitHub-Actions.html"><![CDATA[<p><img src="/blog/public/image/sp-manufacturing-packaging.jpg" alt="GitHub Action" class="center-image" /></p>
-
-<hr />
-
-<h2 id="objective">Objective</h2>
-
-<p>Enhance web application quality and speed up development iterations.</p>
-
-<h2 id="technical-goalsoverview">Technical Goals/Overview</h2>
-
-<p>Automate build, testing, and deployment of Python web application using GitHub Actions.</p>
-
-<h2 id="summary-technical-implementation">Summary: Technical Implementation</h2>
-
-<ol>
-  <li>Create GitHub Actions Workflow to
-    <ul>
-      <li>trigger job upon check in to branch</li>
-      <li>checkout branch</li>
-      <li>install python</li>
-      <li>install app dependencies (pip)</li>
-      <li>install test dependencies (pytest, playwright, browser)</li>
-      <li>run tests</li>
-      <li>merge to production branch (if tests successful)</li>
-    </ul>
-  </li>
-  <li>Test and verify GitHub Actions Workflow is working as expected</li>
-</ol>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><category term="vscode" /><category term="github actions" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-manufacturing-packaging.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-manufacturing-packaging.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories</title><link href="https://code-sage.com/blog/2023/09/04/Soapbox-The-Generative-AI-Conundrum.html" rel="alternate" type="text/html" title="Soapbox: The Generative AI Conundrum: How It Shapes Code Quality and Developers’ Trajectories" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://code-sage.com/blog/2023/09/04/Soapbox-The-Generative-AI-Conundrum</id><content type="html" xml:base="https://code-sage.com/blog/2023/09/04/Soapbox-The-Generative-AI-Conundrum.html"><![CDATA[<p><img src="/blog/public/image/sp-generative-ai-human.jpg" alt="AI Conundrum" class="center-image" /></p>
-
-<hr />
-
-<p>In the ever-evolving landscape of software development, Generative Artificial Intelligence (AI) emerges as both a boon and a challenge. As AI increasingly influences code quality and developers’ roles, understanding its dual impact on professionals of varying experience levels becomes pivotal.</p>
-
-<p>Let’s explore how AI can be both a guiding light and a potential pitfall, particularly in the context of developers’ diverse expertise.</p>
-
-<h2 id="the-double-edged-sword-of-ai">The Double-Edged Sword of AI</h2>
-
-<h3 id="positive-impacts">Positive Impacts</h3>
-
-<p>Using AI, I have found projects that used to take months now take weeks, features that took weeks now take days, etc.  I find AI particularly useful for the following tasks:</p>
-
-<ul>
-  <li>Enhanced efficiency: AI-driven tools serve as a great primer for developers, helping them write code faster. Feedback is instant, and suggestions are contextually relevant, reducing the time spent on manual research and coding.</li>
-  <li>Debugging and testing: AI-powered tools can identify bugs and vulnerabilities, improving code quality and reducing the chances of errors escaping into production.</li>
-  <li>Assisted learning: For developers, AI can offer instant feedback, acting as a knowledgeable mentor that guides them through best practices.</li>
-</ul>
-
-<p>There is a lot to be said about the efficiency of AI and how it can help us get to the next level of development.  Not just code that works but code that is architected to be efficient, secure, and maintainable.  With our guidance, AI can help us efficiently produce good quality code and reduce technical debt.</p>
-
-<h3 id="potential-hazards-and-pitfalls">Potential hazards and pitfalls</h3>
-
-<p>I find the lack of understanding of underlying principles can result in the same patterns that plague the pre-AI development.  This failure to understand the underlying principles can result in potentially serious bottlenecks.  That is, in using AI with technologies I am not familiar with I have found myself spending more time in frustration trying to “resolve” the issue with AI instead of “thinking through and understanding” and resolving the problem the AI had not “encountered” in its training.  Additionally, we should all be aware of the following AI pitfalls:</p>
-
-<ul>
-  <li>Lack of available training data: AI tools require large amounts of training data to function effectively. However, this data may not always be available, particularly for niche use cases or new technologies or versions of software components.</li>
-  <li>Dependency concerns: Over reliance on AI tools can lead to a decline in fundamental coding skills, creating a generation of developers heavily reliant on automation.</li>
-  <li>Homogenization of code: AI tools may favor certain coding patterns, potentially stifling creativity and diversity in code bases.</li>
-  <li>Hallucinations: AI tools may generate code that is syntactically correct but semantically incorrect. This can lead to bugs and vulnerabilities in production code.</li>
-</ul>
-
-<p>Overall, AI can provide answers but what is the intent of the questions?  With the help of AI, we can still generate working but inefficient code with costly technical debt.</p>
-
-<p>With our (AI and humans) collective faults, we can certainly block ourselves from growth and allow AI to lead us down the “meandering path of the moment” vs the “strategic path of born of experience”.</p>
-
-<h2 id="harnessing-experience">Harnessing Experience</h2>
-
-<h3 id="experienced-developers">Experienced Developers</h3>
-
-<p>Having traversed the coding landscape, experienced developers can leverage AI for strategic tasks. By identifying where automation enhances efficiency and where personal experience adds value.  Experienced developers will have the ability to readily overcome challenges faced by less experienced developers and AI.</p>
-
-<h3 id="less-experienced-developers">Less Experienced Developers</h3>
-
-<p>For novice developers, AI serves as a guiding beacon. However, it’s crucial they don’t treat AI as a crutch. Instead, they should approach it as an enabler that complements learning. Engaging with AI tools while striving to understand the principles they automate will create a solid foundation for growth.</p>
-
-<h3 id="the-path-to-leveling-up">The Path to “Leveling Up”</h3>
-
-<ul>
-  <li>Embrace continuous learning: Both experienced and less experienced developers should prioritize continuous learning. This includes understanding how AI tools work, recognizing their limitations, and enhancing core coding skills.</li>
-  <li>Balance automation and manual coding: Rather than entirely outsourcing tasks to AI, developers should strategically choose where automation benefits them and where hands-on coding sharpens their skills.  Developers should always be able to read, write, and understand code.</li>
-  <li>Collaborate and seek guidance: Engaging with experienced developers can provide valuable insights. Their guidance helps less experienced developers make informed decisions about AI tool usage.</li>
-  <li>Experiment and innovate: Use AI as a launchpad for innovation. Experiment with creative uses of AI-driven suggestions to create high-quality code.</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>The AI surge in the realm of code quality is both transformative and challenging. For developers, whether seasoned or new, it’s an opportunity to tread thoughtfully. By harnessing AI’s strengths and mitigating its potential pitfalls, professionals can ensure a harmonious coexistence between technology and craftsmanship.</p>
-
-<p>It is important to understand AI is a tool to help the developer.  The developer is responsible for many aspects of the code including quality, efficiency, maintainability, security, etc.  AI is a tool to assist the developer with these aspects, not replace the developer.</p>
-
-<p>Will we use this to our advantage or disadvantage?  Discipline in “software engineering” fundamentals is still required.  Are we asking AI to assist us? Or are we asking AI to do the work for us?</p>
-
-<hr />]]></content><author><name>Brandon DSouza</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-generative-ai-human.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting ‘broken’ custom Dev Ops tool by logically investigating where ‘breaking changes’ were likely to be introduced and eliminating potential culprits i.e.  (db, web server, software framework and components) until resolved.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="html" /><category term="css" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-puzzle-piece-missing.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-puzzle-piece-missing.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
