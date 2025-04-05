@@ -4,13 +4,49 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2025-01-20T17:31:56+00:00</updated>
+ <updated>2025-04-05T04:01:24+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Legacy PHP Application Modernization</title>
+   <link href="https://code-sage.com/application-modernization/2025/03/30/PHP-App-Modernization.html"/>
+   <updated>2025-03-30T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/php_app_modern_1.jpg&quot; alt=&quot;Dev Ops&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;business-objective&quot;&gt;Business Objective&lt;/h2&gt;
+
+&lt;p&gt;Modernize legacy PHP Application for maintainability and new feature enhancements.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-technical-implementation&quot;&gt;Summary: Technical Implementation&lt;/h2&gt;
+
+&lt;h2 id=&quot;technical-considerations&quot;&gt;Technical Considerations&lt;/h2&gt;
+
+&lt;p&gt;Retain git history. No functional changes to the application.  Update to use modern PHP practices and standards PSR-4.&lt;/p&gt;
+
+&lt;p&gt;1) Update project to use composer for dependency management and autoloader.&lt;/p&gt;
+
+&lt;p&gt;2) Moderize folder structure, file name, and class name conventions.&lt;/p&gt;
+
+&lt;p&gt;3) Improve clean code&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;refactor code&lt;/li&gt;
+  &lt;li&gt;use/prefer class objects over global functions&lt;/li&gt;
+  &lt;li&gt;update to use of namespaces&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;4) Ensure application works “as is” after changes.&lt;/p&gt;
+
+&lt;p&gt;Overall, the technical implementation focused on successfully navigating and trouble shooting issues (auto loading, global, class references and runtime errors) encountered to continue development and long term support of PHP web application.  A key factor was the existing testing framework and test cases that were already in place.  This allowed for a more efficient and effective approach to the modernization process.  The testing framework was used to validate the changes made to the code base, ensuring that the application continued to function as expected after the desired modernization process was complete successful.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Live React Portfolio Sample App - E-Shop Notifications</title>
@@ -1078,6 +1114,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     
