@@ -6,7 +6,21 @@ body {
 .post-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .post-wrapper {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-wrapper {
+    margin: 30px;
+  }
 }
 
 .post-image {
@@ -16,14 +30,52 @@ body {
 
 .post-text {
   flex: 1 1 auto;
+  text-align: left;
 }
 
 .first-image {
   max-width: 90%;
   max-height: 250px;
-  margin: 0 auto;
+  margin: 0;
   display: block;
   border-radius: 40px;
+  float: right;
+}
+
+.post-item-container {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+}
+
+.post-item-container img {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.post-item-text h2 {
+  margin: 0;
+}
+
+.post-item-text .post-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.list-image {
+  max-width: 25%;
+  max-height: 75px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+
 }
 
 @media (max-width: 768px) {
