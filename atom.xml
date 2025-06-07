@@ -4,13 +4,69 @@
  <title>Code-Sage</title>
  <link href="https://code-sage.com/blog/atom.xml" rel="self"/>
  <link href="https://code-sage.com/blog/"/>
- <updated>2025-04-06T23:14:18+00:00</updated>
+ <updated>2025-06-07T16:39:48+00:00</updated>
  <id>https://code-sage.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Live Portfolio Blazor Web App - ACME Insurance Claim Demo</title>
+   <link href="https://code-sage.com/frontend/2025/05/24/Portfollio-Blazor-App.html"/>
+   <updated>2025-05-24T12:16:27+00:00</updated>
+   <id>https://code-sage.com/blog/frontend/2025/05/24/Portfollio-Blazor-App</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/public/image/blazor_chip.jpg&quot; alt=&quot;Blazor Web Development&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;live-portfolio-app-notes&quot;&gt;Live Portfolio App Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;objective&quot;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;To demonstrate my Blazor Web App development skills,  I have exposed a fully functional front end Blazor Web App (with out a backend).  This portfolio sample features a simple intuitive, and easy to use mobile first User Interface.&lt;/p&gt;
+
+&lt;h3 id=&quot;application-title&quot;&gt;Application Title:&lt;/h3&gt;
+&lt;p&gt;ACME Auto Insurance Claim Demo&lt;/p&gt;
+
+&lt;h3 id=&quot;application-overview&quot;&gt;Application Overview:&lt;/h3&gt;
+&lt;p&gt;The Blazor Web App is a front end component designed to allow ACME customers to file auto insurance claims.&lt;/p&gt;
+
+&lt;h3 id=&quot;application-features&quot;&gt;Application Features:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mobile first, responsive design, mouse, touch, and keyboard accessible.&lt;/li&gt;
+  &lt;li&gt;Info/Instructions Toggle&lt;/li&gt;
+  &lt;li&gt;Collect multiple person data&lt;/li&gt;
+  &lt;li&gt;Browser multi file/photo upload&lt;/li&gt;
+  &lt;li&gt;Browser Geolocation&lt;/li&gt;
+  &lt;li&gt;Claim collection&lt;/li&gt;
+  &lt;li&gt;Claim Confirmation&lt;/li&gt;
+  &lt;li&gt;Test Services&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-is-the-blazor-web-app-different-from-the-production-version&quot;&gt;How is the Blazor Web App different from the production version?&lt;/h3&gt;
+&lt;p&gt;The production version of the Blazor Web App would have a backend API to store and retrieve the data.  Additionally, the production version of the app would connected to backing services that provides user authentication, authorization, role-based access control, long term storage, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-the-portfolio-sample-blazor-web-app&quot;&gt;How to use the Portfolio Sample Blazor Web App?&lt;/h2&gt;
+&lt;p&gt;Simply visit the url &lt;a href=&quot;/blog/live-portfolio/blazor-web-app/&quot; target=&quot;_blank&quot;&gt;ACME Insurance Claim Demo&lt;/a&gt; and interact with the UI to File a Claim.  Only 3 fields are needed to submit.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Policyholder ID*:&lt;/li&gt;
+  &lt;li&gt;Incident Date*:&lt;/li&gt;
+  &lt;li&gt;Incident Description*:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;are-there-missing-desired-features--next-steps&quot;&gt;Are there missing desired features?  Next steps?&lt;/h2&gt;
+&lt;p&gt;Yes, of course.  This is only a frontend implementation and does not have backing services (Azure functions, blob storage, active directory) and other missing functionality i.e. login/registration.  Additionally,  much of the code could be used in a IPhone/Android Maui based mobile applications.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I hope you enjoyed interacting with the Blazor Web App and found it helpful.  If you have any questions or feedback, please feel free to reach out to me via &lt;a href=&quot;/blog/live-portfolio/blazor-web-app/](https://www.linkedin.com/in/brandon-dsouza&quot; target=&quot;_blank&quot;&gt;Linked in&lt;/a&gt; .  I am always looking to improve my skills and learn from others.&lt;/p&gt;
+
+&lt;p&gt;Thank you for your time and consideration.&lt;/p&gt;
+
+&lt;p&gt;Brandon DSouza&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Legacy PHP Application Modernization</title>
@@ -1114,6 +1170,13 @@
     
     
 
+    
+    
+    
+    
+    
+
+    
     
     
     

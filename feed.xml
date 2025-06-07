@@ -1,5 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2025-04-06T23:14:18+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
-</subtitle><entry><title type="html">Legacy PHP Application Modernization</title><link href="https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization.html" rel="alternate" type="text/html" title="Legacy PHP Application Modernization" /><published>2025-03-30T12:16:27+00:00</published><updated>2025-03-30T12:16:27+00:00</updated><id>https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization</id><content type="html" xml:base="https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization.html"><![CDATA[<p><img src="/blog/public/image/php_app_modern_1.jpg" alt="Dev Ops" class="center-image" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://code-sage.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://code-sage.com/blog/" rel="alternate" type="text/html" /><updated>2025-06-07T16:39:48+00:00</updated><id>https://code-sage.com/blog/feed.xml</id><title type="html">Code-Sage</title><subtitle>A Software Engineer&apos;s Blog
+</subtitle><entry><title type="html">Live Portfolio Blazor Web App - ACME Insurance Claim Demo</title><link href="https://code-sage.com/blog/frontend/2025/05/24/Portfollio-Blazor-App.html" rel="alternate" type="text/html" title="Live Portfolio Blazor Web App - ACME Insurance Claim Demo" /><published>2025-05-24T12:16:27+00:00</published><updated>2025-05-24T12:16:27+00:00</updated><id>https://code-sage.com/blog/frontend/2025/05/24/Portfollio-Blazor-App</id><content type="html" xml:base="https://code-sage.com/blog/frontend/2025/05/24/Portfollio-Blazor-App.html"><![CDATA[<p><img src="/blog/public/image/blazor_chip.jpg" alt="Blazor Web Development" class="center-image" /></p>
+
+<hr />
+
+<h2 id="live-portfolio-app-notes">Live Portfolio App Notes</h2>
+
+<h3 id="objective">Objective</h3>
+<p>To demonstrate my Blazor Web App development skills,  I have exposed a fully functional front end Blazor Web App (with out a backend).  This portfolio sample features a simple intuitive, and easy to use mobile first User Interface.</p>
+
+<h3 id="application-title">Application Title:</h3>
+<p>ACME Auto Insurance Claim Demo</p>
+
+<h3 id="application-overview">Application Overview:</h3>
+<p>The Blazor Web App is a front end component designed to allow ACME customers to file auto insurance claims.</p>
+
+<h3 id="application-features">Application Features:</h3>
+
+<ul>
+  <li>Mobile first, responsive design, mouse, touch, and keyboard accessible.</li>
+  <li>Info/Instructions Toggle</li>
+  <li>Collect multiple person data</li>
+  <li>Browser multi file/photo upload</li>
+  <li>Browser Geolocation</li>
+  <li>Claim collection</li>
+  <li>Claim Confirmation</li>
+  <li>Test Services</li>
+</ul>
+
+<h3 id="how-is-the-blazor-web-app-different-from-the-production-version">How is the Blazor Web App different from the production version?</h3>
+<p>The production version of the Blazor Web App would have a backend API to store and retrieve the data.  Additionally, the production version of the app would connected to backing services that provides user authentication, authorization, role-based access control, long term storage, etc.</p>
+
+<h2 id="how-to-use-the-portfolio-sample-blazor-web-app">How to use the Portfolio Sample Blazor Web App?</h2>
+<p>Simply visit the url <a href="/blog/live-portfolio/blazor-web-app/" target="_blank">ACME Insurance Claim Demo</a> and interact with the UI to File a Claim.  Only 3 fields are needed to submit.</p>
+<ul>
+  <li>Policyholder ID*:</li>
+  <li>Incident Date*:</li>
+  <li>Incident Description*:</li>
+</ul>
+
+<h2 id="are-there-missing-desired-features--next-steps">Are there missing desired features?  Next steps?</h2>
+<p>Yes, of course.  This is only a frontend implementation and does not have backing services (Azure functions, blob storage, active directory) and other missing functionality i.e. login/registration.  Additionally,  much of the code could be used in a IPhone/Android Maui based mobile applications.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>I hope you enjoyed interacting with the Blazor Web App and found it helpful.  If you have any questions or feedback, please feel free to reach out to me via <a href="/blog/live-portfolio/blazor-web-app/](https://www.linkedin.com/in/brandon-dsouza" target="_blank">Linked in</a> .  I am always looking to improve my skills and learn from others.</p>
+
+<p>Thank you for your time and consideration.</p>
+
+<p>Brandon DSouza</p>]]></content><author><name>Brandon DSouza</name></author><category term="Frontend" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/blazor_chip.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/blazor_chip.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Legacy PHP Application Modernization</title><link href="https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization.html" rel="alternate" type="text/html" title="Legacy PHP Application Modernization" /><published>2025-03-30T12:16:27+00:00</published><updated>2025-03-30T12:16:27+00:00</updated><id>https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization</id><content type="html" xml:base="https://code-sage.com/blog/application-modernization/2025/03/30/PHP-App-Modernization.html"><![CDATA[<p><img src="/blog/public/image/php_app_modern_1.jpg" alt="Dev Ops" class="center-image" /></p>
 
 <hr />
 
@@ -292,33 +339,4 @@
   <li>(dev env enhancement) support for local development using HTTPS</li>
 </ul>
 
-<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (build and runtime) encountered to continue development and long term support of NET Core web application.</p>]]></content><author><name>Brandon DSouza</name></author><category term="Application-Modernization" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">SoapBox: Schedule and prioritize Dependency Maintenance</title><link href="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html" rel="alternate" type="text/html" title="SoapBox: Schedule and prioritize Dependency Maintenance" /><published>2024-01-27T20:16:27+00:00</published><updated>2024-01-27T20:16:27+00:00</updated><id>https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance</id><content type="html" xml:base="https://code-sage.com/blog/devops/2024/01/27/Soapbox-Schdule-and-Prioritize-Dependency-Mantainance.html"><![CDATA[<p><img src="/blog/public/image/sp-machine-belt-gears-above.jpg" alt="Dependency Maintenance" class="center-image" /></p>
-
-<hr />
-
-<p>Regular and proactive dependency maintenance is a must in keeping a software project secure, up-to-date, and well-aligned with evolving requirements and standards.  Updates should be prioritized according to urgency of potential impact to a project.</p>
-
-<h2 id="urgent-dependency-maintenance-to-be-completed-asap">Urgent Dependency Maintenance to be completed ASAP</h2>
-
-<ul>
-  <li>Security Vulnerabilities: Addressing security vulnerabilities should always be the highest priority to protect your software from potential threats.</li>
-  <li>Bug Fixes: Critical bugs affecting the functionality or stability of your software.</li>
-</ul>
-
-<h2 id="typical-dependency-maintenance-based-on-specifics-of-project-priorities">Typical Dependency Maintenance based on specifics of project priorities</h2>
-
-<ul>
-  <li>Feature Requirements: updating dependencies to facilitate new project feature requirements.</li>
-  <li>Policy or Compliance Changes: If there are changes in organizational policies or industry compliance standards that impact your dependencies, addressing these changes is important for maintaining compliance.</li>
-  <li>End-of-Life or Deprecation: Dependencies that have reached their end-of-life or are deprecated should be prioritized to avoid using outdated or unsupported components.</li>
-  <li>Typical dependency revisions:  updating dependencies addressing compatibility issues, non-critical bug fixes, performance improvements, ensures that your software continues to work seamlessly and is ready to move forward.</li>
-</ul>
-
-<h2 id="lts-dependency-maintenance-based-on-specifics-of-project-priorities">LTS Dependency Maintenance based on specifics of project priorities</h2>
-
-<ul>
-  <li>Framework or Language Updates: Addressing updates to the underlying programming language or framework can be important for long-term compatibility</li>
-  <li>New Platform Support: If your project needs to be deployed on a new platform, updating dependencies for compatibility with that platform</li>
-</ul>
-
-<p>Proactive maintenance of dependencies is a strategic imperative. It not only mitigates risks associated with security and performance but also positions the software for sustained relevance and competitiveness in the dynamic realm of software development. Regularly assessing and updating dependencies should be a fundamental aspect of any software maintenance strategy, ensuring a resilient and forward-looking software ecosystem.</p>]]></content><author><name>Brandon DSouza</name></author><category term="DevOps" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/sp-machine-belt-gears-above.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/sp-machine-belt-gears-above.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Overall, the technical implementation focused on successfully navigating and trouble shooting issues (build and runtime) encountered to continue development and long term support of NET Core web application.</p>]]></content><author><name>Brandon DSouza</name></author><category term="Application-Modernization" /><category term="vscode" /><category term="git" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" /><media:content medium="image" url="https://code-sage.com/blog/public/image/ad-puzzle-modernization.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
