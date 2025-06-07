@@ -1,0 +1,39 @@
+# Required MIME Types for Blazor WebAssembly
+AddType application/wasm .wasm
+AddType application/octet-stream .dll
+AddType application/json .json
+AddType application/json .blat
+AddType application/octet-stream .dat
+
+# URL Rewriting for client-side routing
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Set the base path for your Blazor app
+    RewriteBase /blog/live-portfolio/blazor-web-app/
+    
+    # If the requested resource exists as a file or directory, serve directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    
+    # Otherwise, redirect all requests to index.html for the SPA to handle
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# Enable compression for better performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/wasm
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+</IfModule>
+
+# Configure caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/wasm "access plus 1 week"
+    ExpiresByType application/octet-stream "access plus 1 week"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
